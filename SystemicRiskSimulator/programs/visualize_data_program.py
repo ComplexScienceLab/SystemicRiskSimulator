@@ -541,8 +541,8 @@ def main(sgv):
 
         for i_exp in experiments_indices_to_vis:
 
-            df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=BB-*-form=panel.pkl'))[0])
-            df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=IB-*-form=panel.pkl'))[0])
+            df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v=BB-*-form=panel.pkl'))[0])
+            df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v=IB-*-form=panel.pkl'))[0])
 
             ## 一些变量
             num_1D_row_id = len(df_1D_panel)  # 数据表BB之行数
@@ -611,7 +611,7 @@ def main(sgv):
                 if (para_01 == 'note' or para_01 == 'AB'):  # note 数据不需要处理
                     continue
                 if not para_01.startswith('I'):  # 说明是 1D 的数据
-                    v_1D = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v={para_01}-*-form=panel.pkl'))[0])
+                    v_1D = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v={para_01}-*-form=panel.pkl'))[0])
                     dict_1D_panel[para_01] = v_1D
                     if para_01 == 'BB':
                         # 计算总的轮次数（是从0开始计数的)、总的步进数（是从0开始计数的)
@@ -620,7 +620,7 @@ def main(sgv):
                         num_step = num_idData  # 总的步进数（是从0开始计数的)
                         pass  # if
                 else:  # 说明是 2D 的数据
-                    df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v={para_01}-*-form=panel.pkl'))[0])
+                    df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v={para_01}-*-form=panel.pkl'))[0])
                     dict_2D_panel[para_01] = df_2D_panel
                     pass  # if
                 pass  # for
@@ -816,11 +816,11 @@ def main(sgv):
             #         if (para_01 == 'note' or para_01 == 'AB'):
             #         continue
             #     if not para_01.startswith('I'):  # 说明是 1D 的数据
-            #         df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v={para_01}-*-form=panel.pkl'))[0])
+            #         df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v={para_01}-*-form=panel.pkl'))[0])
 
             # #BUG 为什么这里不遍历 para_01，而是直接用 'BB' 和 'IB' ？
-            df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=BB-*-form=panel.pkl'))[0])
-            df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=IB-*-form=panel.pkl'))[0])
+            df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v=BB-*-form=panel.pkl'))[0])
+            df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v=IB-*-form=panel.pkl'))[0])
 
             ## 一些变量
             num_1D_row_id = len(df_1D_panel)  # 数据表BB之行数
