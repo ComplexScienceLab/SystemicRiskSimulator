@@ -191,7 +191,7 @@ class Operator:
 
 
 
-        else:  # #NOW 如果是运行强化学习算法和ABM模型实验组做训练，而是直接使用强化学习环境工具包的相关方法来进行实验组的初始化
+        else:  # 如果是运行强化学习算法和ABM模型实验组做训练，而是直接使用强化学习环境工具包的相关方法来进行实验组的初始化
 
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
                 parameters_works = pd.read_pickle(f)

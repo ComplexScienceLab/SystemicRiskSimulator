@@ -182,7 +182,7 @@ def main(sgv):
             dict_filepath_pkl[para_01] = list_filepath_pkl
             pass  # for
 
-    else:  # #NOW 如果是是运行强化学习算法和ABM模型实验组做训练，那么读取所有实验组 id 的实验结果数据
+    else:  # 如果是是运行强化学习算法和ABM模型实验组做训练，那么读取所有实验组 id 的实验结果数据
         ## 读取实验结果数据。根据 list_idsExp_TASK 中的实验组 id，读取实验结果数据。
         dict_filepath_pkl = dict()
         for para_01 in sgv['list_agents_data_filename_para_01']:
