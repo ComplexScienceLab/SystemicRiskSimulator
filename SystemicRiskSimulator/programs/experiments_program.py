@@ -255,11 +255,11 @@ def main(sgv):
             ## 默认程序打开输出文件查看
             if sgv['is_auto_open_outputlog']:
                 system = platform.system()
-                if system == 'Darwin':
+                if system == 'Darwin':  # macOS
                     os.system(r"open " + str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))
-                elif system == 'Windows':
+                elif system == 'Windows':  # Windows
                     os.startfile(str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))
-                elif system == 'Linux':
+                elif system == 'Linux':  # Linux
                     os.system('xdg-open ' + str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))  # #BUG 还没测试过
                 else:
                     print("Unsupported operating system")
