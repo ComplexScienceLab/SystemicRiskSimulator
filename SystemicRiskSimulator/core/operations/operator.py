@@ -49,8 +49,12 @@ class Operator:
 
         # if sgv['init_parameters_method'] == "import data":
 
-        if not sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练':  # 如果不是运行强化学习算法和ABM模型实验组做训练
+        # 如果是运行强化学习算法和ABM模型实验组做训练，则不使用 SQLite 数据库管理实验组
+        if sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练':
+            sgv['is_use_sqlite_to_manage_experiments'] = False
+            pass  # if
 
+        if sgv['is_use_sqlite_to_manage_experiments']:
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
                 parameters_works = pd.read_pickle(f)
                 pass  # with
@@ -191,7 +195,7 @@ class Operator:
 
 
 
-        else:  # 如果是运行强化学习算法和ABM模型实验组做训练，而是直接使用强化学习环境工具包的相关方法来进行实验组的初始化
+        else:
 
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
                 parameters_works = pd.read_pickle(f)

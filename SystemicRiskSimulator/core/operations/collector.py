@@ -347,16 +347,17 @@ class Collector:
 
         ## 导出数据
 
-        if sgv['is_use_RL_method']:
+        if sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练':
             sgv['exp_id_exp_output_data'] = f"id={sgv['id_episode']}-"
-            if sgv['RL_state'] == 'training':
-                folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
-            elif sgv['RL_state'] == 'using':
-                folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
-                pass  # if
-        else:
+            folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
+        elif sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做使用':
+            sgv['exp_id_exp_output_data'] = f"id={sgv['id_episode']}-"
+            folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
+        elif sgv['运行实验组的方式'] == '运行ABM实验组':
             sgv['exp_id_exp_output_data'] = ""
             folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
+        else:
+            raise ValueError(f"运行实验组的方式 {sgv['运行实验组的方式']} 不支持！")  # 如果运行实验组的方式不支持，则抛出异常
             pass  # if
         folderpath_experiments_output_data.mkdir(parents=True, exist_ok=True)
 
