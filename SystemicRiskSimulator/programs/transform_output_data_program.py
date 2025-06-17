@@ -75,82 +75,91 @@ def main(sgv):
     # %%
     print("执行：")
 
-    if sgv['is_use_RL_method']:
-        if sgv['RL_state'] == 'training':
-            sgv['subfoldername_experiments_output_data'] = "RL_training"
-        elif sgv['RL_state'] == 'using':
-            sgv['subfoldername_experiments_output_data'] = "RL_using"
-            pass  # if
-    else:
+    if sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练':
+        sgv['subfoldername_experiments_output_data'] = "RL_training"
+        folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
+    elif sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做应用':
+        sgv['subfoldername_experiments_output_data'] = "RL_using"
+        folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
+    elif sgv['运行实验组的方式'] == '运行ABM实验组':
         sgv['exp_id_exp_output_data'] = ""
         sgv['subfoldername_experiments_output_data'] = "normal"
-        pass  # if
-
-    if sgv['is_use_RL_method']:
-        if sgv['RL_state'] == 'training':
-            folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
-        elif sgv['RL_state'] == 'using':
-            folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
-            pass  # if
-        pass  # if
-    else:
         folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
+    else:
+        raise ValueError(f"运行实验组的方式 {sgv['运行实验组的方式']} 不支持！")  # 如果运行实验组的方式不支持，则抛出异常
         pass  # if
-
     folderpath_experiments_output_data.mkdir(parents=True, exist_ok=True)
 
     num_files_BB = len(list(folderpath_experiments_output_data.glob('*v=BB-*.pkl')))  # 获取实验组输出数据pkl格式之BB数据之文件数量
     num_files_IB = len(list(folderpath_experiments_output_data.glob('*v=IB-*.pkl')))  # 获取实验组输出数据pkl格式之IB数据之文件数量
     print(f"BB 文件数等于 IB 文件数？：{num_files_BB == num_files_IB}")  # DEBUG
 
-    # if sgv['is_use_sqlite_to_manage_experiments']:
-    ## 连接 SQLite 数据库，统计实验组作业完成情况（#HACK #NOTE 只能用于串行处理模式）
-    conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-    c = conn.cursor()
-    # 如果没有列 status_预处理实验结果程序 ，那么添加该列
-    c.execute("PRAGMA table_info(experiments)")
-    if not any([v[1] == 'status_预处理实验结果程序' for v in c.fetchall()]):
-        c.execute("ALTER TABLE experiments ADD COLUMN status_预处理实验结果程序 TEXT DEFAULT 'RAW'")
-        conn.commit()
-        pass  # if
-    # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
-    if sgv['is_rerun_all_done_works_in_the_same_experiments']:
-        c.execute("UPDATE experiments SET status_预处理实验结果程序 = 'RAW' WHERE status_预处理实验结果程序 = 'DONE'")
-        conn.commit()
-        pass  # if
-    # 检查实验组作业完成状态
-    c.execute("SELECT exp_id, status_预处理实验结果程序 FROM experiments")
-    rows = c.fetchall()
-    list_idsExp_DOING = []
-    list_idsExp_DONE = []
-    list_idsExp_RAW = []
-    for row in rows:
-        exp_id, status_预处理实验结果程序 = row[0], row[1]
-        if status_预处理实验结果程序 == "DOING":
-            list_idsExp_DOING.append(exp_id)
-        elif status_预处理实验结果程序 == "DONE":
-            list_idsExp_DONE.append(exp_id)
-        else:
-            list_idsExp_RAW.append(exp_id)
-            pass  # if
-        pass  # for
 
-    # 如果实验组作业状态表中没有实验组 id，那么添加实验组 id 列
-    c.execute("PRAGMA table_info(experiments)")
-    if not any([v[1] == 'exp_id' for v in c.fetchall()]):
-        c.execute("ALTER TABLE experiments ADD COLUMN exp_id INTEGER")
-        conn.commit()
+    if sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练':
+        sgv['is_use_sqlite_to_manage_experiments'] = False  # 禁用 SQLite 数据库管理实验组作业状态，因为强化学习算法和ABM模型实验组做训练无需使用 SQLite 数据库管理实验组作业状态。
+        pass  # if
+
+    if sgv['is_use_sqlite_to_manage_experiments']:
+        ## 连接 SQLite 数据库，统计实验组作业完成情况（#HACK #NOTE 只能用于串行处理模式）
+        conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+        c = conn.cursor()
+        # 如果没有列 status_预处理实验结果程序 ，那么添加该列
+        c.execute("PRAGMA table_info(experiments)")
+        if not any([v[1] == 'status_预处理实验结果程序' for v in c.fetchall()]):
+            c.execute("ALTER TABLE experiments ADD COLUMN status_预处理实验结果程序 TEXT DEFAULT 'RAW'")
+            conn.commit()
+            pass  # if
+        # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
+        if sgv['is_rerun_all_done_works_in_the_same_experiments']:
+            c.execute("UPDATE experiments SET status_预处理实验结果程序 = 'RAW' WHERE status_预处理实验结果程序 = 'DONE'")
+            conn.commit()
+            pass  # if
+        # 检查实验组作业完成状态
+        c.execute("SELECT exp_id, status_预处理实验结果程序 FROM experiments")
+        rows = c.fetchall()
+        list_idsExp_DOING = []
+        list_idsExp_DONE = []
+        list_idsExp_RAW = []
+        for row in rows:
+            exp_id, status_预处理实验结果程序 = row[0], row[1]
+            if status_预处理实验结果程序 == "DOING":
+                list_idsExp_DOING.append(exp_id)
+            elif status_预处理实验结果程序 == "DONE":
+                list_idsExp_DONE.append(exp_id)
+            else:
+                list_idsExp_RAW.append(exp_id)
+                pass  # if
+            pass  # for
+
+        # 如果实验组作业状态表中没有实验组 id，那么添加实验组 id 列
+        c.execute("PRAGMA table_info(experiments)")
+        if not any([v[1] == 'exp_id' for v in c.fetchall()]):
+            c.execute("ALTER TABLE experiments ADD COLUMN exp_id INTEGER")
+            conn.commit()
+            pass  # if
+
+        pass  # if
+
+    else:
         pass  # if
 
     # 读取实验组作业状态信息
-    # list_idsExp_DOING = []
-    # list_idsExp_DONE = []
-    # list_idsExp_RAW = []
+    list_idsExp_DOING = []
+    list_idsExp_DONE = []
+    list_idsExp_RAW = []
 
-    if not sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练':  # 如果不是运行强化学习算法和ABM模型实验组做训练
+    list_idsExp_PLAN = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(0, num_files_BB))
+    list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
 
-        list_idsExp_PLAN = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(0, num_files_BB))
-        list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
+    # 如果是运行强化学习算法和ABM模型实验组做训练，则不使用 SQLite 数据库管理实验组
+    if sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练':
+        sgv['is_use_sqlite_to_manage_experiments'] = False
+        pass  # if
+
+    if sgv['is_use_sqlite_to_manage_experiments']:
+
+        # list_idsExp_PLAN = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(0, num_files_BB))
+        # list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
         # 保存实验组作业完成状态信息
         with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
             json.dump({
@@ -171,7 +180,9 @@ def main(sgv):
         # status_预处理实验结果程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
         # Tools.draw_color_band_before_experiments(ids, status_预处理实验结果程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_预处理实验结果程序.png"))
         conn.close()
+        pass  # if
 
+    if not sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练':
         ## 读取实验结果数据。根据 list_idsExp_TASK 中的实验组 id，读取实验结果数据。
         dict_filepath_pkl = dict()
         for para_01 in sgv['list_agents_data_filename_para_01']:
@@ -195,6 +206,7 @@ def main(sgv):
             dict_filepath_pkl[para_01] = list_filepath_pkl
             pass  # for
         pass  # if
+
 
     ## #NOTE 导入Pandas格式的实验结果数据转换为面板形式再导出
     if (sgv['transform_data']['导入Pandas格式的实验结果数据转换为面板形式再导出']):
@@ -225,7 +237,6 @@ def main(sgv):
                 for i, exp_id in enumerate(list_idsExp_TASK):
                     filepath_pkl[para_01] = dict_filepath_pkl[para_01][i]
                     filepath_note_pkl = dict_filepath_pkl['note'][i]
-                    # print(f"exp_id = {exp_id}")
                     works.append((
                         exp_id,
                         filepath_pkl,
@@ -253,7 +264,7 @@ def main(sgv):
                 for i, exp_id in enumerate(list_idsExp_TASK):
                     filepath_pkl[para_01] = dict_filepath_pkl[para_01][i]
                     filepath_note_pkl = dict_filepath_pkl['note'][i]
-                    print(f"exp_id = {exp_id}")
+                    print(f"para = {para_01}, exp_id = {exp_id}")
                     fun_导入Pandas格式的实验结果数据转换为面板形式再导出(
                         exp_id,
                         filepath_pkl,
@@ -360,48 +371,52 @@ def main(sgv):
 
         pass  # if 导入Pandas格式的实验结果数据合并为一个文件
 
-    ## 连接 SQLite 数据库，统计实验组之本次作业之完成情况
-    conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-    c = conn.cursor()
-    # 检查实验组作业完成状态
-    c.execute("SELECT exp_id, status_预处理实验结果程序 FROM experiments")
-    rows = c.fetchall()
-    list_idsExp_DOING = []
-    list_idsExp_DONE = []
-    list_idsExp_RAW = []
-    for row in rows:
-        exp_id, status_预处理实验结果程序 = row
-        if status_预处理实验结果程序 == "DOING":
-            list_idsExp_DOING.append(exp_id)
-        elif status_预处理实验结果程序 == "DONE":
-            list_idsExp_DONE.append(exp_id)
-        else:
-            list_idsExp_RAW.append(exp_id)
-            pass  # if
-        pass  # for
-    # 保存实验组作业完成状态信息
-    with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
-        json.dump({
-            "计划运行的实验组 id": list_idsExp_TASK,
-            "未运行过的实验组 id": list_idsExp_RAW,
-            "之前运行中被中断的实验组 id": list_idsExp_DOING,
-            "已完成的实验组 id": list_idsExp_DONE,
-            "完成率": len(list_idsExp_DONE) / num_files_BB,
-            "中断率": len(list_idsExp_DOING) / num_files_BB,
-        }, f)
-        logging.info("实验组开始运行前，实验组作业完成状态情况如下:\n" + str({
-            "之前运行中被中断的实验组 id": list_idsExp_DOING,
-            "完成率": len(list_idsExp_DONE) / num_files_BB,
-            "中断率": len(list_idsExp_DOING) / num_files_BB,
-        }))
-        pass  # with
+    if sgv['is_use_sqlite_to_manage_experiments']:
 
-    # # 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之后的作业完成状态信息。
-    # ids = [row[0] for row in rows]  # 获取实验组 id
-    # status_预处理实验结果程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
-    # Tools.draw_color_band_after_experiments(ids, status_预处理实验结果程序_运行状态, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_after_预处理实验结果程序.png"))
+        ## 连接 SQLite 数据库，统计实验组之本次作业之完成情况
+        conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+        c = conn.cursor()
+        # 检查实验组作业完成状态
+        c.execute("SELECT exp_id, status_预处理实验结果程序 FROM experiments")
+        rows = c.fetchall()
+        list_idsExp_DOING = []
+        list_idsExp_DONE = []
+        list_idsExp_RAW = []
+        for row in rows:
+            exp_id, status_预处理实验结果程序 = row
+            if status_预处理实验结果程序 == "DOING":
+                list_idsExp_DOING.append(exp_id)
+            elif status_预处理实验结果程序 == "DONE":
+                list_idsExp_DONE.append(exp_id)
+            else:
+                list_idsExp_RAW.append(exp_id)
+                pass  # if
+            pass  # for
+        # 保存实验组作业完成状态信息
+        with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
+            json.dump({
+                "计划运行的实验组 id": list_idsExp_TASK,
+                "未运行过的实验组 id": list_idsExp_RAW,
+                "之前运行中被中断的实验组 id": list_idsExp_DOING,
+                "已完成的实验组 id": list_idsExp_DONE,
+                "完成率": len(list_idsExp_DONE) / num_files_BB,
+                "中断率": len(list_idsExp_DOING) / num_files_BB,
+            }, f)
+            logging.info("实验组开始运行前，实验组作业完成状态情况如下:\n" + str({
+                "之前运行中被中断的实验组 id": list_idsExp_DOING,
+                "完成率": len(list_idsExp_DONE) / num_files_BB,
+                "中断率": len(list_idsExp_DOING) / num_files_BB,
+            }))
+            pass  # with
 
-    conn.close()  # 关闭数据库连接
+        # # 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之后的作业完成状态信息。
+        # ids = [row[0] for row in rows]  # 获取实验组 id
+        # status_预处理实验结果程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
+        # Tools.draw_color_band_after_experiments(ids, status_预处理实验结果程序_运行状态, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_after_预处理实验结果程序.png"))
+
+        conn.close()  # 关闭数据库连接
+        pass  # if
+
 
     pass  # main
 

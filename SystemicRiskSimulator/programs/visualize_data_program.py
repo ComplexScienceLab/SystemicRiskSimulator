@@ -115,14 +115,15 @@ def main(sgv):
 
     ### 处理相关导入导出文件夹
 
-    if sgv['is_use_RL_method']:
-        if sgv['RL_state'] == 'training':
-            folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "RL_training"
-        elif sgv['RL_state'] == 'using':
-            folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "RL_using"
-    else:
+
+    if sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练':
+        folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "RL_training"
+    elif sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做应用':
+        folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "RL_using"
+    elif sgv['运行实验组的方式'] == '运行ABM实验组':
         folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "normal"
-        pass  # if
+    else:
+        raise ValueError(f"运行实验组的方式 {sgv['运行实验组的方式']} 不支持！")  # 如果运行实验组的方式不支持，则抛出异常
 
     # #TODO 以下部分建议分散到具体的子程序里面
     # sgv['folderpath_experiments'] = Path(sgv['folderpath_project'], sgv['folderpath_root_experiments'], sgv['foldername_experiments'])
@@ -1082,7 +1083,8 @@ def main(sgv):
     # %% [markdown] ## #NOTE 绘制强化学习收敛曲线图（只有使用强化学习方法才能启用）
 
     # %%
-    if sgv['is_use_RL_method']:
+    # if sgv['is_use_RL_method']:
+    if sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练' or sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做应用':
         if (sgv['visulization_process']['绘制强化学习收敛曲线图']):
             print("准备绘制强化学习收敛曲线图")
             Tools.delete_and_recreate_folder(sgv['folderpath_visualize_强化学习收敛曲线'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
@@ -1177,6 +1179,7 @@ def main(sgv):
 
             plt.close()
             pass  # if
+        pass  # if
 
     # %%
     if sgv['is_ignore_warning']:
