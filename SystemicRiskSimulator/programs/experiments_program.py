@@ -338,7 +338,7 @@ def main(sgv):
             sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
 
             ## 运行固定的奖励函数参数
-            np.random.seed(57)  # 随机选取一个奖励函数的参数 #TODO 后续改成从配置文件获取
+            # np.random.seed(57)  # 随机选取一个奖励函数的参数 #TODO 后续改成从配置文件获取
             # alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
             alpha_reward = 0.50  # #DEBUG 调试专用
             grouped_parameters_works = parameters_works.groupby('alpha_reward')  # 根据 alpha_reward 列分组 parameters_works
