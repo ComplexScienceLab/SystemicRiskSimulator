@@ -18,6 +18,7 @@ def simulator(config: dict):
     # global sgv, para
 
     # %%
+    import sys
     import platform
     import logging
     from pathlib import Path
@@ -98,7 +99,6 @@ def simulator(config: dict):
         sgv['运行实验组的方式'] = '运行强化学习算法和Gym框架结合自定义ABM模型实验组做训练'
         pass  # if
 
-
     if sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练':
         sgv['subfoldername_experiments_output_data'] = "RL_training"
     elif sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做应用':
@@ -109,7 +109,6 @@ def simulator(config: dict):
     else:
         raise ValueError(f"运行实验组的方式 {sgv['运行实验组的方式']} 不支持！")  # 如果运行实验组的方式不支持，则抛出异常
         pass  # if
-
 
     # %% 是否运作实验程序
     if sgv['schedule_operation']['实验组模拟程序']:
@@ -179,8 +178,16 @@ def simulator(config: dict):
             # para_pkl = pickle.dumps(para)
             # para_base64 = base64.b64encode(para_pkl).decode('utf-8')
             start_time = time.time()
-            subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')), sgv_base64])
+            # subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')), sgv_base64])
             # subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')), sgv_base64, para_base64])
+            subprocess.run(
+                [
+                    sys.executable,
+                    str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')),
+                    sgv_base64,
+                ],
+                # check=True,  # 如果子进程返回非零退出状态码，则引发 CalledProcessError 异常
+            )
         else:
             from SystemicRiskSimulator.programs.experiments_program import main
             start_time = time.time()

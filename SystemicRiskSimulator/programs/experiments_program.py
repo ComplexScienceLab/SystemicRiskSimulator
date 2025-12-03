@@ -95,7 +95,7 @@ def main(sgv):
         rows = c.fetchall()
         sgv['list_idsExp_TASK'] = [row[0] for row in rows]  # 获取实际上需要运行的实验组 id 列表
     else:
-        sgv['list_idsExp_TASK']=list_idsExp_TASK
+        sgv['list_idsExp_TASK'] = list_idsExp_TASK
         pass  # if
 
     ## 通过设定的运行方式运行实验组
@@ -120,7 +120,8 @@ def main(sgv):
                 # sgv['id_experiment'] = 0  # 设定当前实验编号
                 works = []
                 for i, para in paras.iterrows():
-                    exp_id = int(para.loc[i, 'exp_id'])  # 获取当前实验编号
+                    para = para.to_dict()
+                    exp_id = int(para[ 'exp_id'])  # 获取当前实验编号
                     work = (exp_id, sgv, para, model_dict)
                     works.append(work)
                     pass  # for
