@@ -21,13 +21,13 @@ for file in folderpath_agents.iterdir():
 money_unit = MoneyType(1e9)  # 金额单位：十亿
 
 list_年份 = ['2012', '2013']  # 设置 agents 初始数据列表
-list_agents_IB_networkDensity = [0.25, 1.0]  # 设置 agents 初始数据列表
+list_agents_networkDensity_IB = [0.25, 1.0]  # 设置 agents 初始数据列表
 list_agents_IBA_networkDensity = [0.25, 0.5, 0.75, 1.0]  # 设置 agents 初始数据列表
 num_bank = 5
 num_asset = 4
 
 for year in list_年份:
-    for density_IB in list_agents_IB_networkDensity:
+    for density_IB in list_agents_networkDensity_IB:
         for density_IBA in list_agents_IBA_networkDensity:
             # %% 设置银行个体变量
             set_bankCommercial_variables = dict(

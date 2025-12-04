@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="systemicrisksimulator",
-    version="0.0.48_alpha",
+    version="0.1.0",
     description="一个金融系统的系统性风险模拟器。 A systemic risk simulator for financial systems.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",

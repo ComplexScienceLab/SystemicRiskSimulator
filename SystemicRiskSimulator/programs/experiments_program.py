@@ -81,20 +81,28 @@ def main(sgv):
 
     # model = list(models.values())[0]  # 获取当前实验对应的模型
 
-    # # 连接实验组作业管理数据库
-    # conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-    # c = conn.cursor()
-    # c.execute("SELECT id,status FROM experiments WHERE status='TASK'")
-    # rows = c.fetchall()
-    # list_idsExp_TASK = [row[0] for row in rows]  # 获取实际上需要运行的实验组 id 列表
+    # 如果是运行强化学习算法和ABM模型实验组做训练，则不使用 SQLite 数据库管理实验组
+    if sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练':
+        sgv['is_use_sqlite_to_manage_experiments'] = False
+        pass  # if
 
-    # paras = parameters_works[parameters_works['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框  #HACK 2025-04-14 移到别处
+    # 连接实验组作业管理数据库
+    # 记录实验组运行状态
+    if sgv['is_use_sqlite_to_manage_experiments']:
+        conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+        c = conn.cursor()
+        c.execute("SELECT id,status FROM experiments WHERE status='TASK'")
+        rows = c.fetchall()
+        sgv['list_idsExp_TASK'] = [row[0] for row in rows]  # 获取实际上需要运行的实验组 id 列表
+    else:
+        sgv['list_idsExp_TASK'] = list_idsExp_TASK
+        pass  # if
 
     ## 通过设定的运行方式运行实验组
     match sgv['运行实验组的方式']:
         case '运行ABM实验组':
             ## #NOTE：运行ABM实验组
-            paras = parameters_works[parameters_works['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框  #HACK  #HACK 2025-04-14 移到此处
+            paras = parameters_works[parameters_works['exp_id'].isin(sgv['list_idsExp_TASK'])]  # 获取实际上需要运行的实验组参数作业数据框  #HACK  #HACK 2025-04-14 移到此处
 
             ## #NOTE：多进程并行处理
             if sgv['is_enable_multiprocessing_for_run_model']:
@@ -112,7 +120,8 @@ def main(sgv):
                 # sgv['id_experiment'] = 0  # 设定当前实验编号
                 works = []
                 for i, para in paras.iterrows():
-                    exp_id = int(para.loc[i, 'exp_id'])  # 获取当前实验编号
+                    para = para.to_dict()
+                    exp_id = int(para[ 'exp_id'])  # 获取当前实验编号
                     work = (exp_id, sgv, para, model_dict)
                     works.append(work)
                     pass  # for
@@ -198,7 +207,7 @@ def main(sgv):
             # alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
             alpha_reward = 0.60  # #DEBUG 调试专用
             grouped_parameters_works = parameters_works.groupby('alpha_reward')  # 根据 alpha_reward 列分组 parameters_works
-            paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框
+            paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(sgv['list_idsExp_TASK'])]  # 获取实际上需要运行的实验组参数作业数据框
             sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
 
             # 创建环境
@@ -221,7 +230,7 @@ def main(sgv):
             sgv['episode'] = 0  # 初始化局数计数器
             while sgv['episode'] < sgv['max_num_episode']:
                 sgv['episode'] += 1
-                # exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
+                # exp_id = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
                 exp_id = 956  # #DEBUG 调试专用
 
                 para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
@@ -255,11 +264,11 @@ def main(sgv):
             ## 默认程序打开输出文件查看
             if sgv['is_auto_open_outputlog']:
                 system = platform.system()
-                if system == 'Darwin':
+                if system == 'Darwin':  # macOS
                     os.system(r"open " + str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))
-                elif system == 'Windows':
+                elif system == 'Windows':  # Windows
                     os.startfile(str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))
-                elif system == 'Linux':
+                elif system == 'Linux':  # Linux
                     os.system('xdg-open ' + str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))  # #BUG 还没测试过
                 else:
                     print("Unsupported operating system")
@@ -285,8 +294,8 @@ def main(sgv):
             # alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
             alpha_reward = 0.50  # #DEBUG 调试专用
             grouped_parameters_works = parameters_works.groupby('alpha_reward')  # 根据 alpha_reward 列分组 parameters_works
-            paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框
-            sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
+            paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(sgv['list_idsExp_TASK'])]  # 获取实际上需要运行的实验组参数作业数据框
+            sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表  # 这句是否重复？
 
             ## 创建环境
             sgv['id_experiment'] = np.random.choice(paras.exp_id)  # 随机选择一个实验组
@@ -309,7 +318,7 @@ def main(sgv):
                 M.sgv['id_episode'] = i_episode
 
                 sgv['id_experiment'] = np.random.choice(paras.exp_id)  # 随机选择一个实验组
-                # sgv['id_experiment'] = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
+                # sgv['id_experiment'] = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
                 # sgv['id_experiment'] = 955  # #DEBUG 调试专用
                 para = paras[paras['exp_id'] == sgv['id_experiment']].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典 #BUG 为什么没用到？
 
@@ -330,11 +339,11 @@ def main(sgv):
             sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
 
             ## 运行固定的奖励函数参数
-            np.random.seed(57)  # 随机选取一个奖励函数的参数 #TODO 后续改成从配置文件获取
+            # np.random.seed(57)  # 随机选取一个奖励函数的参数 #TODO 后续改成从配置文件获取
             # alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
             alpha_reward = 0.50  # #DEBUG 调试专用
             grouped_parameters_works = parameters_works.groupby('alpha_reward')  # 根据 alpha_reward 列分组 parameters_works
-            paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框
+            paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(sgv['list_idsExp_TASK'])]  # 获取实际上需要运行的实验组参数作业数据框
             sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
 
             ## 创建环境
@@ -487,48 +496,62 @@ def main(sgv):
 
             pass  # match
 
-    ## 连接 SQLite 数据库，统计实验组之本次作业之完成情况
-    num_parameters_works = len(parameters_works)
-    time_start_统计实验组作业情况 = time.time()
-    conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-    c = conn.cursor()
-    # 检查实验组作业完成状态
-    c.execute("SELECT exp_id, status_实验组模拟程序 FROM experiments")
-    rows = c.fetchall()
-    list_idsExp_DOING = []
-    list_idsExp_DONE = []
-    list_idsExp_RAW = []
-    for row in rows:
-        exp_id, status_实验组模拟程序 = row
-        if status_实验组模拟程序 == "DOING":
-            list_idsExp_DOING.append(exp_id)
-        elif status_实验组模拟程序 == "DONE":
-            list_idsExp_DONE.append(exp_id)
-        else:
-            list_idsExp_RAW.append(exp_id)
-            pass  # if
-        pass  # for
-    # 保存实验组作业完成状态信息
-    with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
-        json.dump({
-            "计划运行的实验组 id": list_idsExp_TASK,
-            "未运行过的实验组 id": list_idsExp_RAW,
-            "之前运行中被中断的实验组 id": list_idsExp_DOING,
-            "已完成的实验组 id": list_idsExp_DONE,
-            "完成率": len(list_idsExp_DONE) / num_parameters_works,
-            "中断率": len(list_idsExp_DOING) / num_parameters_works,
-        }, f)
-        logging.info("实验组开始运行前，实验组作业完成状态情况如下:\n" + str({
-            "之前运行中被中断的实验组 id": list_idsExp_DOING,
-            "完成率": len(list_idsExp_DONE) / num_parameters_works,
-            "中断率": len(list_idsExp_DOING) / num_parameters_works,
-        }))
-        pass  # with
+    # 如果是运行强化学习算法和ABM模型实验组做训练，则不使用 SQLite 数据库管理实验组
+    if sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练':
+        sgv['is_use_sqlite_to_manage_experiments'] = False
+        pass  # if
 
-    time_end_统计实验组作业情况 = time.time()
-    logging.debug(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")
+    # 记录实验组运行状态
+    if sgv['is_use_sqlite_to_manage_experiments']:
 
-    conn.close()  # 关闭数据库连接
+        ## 连接 SQLite 数据库，统计实验组之本次作业之完成情况
+        num_parameters_works = len(parameters_works)
+        time_start_统计实验组作业情况 = time.time()
+        conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+        c = conn.cursor()
+        # 检查实验组作业完成状态
+        c.execute("SELECT exp_id, status_实验组模拟程序 FROM experiments")
+        rows = c.fetchall()
+        list_idsExp_DOING = []
+        list_idsExp_DONE = []
+        list_idsExp_RAW = []
+        for row in rows:
+            exp_id, status_实验组模拟程序 = row
+            if status_实验组模拟程序 == "DOING":
+                list_idsExp_DOING.append(exp_id)
+            elif status_实验组模拟程序 == "DONE":
+                list_idsExp_DONE.append(exp_id)
+            else:
+                list_idsExp_RAW.append(exp_id)
+                pass  # if
+            pass  # for
+        # 保存实验组作业完成状态信息
+        with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
+            json.dump({
+                "计划运行的实验组 id": sgv['list_idsExp_TASK'],
+                "未运行过的实验组 id": list_idsExp_RAW,
+                "之前运行中被中断的实验组 id": list_idsExp_DOING,
+                "已完成的实验组 id": list_idsExp_DONE,
+                "完成率": len(list_idsExp_DONE) / num_parameters_works,
+                "中断率": len(list_idsExp_DOING) / num_parameters_works,
+            }, f)
+            logging.info("实验组开始运行前，实验组作业完成状态情况如下:\n" + str({
+                "之前运行中被中断的实验组 id": list_idsExp_DOING,
+                "完成率": len(list_idsExp_DONE) / num_parameters_works,
+                "中断率": len(list_idsExp_DOING) / num_parameters_works,
+            }))
+            pass  # with
+
+        time_end_统计实验组作业情况 = time.time()
+        logging.debug(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")
+
+        conn.close()  # 关闭数据库连接
+
+    else:
+        logging.info("实验组运行方式不使用 SQLite 数据库管理实验组。默认所有的实验组作业都已完成。")
+        sgv['list_idsExp_DONE'] = sgv['list_idsExp_TASK']
+
+        pass  # if
 
     pass  # main
 

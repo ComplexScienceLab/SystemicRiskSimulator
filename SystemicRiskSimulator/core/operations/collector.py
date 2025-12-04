@@ -1,5 +1,6 @@
 ## 函数区：收集数据
 import shutil
+import zipfile
 from copy import deepcopy
 
 from scipy.sparse import csr_array
@@ -34,18 +35,6 @@ class Collector:
 
         ## 初始化数据框用以存储agent数据
 
-        # #HACK 改之前的收集 agents 数据文件代码，对于未适配的 set_config_variables.py 文件而言，如果没有
-        # dict_agents_data = {}
-        # for i, agents_data in enumerate(sgv['list_agents_data']):
-        #     with open(Path(sgv['folderpath_agents'], 'agents', f"{agents_data}_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
-        #         dict_agents_data[agents_data] = pickle.load(f)
-        #     pass  # for
-        #
-        # BB_data = pd.DataFrame()
-        # IB_data = pd.DataFrame()
-        # A_data = AgentDataCollection(BB_data, IB_data)
-
-        # #HACK 改之后的收集 agents 数据文件代码
         dict_agents_data = {}
         id_agents = para['id_agents']
         for para_01 in sgv['list_agents_data_filename_para_01']:
@@ -116,18 +105,6 @@ class Collector:
 
         ## 初始化数据框用以存储agent数据
 
-        # #HACK 改之前的收集 agents 数据文件代码，对于未适配的 set_config_variables.py 文件而言，如果没有
-        # dict_agents_data = {}
-        # for i, agents_data in enumerate(sgv['list_agents_data']):
-        #     with open(Path(sgv['folderpath_agents'], 'agents', f"{agents_data}_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
-        #         dict_agents_data[agents_data] = pickle.load(f)
-        #     pass  # for
-        #
-        # BB_data = pd.DataFrame()
-        # IB_data = pd.DataFrame()
-        # A_data = AgentDataCollection(BB_data, IB_data)
-
-        # #HACK 改之后的收集 agents 数据文件代码
         dict_agents_data = {}
         id_agents = para['id_agents']
         for para_01 in sgv['list_agents_data_filename_para_01']:
@@ -211,35 +188,6 @@ class Collector:
         # BB = deepcopy(A.BB)
         # sgv['series_BB'] = pd.Series()
 
-        # # #HACK 改之前的收集 agents 数据文件代码，对于未适配的 set_config_variables.py 文件而言，如果没有
-        # series_BB = pd.Series()
-        # for i in A.BB.index:  # TODO 添加需要收集哪些具体给定的字段
-        #     series_BB[i] = A.BB[i].copy()
-        # df_BB = series_BB.to_frame().transpose()
-        # df_BB.insert(loc=0, column='process_name', value=sgv['process_name'])
-        # df_BB.insert(loc=1, column='step', value=sgv['step'])
-        # df_BB.insert(loc=2, column='turn', value=sgv['turn'])
-        # df_BB.insert(loc=3, column='phase', value=sgv['phase'])
-        # A_data.BB = pd.concat([A_data.BB, df_BB], ignore_index=True)
-        # # BB_data = pd.concat([BB_data, sgv['df_BB']], ignore_index=True)
-        #
-        # # IB_df = A.IB.to_frame().transpose()
-        # # IB = deepcopy(A.IB)
-        # series_IB = pd.Series()
-        # for i in A.IB.index:
-        #     series_IB[i] = A.IB[i].copy()
-        # df_IB = series_IB.to_frame().transpose()
-        # df_IB.insert(loc=0, column='process_name', value=sgv['process_name'])
-        # df_IB.insert(loc=1, column='step', value=sgv['step'])
-        # df_IB.insert(loc=2, column='turn', value=sgv['turn'])
-        # df_IB.insert(loc=3, column='phase', value=sgv['phase'])
-        # A_data.IB = pd.concat([A_data.IB, df_IB], ignore_index=True)
-        # # IB_data = pd.concat([IB_data, IB_df], ignore_index=True)
-        #
-        # # A_data.BB, A_data.IB = BB_data, IB_data
-        # # return A_data
-
-        # #HACK 改之后的收集 agents 数据文件代码
         for para_01 in sgv['list_agents_data_filename_para_01']:
             # if para_01 == "note" or para_01 == "AB":  # 如果是备注变量，则跳过。因为是静态的，不需要收集
             if para_01 == "note":  # 如果是备注变量，则跳过。因为是静态的，不需要收集
@@ -319,20 +267,11 @@ class Collector:
 
         """
 
-        # ## #TODO 查看是否存在整列都是一模一样的全零或者全部 True 或者 False 或者空列表的列，如果存在，则记录该列的值到 A_data.note ，然后删除
-        # list_columns_all_nan = A_data.BB.columns[A_data.BB.isnull().all()]
-        # list_columns_all_zero = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == 0).all() if isinstance(x, np.ndarray) else x == 0).all()]
-        # list_columns_all_True = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == True).all() if isinstance(x, np.ndarray) else x is True).all()]
-        # list_columns_all_False = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == False).all() if isinstance(x, np.ndarray) else x is False).all()]
-        # list_columns_all_empty = A_data.BB.columns[A_data.BB.applymap(lambda x: (len(x) == 0).all() if isinstance(x, np.ndarray) else len(x) == 0).all()]
-        # # 合并上述列表
-        # list_columns_can_remove = list_columns_all_nan.union(list_columns_all_zero).union(list_columns_all_True).union(list_columns_all_False).union(list_columns_all_empty)
-
-        ## 压缩数据
-        if sgv['is_compress_result_data']:
-            A_data = cls.compress_result_data(A_data, sgv)
-            pass  # if
-
+        # # 压缩数据
+        # if sgv['is_compress_result_data']:
+        #     A_data = cls.compress_result_data(A_data, sgv)
+        #     pass  # if
+        #
         # # 解压数据 #DEBUG 以下用于测试解压后的数据是否与原始数据一致
         # if sgv['is_compress_result_data']:
         #     A_data_decompress = cls.decompress_result_data(A_data, sgv)
@@ -345,36 +284,47 @@ class Collector:
         #     # #DEBUG 手动检查 exit 等列是否还原回来了
         #     compare.append(A_data.IB['hel'][i] ^ A_data_decompress.IB['hel'][i])
 
-        ## 导出数据
-
-        if sgv['is_use_RL_method']:
+        if sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练':
             sgv['exp_id_exp_output_data'] = f"id={sgv['id_episode']}-"
-            if sgv['RL_state'] == 'training':
-                folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
-            elif sgv['RL_state'] == 'using':
-                folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
-                pass  # if
-        else:
+            folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
+        elif sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做使用':
+            sgv['exp_id_exp_output_data'] = f"id={sgv['id_episode']}-"
+            folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
+        elif sgv['运行实验组的方式'] == '运行ABM实验组':
             sgv['exp_id_exp_output_data'] = ""
             folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
+        else:
+            raise ValueError(f"运行实验组的方式 {sgv['运行实验组的方式']} 不支持！")  # 如果运行实验组的方式不支持，则抛出异常
             pass  # if
         folderpath_experiments_output_data.mkdir(parents=True, exist_ok=True)
 
+        ## 导出数据并根据需要单独压缩
         for para_01 in sgv['list_agents_data_filename_para_01']:
             match para_01:
-                case "note":  # 如果变量类型是 note ，则直接保存成 pkl 文件
-                    pd.to_pickle(A_data[para_01], folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
-                case "AB":  # 如果变量类型是 AB
-                    pd.to_pickle(A_data[para_01], folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
-                    if sgv['is_export_data_to_xlsx']:
-                        A_data[para_01].to_excel(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx", index=False)
+                case "note":
+                    filepath = folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl"
+                    pd.to_pickle(A_data[para_01], filepath)
+                    if sgv['is_compress_result_data']:
+                        cls.compress_file_to_zip(filepath)
+                case "AB":
+                    filepath = folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl"
+                    pd.to_pickle(A_data[para_01], filepath)
+                    if sgv['is_compress_result_data']:  # 这个不压缩
+                        cls.compress_file_to_zip(filepath)
+                    if sgv['is_export_data_to_xlsx']:  # 这个不压缩
+                        filepath = folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx"
+                        A_data[para_01].to_excel(filepath, index=False)
                 case _:
-                    pd.to_pickle(A_data[para_01], folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
+                    filepath = folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl"
+                    pd.to_pickle(A_data[para_01], filepath)
+                    if sgv['is_compress_result_data']:
+                        cls.compress_file_to_zip(filepath)
                     if sgv['is_export_data_to_xlsx']:
-                        A_data[para_01].to_excel(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx", index=False)
+                        filepath = folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx"
+                        A_data[para_01].to_excel(filepath, index=False)
                     if sgv['is_export_data_to_csv']:
-                        A_data[para_01].to_csv(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.csv", index=False)
-                    pass  # match
+                        filepath = folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.csv"
+                        A_data[para_01].to_csv(filepath, index=False)
             # # DEBUG 立刻读取刚保存的文件检查是否正确
             # A_data_AB_before = A_data[para_01]
             # A_data_AB_after = pd.read_pickle(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
@@ -665,6 +615,35 @@ class Collector:
             pickle.dump(sgv, f)
 
         # pickle.dump(config_data, open(Path(sgv['folderpath_experiments_output_data'], r"config.pkl"), "wb"))  # 导出为pkl格式
+        pass  # function
+
+    @staticmethod
+    def compress_file_to_zip(filepath: Path):
+        """
+        将单个文件压缩为一个 ZIP 文件。
+
+        Args:
+            filepath (Path): 要压缩的文件路径
+        """
+        zip_path = filepath.with_suffix('.zip')
+        with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
+            zipf.write(filepath, arcname=filepath.name)
+        filepath.unlink()  # 删除原始文件
+        pass  # function
+
+    @staticmethod
+    def decompress_zip_file(zip_path: Path):
+        """
+        解压然后删除单个 ZIP 文件。
+
+        Args:
+            zip_path (Path): 要解压的 ZIP 文件路径
+        """
+        extract_dir = zip_path.with_suffix('')  # 解压到与 ZIP 文件同名的文件夹
+        with zipfile.ZipFile(zip_path, 'r') as zipf:
+            zipf.extractall(extract_dir)
+        zip_path.unlink()  # 删除 ZIP 文件
+        pass  # function
 
     @classmethod
     def compress_result_data(cls, A_data_origin: pd.Series, sgv: dict):
@@ -682,7 +661,7 @@ class Collector:
         A_data_compress = pd.Series()
 
         for para_01 in sgv['list_agents_data_filename_para_01']:
-            if para_01 == "note":  # 如果是备注变量，则直接存入 A_data_compress.note
+            if (para_01 == "note") or (para_01 == "AB"):  # 如果是这些类型的变量，则直接存入 A_data_compress.note
                 A_data_compress[para_01] = A_data_origin.note.copy()  # #BUG 可能无法满意地深拷贝。
                 A_data_compress[para_01]['compress'] = dict()
                 pass  # if
