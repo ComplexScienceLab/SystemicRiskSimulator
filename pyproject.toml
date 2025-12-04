@@ -1,6 +1,6 @@
 [project]
 name = "systemicrisksimulator"
-version = "0.0.47_alpha"
+version = "0.1.0"
 description = "一个金融系统的系统性风险模拟器。 A systemic risk simulator for financial systems."
 readme = "README.md"
 requires-python = ">=3.11"
