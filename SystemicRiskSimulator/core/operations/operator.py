@@ -379,8 +379,8 @@ class Operator:
         A = cls.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
         # A_last = ModelAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))  # #BUG 这个有用吗
 
-        ## 计算银行数量
-        sgv['num_bank'] = len(A.note['id_bank'])
+        # ## 计算银行数量  #BUG 单独放在这里似乎不妥。如果不同的模型需要计算其他类型的个体的数量的话就不方便解耦了
+        # sgv['num_bank'] = len(A.note['id_bank'])
 
         if (not sgv['is_enable_multiprocessing_for_run_model'] and not (sgv['is_use_RL_method'] and sgv['RL_state'] == 'training')):
             log_message(
