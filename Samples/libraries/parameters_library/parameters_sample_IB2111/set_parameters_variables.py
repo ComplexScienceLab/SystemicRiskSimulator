@@ -197,6 +197,12 @@ if __name__ == '__main__':
         # '05'
     ]
 
+
+    # 银行奖励函数参数组合方案列表
+    config['银行奖励函数参数组合方案'] = [
+        # '01',
+    ]
+
     # 银行间违约策略方案列表
     config['银行间违约策略方案'] = [
         '01',
@@ -231,7 +237,7 @@ if __name__ == '__main__':
 
     sgv = dict()
     sgv.update(config)
-    sgv['folderpath_agents'] = Path(sgv['folderpath_project'] / "libraries/agents_library" / sgv['foldername_agents'])  # agents 文件夹路径
+    sgv['folderpath_agents'] = Path(sgv['folderpath_project'] / "Samples/libraries/agents_library" / sgv['foldername_agents'])  # agents 文件夹路径
 
     # 导入 agents 之参数
     df_agents_BB = pd.DataFrame(columns=['id_agents', 'yearName', 'networkDensity_IB', 'agentsData'])
@@ -289,7 +295,6 @@ if __name__ == '__main__':
         num_所需银行[yearName] = num_bank[yearName]
         pass  # for
 
-
     # %% [markdown]
     # ## 设置参数变量
 
@@ -328,8 +333,9 @@ if __name__ == '__main__':
             list_combinations_Shock_exIB_def_t_percentage_01 = np.array(np.meshgrid(*[Shock_exIB_def_t_percentage] * num_所需银行[yearName])).T.reshape(-1, num_所需银行[yearName])  # 生成所有可能的组合
             list_description_Shock_exIB_def_t_percentage_01 = [f"外生违约损失冲击权重百分比之各个个体步进组合"] * len(list_combinations_Shock_exIB_def_t_percentage_01)  # 添加组合描述
             pass  # if
-        
+
         # %%
+
         # #NOTE 方案 2：各个个体对角线步进组合
         if '02' in sgv['外生违约损失冲击权重百分比方案']:
             logging.debug("方案 2：各个个体对角线步进组合")
@@ -424,7 +430,6 @@ if __name__ == '__main__':
         if num_bank[yearName] > num_所需银行[yearName]:
             list_combinations_Shock_exIB_def_t_percentage = insert_combinations_to_indices(num_bank[yearName], list_combinations_Shock_exIB_def_t_percentage, idxs_所需银行[yearName])
             pass  # if
-
 
         dict_list_combinations_Shock_exIB_def_t_percentage_in_agents_items[idx_item] = list_combinations_Shock_exIB_def_t_percentage
         dict_list_description_Shock_exIB_def_t_percentage_in_agents_items[idx_item] = list_description_Shock_exIB_def_t_percentage
@@ -630,12 +635,27 @@ if __name__ == '__main__':
         # 综合上述各个方案之组合
         list_combinations_banks_alpha_reward = []
         list_description_banks_alpha_reward = []
+        for scheme in sgv['银行奖励函数参数组合方案']:
+            list_combinations_banks_alpha_reward.extend(eval(f'list_combinations_banks_alpha_reward_{scheme}'))
+            list_description_banks_alpha_reward.extend(eval(f'list_description_banks_alpha_reward_{scheme}'))
+            pass  # if
 
-        for alpha_reward in config['list_alpha_reward']:
-            alpha_reward = round(alpha_reward, 2)
-            list_combinations_banks_alpha_reward.append(alpha_reward)
-            list_description_banks_alpha_reward.append(f"奖励函数参数之{alpha_reward}")  # 添加组合描述
-            pass  # for
+        # 检查是否有重复的组合，如果有则去重
+        array_combinations = np.array(list_combinations_banks_alpha_reward)
+        _, unique_indices = np.unique(array_combinations, axis=0, return_index=True)
+        if len(unique_indices) < len(list_combinations_banks_alpha_reward):
+            logging.debug(f"年{yearName}密度{networkDensity_IB:.2f}有重复组合")  # #BUG 需要重新适配
+        list_combinations_banks_alpha_reward = array_combinations[unique_indices].tolist()
+        list_description_banks_alpha_reward = [list_description_banks_alpha_reward[i] for i in unique_indices]
+
+        # 检查是否有全0的组合，如果有则去掉
+        if any(np.count_nonzero(combination) == 0 for combination in list_combinations_banks_alpha_reward):
+            logging.debug(f"年{yearName}密度{networkDensity_IB:.2f}有全 0 组合")  # #BUG 需要重新适
+            idx_all_zero_combinations = [idx for idx, combination in enumerate(list_combinations_banks_alpha_reward) if np.count_nonzero(combination) == 0]  # 找到全 0 组合的索引
+            list_combinations_banks_alpha_reward = [x for i, x in enumerate(list_combinations_banks_alpha_reward) if i not in idx_all_zero_combinations]  # 根据索
+            list_description_banks_alpha_reward = [x for i, x in enumerate(list_description_banks_alpha_reward) if i not in idx_all_zero_combinations]
+            pass  # if
+
         dict_list_combinations_alpha_reward_in_agents_items[idx_item] = list_combinations_banks_alpha_reward
         dict_list_description_alpha_reward_in_agents_items[idx_item] = list_description_banks_alpha_reward
         pass  # for
@@ -735,7 +755,7 @@ if __name__ == '__main__':
                     # df_parameters_for_each_agentsPara['Strategy_default'] = [x[2] for x in combinations_for_each_agentsParam]  # #HACK 如果没有用到这个，那么需要注释掉
                     # df_parameters_for_each_agentsPara['alpha_reward'] = [x[3] for x in combinations_for_each_agentsParam]  # #HACK 如果没有用到这个，那么需要注释掉
                     df_parameters_for_each_agentsPara['description'] = [
-                            f"个体集{id_agents}年份{yearName}银行间密度{networkDensity_IB}之：" + "，".join(str(xx) for xx in x) + "。" for x in combinations_for_each_description
+                        f"个体集{id_agents}年份{yearName}银行间密度{networkDensity_IB}之：" + "，".join(str(xx) for xx in x) + "。" for x in combinations_for_each_description
                     ]
 
                     if not df_parameters_for_each_agentsPara.empty and not df_parameters_for_each_agentsPara.isna().all().all():
