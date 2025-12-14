@@ -233,7 +233,7 @@ class Operator:
         ## 构建本次实验组所需的所有模型
 
         ### 判断属于什么运行模式
-        if not (sgv['is_develope_mode'] and sgv['is_maintain_model_files_in_simulator_when_develope_mode']):
+        if not sgv['is_develope_mode'] or not sgv['is_maintain_model_files_in_simulator_when_develope_mode']:
             # 如果是应用实验状态，则复制模型数据与内容到输出文件夹下，另外导出一份到`SystemicRiskSimulator/models`文件夹下
             Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建输出文件夹之模型文件夹
             Tools.copy_files_from_other_folders(sgv['folderpath_models'], sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出模型文件夹到输出文件夹之模型文件夹
