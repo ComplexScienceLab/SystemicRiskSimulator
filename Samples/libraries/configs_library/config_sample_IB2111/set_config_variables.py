@@ -71,8 +71,8 @@ set_config_variables = dict(
     # 开发、调试模型专用变量：
     is_develope_mode=True,  # 是否处于开发状态。默认 False。默认情况下，模拟器通在子进程独立启用相关的程序。启用之后，在模拟器中，将通过函数调用的方式调用各个程序。启用之后，适合在 Python 3.11 开始的版本做断点调试。
     # is_develope_mode=False,  # 是否处于开发状态。默认 False。默认情况下，模拟器通在子进程独立启用相关的程序。启用之后，在模拟器中，将通过函数调用的方式调用各个程序。启用之后，适合在 Python 3.11 开始的版本做断点调试。
-    # is_maintain_model_files_in_simulator_when_develope_mode=True,  # 如果 is_develope_mode == True ，那么启用是否保留模拟器里的模型？默认 False。运行的时候只会运行输出文件夹内已有的模型，而不会运行外部导入的模型，运行后也不会将其删除。如果你想直接运行输出文件夹内已有的模型，并且做开发模型相关的工作，建议开启此项。
-    is_maintain_model_files_in_simulator_when_develope_mode=False,  # 如果 is_develope_mode == True ，那么启用是否保留模拟器里的模型？默认 False。运行的时候只会运行输出文件夹内已有的模型，而不会运行外部导入的模型，运行后也不会将其删除。如果你想直接运行输出文件夹内已有的模型，并且做开发模型相关的工作，建议开启此项。
+    is_maintain_model_files_in_simulator_when_develope_mode=True,  # 如果 is_develope_mode == True ，那么启用是否保留模拟器里的模型？默认 False。运行的时候只会运行输出文件夹内已有的模型，而不会运行外部导入的模型，运行后也不会将其删除。如果你想直接运行输出文件夹内已有的模型，并且做开发模型相关的工作，建议开启此项。
+    # is_maintain_model_files_in_simulator_when_develope_mode=False,  # 如果 is_develope_mode == True ，那么启用是否保留模拟器里的模型？默认 False。运行的时候只会运行输出文件夹内已有的模型，而不会运行外部导入的模型，运行后也不会将其删除。如果你想直接运行输出文件夹内已有的模型，并且做开发模型相关的工作，建议开启此项。
     is_ignore_warning=True,  # 是否忽略警告。默认 False；
     test_logging=10,  # 日志输出级别。调试级别是10，输出信息级别是20。具体见：[logging —— python的日志记录工具](https://docs.python.org/zh-cn/3.9/library/logging.html#levels)
     test_turn_for_debug=4,  # test变量，用于打断点。相关语句：`sgv['turn']>=sgv['test_turn_for_debug']`；
