@@ -11,6 +11,7 @@ from SystemicRiskSimulator.core.define.define_type import *
 from SystemicRiskSimulator.core.operations.collector import Collector
 from SystemicRiskSimulator.core.operations.executer import Executer
 from SystemicRiskSimulator.tools.tools import Tools
+from SystemicRiskSimulator.core.algorithms.cascading_failure_single_mechanism_algorithm import run_single_mechanism_cascade
 
 
 class ModelMain:
@@ -49,6 +50,7 @@ class ModelMain:
         self.para = para
         self.model_strategy = model_dict['model_strategy'](np.array(para['Strategy_default']))  # 初始化 model_strategy 之实例
         self.model_finance = model_dict['model_finance'](A.note.num_bank)  # 初始化 Content_Finance 之实例
+        self._cascade_result = None # 存放单机制级联算法的结果
 
         pass  # function
 
@@ -65,9 +67,8 @@ class ModelMain:
             agent_strategies_variable=self.A.note.strategy_Default_IB_def_s,
             agent_interState=self.A.BB.con,
             ia=ia,
-            A=self.A
+            A=self.A,
         )
-
         # 获取 agents 动作
         idxs_in_con = np.where(self.A.BB.con)[0]  # 轮到执行动作的 agents 的 idxs
         for i in range(self.A.note.num_bank):
@@ -87,7 +88,9 @@ class ModelMain:
                 pass  # if
             pass  # for
 
-        # 根据该银行间违约比例计算银行间冲击值
+        # 旧逻辑：根据 theta_IB_def 计算 Shock_IB_def 并更新金融模块
+        # 在接入统一机制算法后，Shock_IB_def 的传播由机制层主导，
+        # 这里仍然保持赋值与同步，以尽量减少对下游依赖的破坏。
         self.A.IB.Shock_IB_def = self.A.IB.theta_IB_def * self.A.BB.Shock_IB_def_s[:, None]
         Executer.update_variableStep(self.model_finance, 'Shock_IB_def', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])
 
@@ -102,66 +105,135 @@ class ModelMain:
         # if sgv['turn'] > 1 and (self.A.BB.inf.any() and sgv['is_continue_process']):
         if self.sgv['turn'] > 0:
 
-            self.sgv['turn'] += 1  # 回合数计次轮次数（由于开始轮次是`START`，所以记为0）
-            self.sgv['phase'] = 1  # 逐相复位（起始为1）
-            self.sgv['process_name'] = "InterBankInsolventContagionShock"
+            # 统一使用单机制算法进行 interbank 级联计算
+            self.sgv['turn'] += 1
+            self.sgv['phase'] = 1
+            self.sgv['process_name'] = "InterBankInsolventContagionShock_SingleMechanism"
             logging.debug(f"          轮次 {self.sgv['turn']}：模型 {self.sgv['process_name']}")
 
-            self.A.IB.theta_IB_def = np.divide(self.A.IB.Shock_IB_def, self.A.BB.Shock_IB_def_s, out=np.zeros_like(self.A.IB.Shock_IB_def), where=self.A.BB.Shock_IB_def_s != 0)  # 计算银行间违约比例
+            # 使用银行专用封装函数，根据当前资产负债和损失变量构造级联模型
+            cascade_result = run_bank_interbank_cascade(
+                Z_IB=self.A.IB.Z_IB,
+                E_all=self.A.BB.E_all,
+                Z_IB_all=self.A.BB.Z_IB_all,
+                Loss_exIB_init=self.A.BB.Loss_exIB_def_t,
+                Loss_IB_init=self.A.BB.Loss_IB_def_t,
+                initial_failed_mask=self.A.BB.isv,
+                steps=self.para.get('cascade_steps', 200),
+                seed=self.para.get('random_seed', None),
+                load_redundancy=self.para.get('load_redundancy', 0.0),
+                early_stop_patience=self.para.get('early_stop_patience', 10),
+                redistribution_mode=self.para.get('redistribution_mode', 'average'),
+                redistribution_weights=None,
+                random_dirichlet_alpha=self.para.get('random_dirichlet_alpha', 1.0),
+                record_history=False,
+            )
+            self._cascade_result = cascade_result
 
-            Executer.update_variableStep(self.model_finance, 'clear all Shock_source', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 清零所有冲击源头变量 Shock_source
+            final_failed_mask = cascade_result['final_failed_mask']
+            load_final = cascade_result.get('load_init')
+            capacity = cascade_result.get('capacity')
+            if load_final is None or capacity is None:
+                # 理论上不会发生，只是防御性判断
+                load_final = self.A.BB.Loss_exIB_def_t + self.A.BB.Loss_IB_def_t
+                capacity = self.A.BB.E_all + self.A.BB.Z_IB_all
 
-            self.A.BB.inf = ~self.A.BB.br & (self.A.BB.Shock_IB_def_t > 0.0)
+            # 根据最终失效结果，回填本模型的金融量
+            self.A.BB.isv = final_failed_mask.copy()
+            self.A.BB.br |= self.A.BB.isv
 
-            self.A.IB.Default_IB += self.A.IB.Shock_IB_def  # 更新 Default_IB
-
-            self.A.IB.Loss_IB_def += self.A.IB.Shock_IB_def.T  # 计算 Loss_IB_def
-            Executer.update_variableStep(self.model_finance, 'Loss_IB_def_t', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])
-
-            # Executer.update_variableStep(self.model_finance, 'clear all Shock_source', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 清零所有冲击源头变量 Shock_source
-            # Executer.update_variableStep(self.model_finance, 'clear all Shock_interbank', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 清零所有银行间冲击变量 Shock_IB
-
-            # 资不抵债银行资产违约损失冲击模型 InterBankInsolventShock
-
-            self.A.BB.Loss_IB_def_t += self.A.BB.Shock_IB_def_t  # 银行间违约损失冲击损失
-            Executer.update_variableStep(self.model_finance, 'Loss_IB_def_t', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])
-
-            # 临时记录 self.A.BB.Default_IB_def_s 、self.A.BB.Default_D_def_s 变动前的值
-            Default_IB_def_s_last = self.A.BB.Default_IB_def_s.copy()
-            Default_D_def_s_last = self.A.BB.Default_D_def_s.copy()
-
-            self.A.BB.Default_IB_def_s[self.A.BB.inf] = np.minimum(np.maximum(self.A.BB.Loss_exIB_def_t[self.A.BB.inf] + self.A.BB.Loss_IB_def_t[self.A.BB.inf] - self.A.BB.E_all[self.A.BB.inf], 0), self.A.BB.Z_IB_all[self.A.BB.inf])  # 银行间违约量变动
-            Executer.update_variableStep(self.model_finance, 'Default_IB_def_s', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 更新银行间违约量
-
-            self.A.BB.Default_D_def_s[self.A.BB.inf] = np.maximum(self.A.BB.Loss_exIB_def_t[self.A.BB.inf] + self.A.BB.Loss_IB_def_t[self.A.BB.inf] - (self.A.BB.E_all[self.A.BB.inf] + self.A.BB.Z_IB_all[self.A.BB.inf]), 0)  # 商业银行对居民存款应违约量变动
-            Executer.update_variableStep(self.model_finance, 'Default_D_def_s', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])
-
-            self.A.BB.Shock_IB_def_s[self.A.BB.inf] = self.A.BB.Default_IB_def_s[self.A.BB.inf] - Default_IB_def_s_last[self.A.BB.inf]  # 计算银行内冲击传导至银行间传染冲击
-            Executer.update_variableStep(self.model_finance, 'Shock_IB_def_s', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])
-
-            self.A.BB.Shock_D_def_s[self.A.BB.inf] = self.A.BB.Default_D_def_s[self.A.BB.inf] - Default_D_def_s_last[self.A.BB.inf]  # 计算应银行内冲击传导至居民存款传染冲击
-            Executer.update_variableStep(self.model_finance, 'Shock_D_def_s', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])
-
-            # 计算奖励值
-            self.calc_rewards(
-                alpha_reward=self.para['alpha_reward'],
-                growth_rate=0.2,  # #TODO 后续加入参数集
-                isv=self.A.BB.isv,
-                Loss_IB_def_t=self.A.BB.Loss_IB_def_t,
-                Default_IB_def_s=self.A.BB.Default_IB_def_s
+            # 重新计算最终违约量（沿用原有公式）
+            total_loss = load_final
+            self.A.BB.Loss_IB_def_t = np.maximum(total_loss - self.A.BB.Loss_exIB_def_t, 0.0)
+            Executer.update_variableStep(
+                self.model_finance,
+                'Loss_IB_def_t',
+                self.A,
+                self.A_data,
+                self.para,
+                self.sgv,
+                is_collect=self.sgv['is_collect'],
+                collect=self.sgv['collect'],
             )
 
-            # Collector.collect_agent_data(self.A, self.A_data, self.sgv, self.para, collect=None)
+            self.A.BB.Default_IB_def_s = np.minimum(
+                np.maximum(self.A.BB.Loss_exIB_def_t + self.A.BB.Loss_IB_def_t - self.A.BB.E_all, 0.0),
+                self.A.BB.Z_IB_all,
+            )
+            Executer.update_variableStep(
+                self.model_finance,
+                'Default_IB_def_s',
+                self.A,
+                self.A_data,
+                self.para,
+                self.sgv,
+                is_collect=self.sgv['is_collect'],
+                collect=self.sgv['collect'],
+            )
 
-            # self.A.BB.con = (self.A.BB.isv != isv_last) | (self.A.BB.Shock_IB_def_s != Shock_IB_def_s_last)
-            # self.A.BB.con = ~self.A.BB.br & self.A.BB.isv
-            self.A.BB.con = ~self.A.BB.br & (self.A.BB.Shock_IB_def_s > 0.0)
-            # logging.debug(f"          轮次 {self.sgv['turn']}：模型 {self.sgv['process_name']}，银行传染出去情况：{self.A.BB.con}")
+            self.A.BB.Default_D_def_s = np.maximum(
+                self.A.BB.Loss_exIB_def_t + self.A.BB.Loss_IB_def_t
+                - (self.A.BB.E_all + self.A.BB.Z_IB_all),
+                0.0,
+            )
+            Executer.update_variableStep(
+                self.model_finance,
+                'Default_D_def_s',
+                self.A,
+                self.A_data,
+                self.para,
+                self.sgv,
+                is_collect=self.sgv['is_collect'],
+                collect=self.sgv['collect'],
+            )
 
-            self.A.BB.br |= self.A.BB.isv  # 更新破产银行
+            # 级联结束后，不再有新的对外冲击
+            self.A.BB.Shock_IB_def_s[:] = 0.0
+            self.A.BB.Shock_D_def_s[:] = 0.0
+            self.A.BB.Shock_IB_def_t[:] = 0.0
+            self.A.BB.Shock_P_def_t[:] = 0.0
 
-            Executer.update_variableStep(self.model_finance, 'clear all Shock_target', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 清零所有冲击目标变量 Shock_target
-            Executer.update_variableStep(self.model_finance, 'clear all Shock_interbank', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 清零所有银行间冲击变量 Shock_IB
+            Executer.update_variableStep(
+                self.model_finance,
+                'clear all Shock_source',
+                self.A,
+                self.A_data,
+                self.para,
+                self.sgv,
+                is_collect=self.sgv['is_collect'],
+                collect=self.sgv['collect'],
+            )
+            Executer.update_variableStep(
+                self.model_finance,
+                'clear all Shock_target',
+                self.A,
+                self.A_data,
+                self.para,
+                self.sgv,
+                is_collect=self.sgv['is_collect'],
+                collect=self.sgv['collect'],
+            )
+            Executer.update_variableStep(
+                self.model_finance,
+                'clear all Shock_interbank',
+                self.A,
+                self.A_data,
+                self.para,
+                self.sgv,
+                is_collect=self.sgv['is_collect'],
+                collect=self.sgv['collect'],
+            )
+
+            # 计算奖励并判断是否结束
+            self.calc_rewards(
+                alpha_reward=self.para['alpha_reward'],
+                growth_rate=0.2,
+                isv=self.A.BB.isv,
+                Loss_IB_def_t=self.A.BB.Loss_IB_def_t,
+                Default_IB_def_s=self.A.BB.Default_IB_def_s,
+            )
+            self.A.BB.inf = self.A.BB.isv.copy()
+            self.A.BB.con = np.zeros_like(self.A.BB.con, dtype=bool)
 
         elif self.sgv['turn'] == 0:
             # node_START
@@ -230,27 +302,16 @@ class ModelMain:
         self.model_content()  # 执行首轮轮次级别的步进更新
         self.A.AB.observations = self.get_observations(agent_variable_update=self.A.AB.observations, Loss_IB_def=self.A.IB.Loss_IB_def)  # 获取首次观测
 
+        # 使用单机制机制后，只需在首轮之后运行一次级联即可
         while self.sgv['is_continue_process']:
-            # 决策动作
             self.model_action()
 
-            # 执行动作以更新观测和环境
-            self.model_content()  # 执行一次轮次级别的步进更新
+            # 这里的 model_content 会在 turn>0 时调用单机制级联算法
+            self.model_content()
             self.A.AB.observations = self.get_observations(agent_variable_update=self.A.AB.observations, Loss_IB_def=self.A.IB.Loss_IB_def)  # 获取首次观测
 
-            # # 计算奖励值 #HACK 无用可以删除
-            # self.calc_rewards(
-            #     alpha_reward=self.para['alpha_reward'],
-            #     r_min=0.0,
-            #     isv=self.A.BB.isv,
-            #     Loss_IB_def_t=self.A.BB.Loss_IB_def_t,
-            #     Default_IB_def_s=self.A.BB.Default_IB_def_s
-            # )
-
-            # 判断是否结束
             self.calc_dones()
 
-            pass  # while
 
         pass  # function
 
