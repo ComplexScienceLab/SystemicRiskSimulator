@@ -233,19 +233,36 @@ class Operator:
         ## 构建本次实验组所需的所有模型
 
         ### 判断属于什么运行模式
-        if not sgv['is_develope_mode'] or not sgv['is_maintain_model_files_in_simulator_when_develope_mode']:
-            # 如果是应用实验状态，则复制模型数据与内容到输出文件夹下，另外导出一份到`SystemicRiskSimulator/data/models`文件夹下
-            Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建输出文件夹之模型文件夹
-            Tools.copy_files_from_other_folders(sgv['folderpath_models'], sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出模型文件夹到输出文件夹之模型文件夹
-            Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/model"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建模拟器之 data 文件夹之模型文件夹
-            Tools.copy_files_from_other_folders(sgv['folderpath_models'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/model"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出模型文件夹到模拟器之 data 文件夹
+        # 旧逻辑：根据 is_develope_mode / is_maintain_model_files_in_simulator_when_develope_mode 决定是否复制到模拟器 data/model。
+        # 开发优先改造后，这段不再需要，统一由下面的“开发优先：模型获取与导入”逻辑处理。
+        # if not sgv['is_develope_mode'] or not sgv['is_maintain_model_files_in_simulator_when_develope_mode']:
+        #     ...
+        # else:
+        #     pass  # if
+
+        ## --- 开发优先：模型获取与导入 ---
+        # 约定：
+        # 1) 实验快照仍然会复制一份模型到输出目录（用于存档/复现）。
+        # 2) 运行时导入模型默认直接从 `sgv['folderpath_models']`（外部项目/库路径）加载，保证调试断点与IDE补全。
+        # 3) 如需兼容旧逻辑（从模拟器内 data/model 导入），可设置 sgv['runtime_model_import_source'] = 'simulator_data'.
+
+        runtime_model_import_source = sgv.get('runtime_model_import_source', 'external')
+
+        # 始终生成实验输出目录中的模型快照（状态存档）
+        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
+        Tools.copy_files_from_other_folders(sgv['folderpath_models'], sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
+
+        if runtime_model_import_source == 'simulator_data':
+            # 旧模式：复制到模拟器包内 data/model，再从那里 import（不推荐，仅用于兼容）
+            Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/model"), is_auto_confirmation=sgv['is_auto_confirmation'])
+            Tools.copy_files_from_other_folders(sgv['folderpath_models'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/model"), is_auto_confirmation=sgv['is_auto_confirmation'])
+            model_import_root = Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/model')
         else:
-            pass  # if
+            # 开发优先：直接从外部模型库路径 import
+            model_import_root = Path(sgv['folderpath_models'])
 
-        ## 导入模型（以字典的形式表示模型相关的模块）
-        model_dict = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/model')), r"[Mm]odel", sgv['folderpath_simulator'])
-
-        pass  # if
+        # 导入模型（以字典形式表示模块）
+        model_dict = Tools.import_modules_from_package(str(model_import_root), r"[Mm]odel", sgv['folderpath_simulator'])
 
         ## 导出配置数据
         Collector.export_config_data(sgv)

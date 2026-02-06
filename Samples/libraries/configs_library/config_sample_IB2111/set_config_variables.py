@@ -70,6 +70,11 @@ set_config_variables = dict(
     system_platform=sys.platform,  # 获取系统信息
 
     # 开发、调试模型专用变量：
+    # NOTE：开发优先改造后，默认不再依赖把资源复制到 `SystemicRiskSimulator/data/*` 固定目录。
+
+    # NOTE：运行时资源策略（开发优先默认值）
+    runtime_model_import_source='external',  # 'external' | 'simulator_data'
+    runtime_copy_resources_into_simulator_data=False,  # 默认不复制 config/agents/parameters 到模拟器包内 data/*
     is_develope_mode=True,  # 是否处于开发状态。默认 False。默认情况下，模拟器通在子进程独立启用相关的程序。启用之后，在模拟器中，将通过函数调用的方式调用各个程序。启用之后，适合在 Python 3.11 开始的版本做断点调试。
     # is_develope_mode=False,  # 是否处于开发状态。默认 False。默认情况下，模拟器通在子进程独立启用相关的程序。启用之后，在模拟器中，将通过函数调用的方式调用各个程序。启用之后，适合在 Python 3.11 开始的版本做断点调试。
     is_maintain_model_files_in_simulator_when_develope_mode=True,  # 如果 is_develope_mode == True ，那么启用是否保留模拟器里的模型？默认 False。运行的时候只会运行输出文件夹内已有的模型，而不会运行外部导入的模型，运行后也不会将其删除。如果你想直接运行输出文件夹内已有的模型，并且做开发模型相关的工作，建议开启此项。

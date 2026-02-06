@@ -79,6 +79,7 @@ def simulator(config: dict):
     # from SystemicRiskSimulator.core.operations.operator import Operator
 
     ## 设定实验组运行方式
+    # 统一使用键：`运行实验组的方式`
     if sgv['is_use_Gym_environments'] is False and sgv['is_use_RL_method'] is False:
         logging.debug("\nexperiments_program.py : 只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型。\n")
         sgv['运行实验组的方式'] = '运行ABM实验组'
@@ -97,7 +98,6 @@ def simulator(config: dict):
     elif sgv['is_use_Gym_environments'] is True and sgv['is_use_RL_method'] is True and sgv['RL_state'] == 'training':
         logging.debug("\nexperiments_program.py : 使用 Gymnasium 环境框架结合自定义的环境模型，并且使用强化学习算法做训练。\n")
         sgv['运行实验组的方式'] = '运行强化学习算法和Gym框架结合自定义ABM模型实验组做训练'
-        pass  # if
 
     if sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练':
         sgv['subfoldername_experiments_output_data'] = "RL_training"
@@ -107,29 +107,28 @@ def simulator(config: dict):
         sgv['exp_id_exp_output_data'] = ""
         sgv['subfoldername_experiments_output_data'] = "normal"
     else:
-        raise ValueError(f"运行实验组的方式 {sgv['运行实验组的方式']} 不支持！")  # 如果运行实验组的方式不支持，则抛出异常
-        pass  # if
+        raise ValueError(f"运行实验组的方式 {sgv['运行实验组的方式']} 不支持！")
 
     # %% 是否运作实验程序
     if sgv['schedule_operation']['实验组模拟程序']:
         ## 导入相关数据
-        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
-        # Tools.copy_files_from_other_folders(sgv['folderpath_config'], sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 config 文件夹到输出文件夹
+        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])
         shutil.copyfile(sgv['folderpath_config'] / "set_config_variables.py", sgv['folderpath_experiments_output_config'] / "set_config_variables.py")
 
-        Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除模拟器之 data 文件夹之原来的 config 文件夹
-        # Tools.copy_files_from_other_folders(sgv['folderpath_config'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份 config 文件夹到模拟器之 data 文件夹
-        shutil.copyfile(sgv['folderpath_config'] / "set_config_variables.py", sgv['folderpath_simulator'] / "SystemicRiskSimulator/data/config/set_config_variables.py")
+        # 开发优先：默认不再复制到模拟器包内 data/config。需要兼容旧逻辑时再开启。
+        if sgv.get('runtime_copy_resources_into_simulator_data', False):
+            Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=sgv['is_auto_confirmation'])
+            shutil.copyfile(sgv['folderpath_config'] / "set_config_variables.py", sgv['folderpath_simulator'] / "SystemicRiskSimulator/data/config/set_config_variables.py")
 
-        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_agents'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建输出文件夹原来的 agents 文件夹
-        # Tools.copy_files_from_other_folders(sgv['folderpath_agents'], sgv['folderpath_experiments_output_agents'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 agents 文件夹到输出文件夹
+        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_agents'], is_auto_confirmation=sgv['is_auto_confirmation'])
         shutil.copytree(sgv['folderpath_agents'] / "agents", sgv['folderpath_experiments_output_agents'] / "agents")
         shutil.copyfile(sgv['folderpath_agents'] / "logfile.log", sgv['folderpath_experiments_output_agents'] / "logfile.log")
         shutil.copyfile(sgv['folderpath_agents'] / "set_agents_variables.py", sgv['folderpath_experiments_output_agents'] / "set_agents_variables.py")
 
-        Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建模拟器之 data 文件夹之原来的 agents 文件夹
-        # Tools.copy_files_from_other_folders(sgv['folderpath_agents'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份 agents 文件夹到模拟器之 data 文件夹
-        shutil.copytree(sgv['folderpath_agents'] / "agents", sgv['folderpath_simulator'] / "SystemicRiskSimulator/data/agents/agents")  # 导出一份 agents 文件夹到模拟器之 data 文件夹
+        # 开发优先：默认不再复制到模拟器包内 data/agents。需要兼容旧逻辑时再开启。
+        if sgv.get('runtime_copy_resources_into_simulator_data', False):
+            Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])
+            shutil.copytree(sgv['folderpath_agents'] / "agents", sgv['folderpath_simulator'] / "SystemicRiskSimulator/data/agents/agents")
 
         ## 获取一些系统信息
         sgv['system_platform'] = platform.system()

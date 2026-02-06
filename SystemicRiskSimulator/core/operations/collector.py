@@ -586,15 +586,15 @@ class Collector:
                     pass  # if
                 pass  # for
 
-            Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建模拟器之 data 文件夹之 parameters 文件夹
-            # Tools.copy_files_from_other_folders(sgv['folderpath_parameters'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份参数文件夹到模拟器之 data 文件夹
-            shutil.copyfile(sgv['folderpath_parameters'] / "set_parameters_variables.py", sgv['folderpath_simulator'] / "SystemicRiskSimulator/data/parameters" / "set_parameters_variables.py")
-            # 如果存在文件名（非格式名）为 parameters 的文件（例如 pkl、xlsx 等格式），就全部复制过去
-            for file in Path(sgv['folderpath_parameters']).iterdir():
-                if file.stem == "parameters":
-                    shutil.copyfile(file, sgv['folderpath_simulator'] / "SystemicRiskSimulator/data/parameters" / file.name)
-                    pass  # if
-                pass  # for
+            # 旧逻辑（开发优先改造前）：无条件复制到模拟器包内 data/parameters。
+            # 已由上面的 runtime_copy_resources_into_simulator_data 开关逻辑替代。
+            # Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
+            # shutil.copyfile(sgv['folderpath_parameters'] / "set_parameters_variables.py", sgv['folderpath_simulator'] / "SystemicRiskSimulator/data/parameters" / "set_parameters_variables.py")
+            # for file in Path(sgv['folderpath_parameters']).iterdir():
+            #     if file.stem == "parameters":
+            #         shutil.copyfile(file, sgv['folderpath_simulator'] / "SystemicRiskSimulator/data/parameters" / file.name)
+            #         pass  # if
+            #     pass  # for
             pass  # if
 
         pass  # function
@@ -814,7 +814,7 @@ class Collector:
                     if is_compress_diff:  # 如果是差值压缩
                         if (type(v_2D_origin.at[0, column]) == np.ndarray and (type(v_2D_origin.at[0, column][0, 0]) == MoneyType or type(v_2D_origin.at[0, column][0, 0]) == np.float64)):  # 如果是 MoneyType 型的 numpy 数组
                             v_2D_compress.at[0, column] = v_2D_origin.at[0, column].copy()
-                            for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算差值
+                            for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，累加差值
                                 diff = v_2D_origin.at[i, column] - v_2D_origin.at[i - 1, column]
                                 v_2D_compress.at[i, column] = csr_array(diff)
                                 pass  # for
@@ -855,17 +855,16 @@ class Collector:
                         elif (type(v_2D_origin.at[0, column]) == str):  # 如果是字符串类型
                             v_2D_compress.at[0, column] = v_2D_origin.at[0, column]
                             for i in range(1, len_result_data - 1, 1):
-                                if (v_2D_origin.at[i, column] == v_2D_origin.at[i - 1, column]):
+                                if (v_1D_origin.at[i, column] == v_1D_origin.at[i - 1, column]):
                                     v_2D_compress.at[i, column] = None
                                 else:
-                                    v_2D_compress.at[i, column] = v_2D_origin.at[i, column]
+                                    v_2D_compress.at[i, column] = v_1D_origin.at[i, column]
                                     pass  # if
                                 pass  # for
                             v_2D_compress.at[len_result_data - 1, column] = v_2D_origin.at[len_result_data - 1, column]
-                        else:  # 其他数据类型，直接复制原来的数据
+                        else:  # 如果是其他类型，不压缩
                             v_2D_compress[column] = v_2D_origin[column].copy()
                             pass  # if
-
                         pass  # if
                     pass  # for
 
@@ -968,9 +967,7 @@ class Collector:
                         v_1D_decompress.at[len_result_data - 1, column] = v_1D_compress.at[len_result_data - 1, column]
                     else:  # 其他数据类型，直接复制原来的数据
                         v_1D_decompress[column] = v_1D_compress[column].copy()
-                        pass  # if
-
-                    pass  # for
+                        pass  # for
 
                 A_data_decompress[para_01] = v_1D_decompress
 
@@ -1009,7 +1006,7 @@ class Collector:
                     elif (type(v_2D_compress.at[0, column]) == np.ndarray and (type(v_2D_compress.at[0, column][0]) == NameType or type(v_2D_compress.at[0, column][0]) == AbbrType or type(v_2D_compress.at[0, column][0]) == str)):  # 如果是字符串类型的 numpy 数组
                         last_not_none = v_2D_compress.at[0, column].copy()
                         v_2D_decompress.at[0, column] = last_not_none.copy()
-                        for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，还原不同
+                        for i in range(1, len_result_data - 1, 1):
                             if v_2D_compress.at[i, column] is None:  # 如果是 None，则直接设置为前一行的值，否则与上一个非 None 值计算不同的部分，然后赋值
                                 v_2D_decompress.at[i, column] = last_not_none.copy()
                             else:
@@ -1043,7 +1040,6 @@ class Collector:
                         v_2D_decompress[column] = v_2D_compress[column].copy()
                         pass  # if
 
-                    pass  # for
 
                 A_data_decompress[para_01] = v_2D_decompress
 

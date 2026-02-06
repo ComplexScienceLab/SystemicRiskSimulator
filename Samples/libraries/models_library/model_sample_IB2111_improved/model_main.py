@@ -111,7 +111,7 @@ class ModelMain:
             self.sgv['process_name'] = "InterBankInsolventContagionShock_SingleMechanism"
             logging.debug(f"          轮次 {self.sgv['turn']}：模型 {self.sgv['process_name']}")
 
-            # 使用银行专用封装函数，根据当前资产负债和损失变量构造级联模型
+            # 使用银行间资产负债变量封装的单机制级联算法
             cascade_result = run_bank_interbank_cascade(
                 Z_IB=self.A.IB.Z_IB,
                 E_all=self.A.BB.E_all,
