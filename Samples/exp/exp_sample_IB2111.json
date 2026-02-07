@@ -1,0 +1,4 @@
+{
+  "folderpath_config": "Samples/libraries/configs_library/config_sample_IB2111",
+  "note": "实验 JSON 目前只负责选择 config 文件夹（仍然依赖 set_config_variables.py），用于兼容现有快照机制。你也可以在这里加入少量覆盖项，比如 is_auto_confirmation。"
+}

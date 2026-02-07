@@ -1,5 +1,21 @@
 ## 主程序示例
 
+# NOTE：推荐运行方式已切换为统一入口：
+#   python -m SystemicRiskSimulator --experiment ib2111
+# 或：
+#   python -m SystemicRiskSimulator --experiment-json Samples/exp_configs/exp_sample_IB2111.json
+# 本文件保留作为：1）实验配置示例；2）兼容旧的“直接运行脚本”方式。
+
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+# 兼容：直接运行该脚本时，把项目根目录加入 sys.path，避免 ModuleNotFoundError。
+_PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
+
 from SystemicRiskSimulator.simulator import simulator
 
 
