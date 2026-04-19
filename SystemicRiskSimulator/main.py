@@ -169,6 +169,7 @@ def simulator(config: dict):
     import datetime
     import time
     import subprocess
+    import importlib
     import pickle
     import base64
 
@@ -306,6 +307,33 @@ def simulator(config: dict):
     else:
         raise ValueError(f"运行实验组的方式 {sgv['运行实验组的方式']} 不支持！")
 
+    # 平台信息在后处理（可视化）中也会被使用；即使不跑实验主程序也要提前设置
+    sgv["system_platform"] = platform.system()
+
+    def _run_stage_program(*, stage_name: str, script_name: str, module_name: str):
+        """按当前模式（开发/子进程）运行指定阶段程序。"""
+        stage_start_time = time.time()
+        if not sgv["is_develope_mode"]:
+            sgv_pkl = pickle.dumps(sgv)
+            sgv_base64 = base64.b64encode(sgv_pkl).decode("utf-8")
+            subprocess.run(
+                [
+                    sys.executable,
+                    str(
+                        Path(
+                            sgv["folderpath_simulator"],
+                            f"SystemicRiskSimulator/programs/{script_name}",
+                        )
+                    ),
+                    sgv_base64,
+                ]
+            )
+        else:
+            program_module = importlib.import_module(module_name)
+            program_module.main(sgv)
+
+        logging.info(f"\n{stage_name}运行时长：{time.time() - stage_start_time} 秒。\n")
+
     # 是否运行实验组
     if sgv["schedule_operation"]["实验组模拟程序"]:
         # 快照：config
@@ -358,8 +386,6 @@ def simulator(config: dict):
                 sgv["folderpath_simulator"] / "SystemicRiskSimulator/data/agents/agents",
             )
 
-        sgv["system_platform"] = platform.system()
-
         # 日志
         if sgv["is_rerun_all_done_works_in_the_same_experiments"]:
             for file in Path(sgv["folderpath_experiments_output_log"]).glob("outputlog.txt"):
@@ -408,27 +434,12 @@ def simulator(config: dict):
         logger.removeHandler(log_console_handler)
 
         # 运行实验组
-        if not sgv["is_develope_mode"]:
-            sgv_pkl = pickle.dumps(sgv)
-            sgv_base64 = base64.b64encode(sgv_pkl).decode("utf-8")
-            start_time = time.time()
-            subprocess.run(
-                [
-                    sys.executable,
-                    str(
-                        Path(
-                            sgv["folderpath_simulator"],
-                            "SystemicRiskSimulator/programs/experiments_program.py",
-                        )
-                    ),
-                    sgv_base64,
-                ]
-            )
-        else:
-            from SystemicRiskSimulator.programs.experiments_program import main
-
-            start_time = time.time()
-            main(sgv)
+        start_time = time.time()
+        _run_stage_program(
+            stage_name="实验组模拟程序",
+            script_name="experiments_program.py",
+            module_name="SystemicRiskSimulator.programs.experiments_program",
+        )
 
         logger.addHandler(log_file_handler)
         logger.addHandler(log_console_handler)
@@ -440,6 +451,26 @@ def simulator(config: dict):
         logger.removeHandler(log_file_handler)
         log_console_handler.close()
         logger.removeHandler(log_console_handler)
+
+    # 是否运行预处理程序（通常应在可视化之前执行）
+    if sgv["schedule_operation"].get("预处理实验结果程序", False):
+        _run_stage_program(
+            stage_name="预处理实验结果程序",
+            script_name="transform_output_data_program.py",
+            module_name="SystemicRiskSimulator.programs.transform_output_data_program",
+        )
+
+    # 是否运行可视化程序
+    if sgv["schedule_operation"].get("可视化结果程序", False):
+        _run_stage_program(
+            stage_name="可视化结果程序",
+            script_name="visualize_data_program.py",
+            module_name="SystemicRiskSimulator.programs.visualize_data_program",
+        )
+
+    # 当前 programs 目录尚未提供分析程序文件，先给出显式提示，避免误判“未生效”。
+    if sgv["schedule_operation"].get("分析实验结果程序", False):
+        logging.warning("schedule_operation['分析实验结果程序']=True，但当前未找到对应分析程序，已跳过。")
 
     # 清理：导出最后 config.pkl
     Collector.export_config_data(sgv)
