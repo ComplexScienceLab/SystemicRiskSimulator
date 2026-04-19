@@ -134,7 +134,7 @@ class ModelMain:
             self._cascade_result = cascade_result
 
             final_failed_mask = cascade_result['final_failed_mask']
-            load_final = cascade_result.get('load_init')
+            load_final = cascade_result.get('load_final', cascade_result.get('load_init'))
             capacity = cascade_result.get('capacity')
             if load_final is None or capacity is None:
                 # 理论上不会发生，只是防御性判断
@@ -142,8 +142,10 @@ class ModelMain:
                 capacity = self.A.BB.E_all + self.A.BB.Z_IB_all
 
             # 根据最终失效结果，回填本模型的金融量
+            br_prev = self.A.BB.br.copy()
             self.A.BB.isv = final_failed_mask.copy()
-            self.A.BB.br |= self.A.BB.isv
+            newly_failed = self.A.BB.isv & (~br_prev)
+            self.A.BB.br = br_prev | self.A.BB.isv
 
             # 重新计算最终违约量（沿用原有公式）
             total_loss = load_final
@@ -235,7 +237,9 @@ class ModelMain:
                 Loss_IB_def_t=self.A.BB.Loss_IB_def_t,
                 Default_IB_def_s=self.A.BB.Default_IB_def_s,
             )
-            self.A.BB.inf = self.A.BB.isv.copy()
+            # `inf` 表示“本轮新感染/新失效”，而不是“历史上已失效”。
+            self.A.BB.inf = newly_failed
+            # 单机制算法在本轮已完成传播，后续无待传播主体。
             self.A.BB.con = np.zeros_like(self.A.BB.con, dtype=bool)
 
         elif self.sgv['turn'] == 0:
@@ -401,7 +405,8 @@ class ModelMain:
         # 如果个体处于倒闭状态，则 done 是 True，否则即使没有倒闭但是都没有感染的，则其余个体之 done 也为 True。
         dones = np.full(self.A.note.num_bank, False)  # 初始化 dones 数组为 False
         dones[self.A.BB.br] = True
-        if not self.A.BB.inf.any():
+        # 无后续传播主体时，剩余未破产银行也可视为完成。
+        if not self.A.BB.con.any():
             dones[~self.A.BB.br] = True
             pass  # if
 

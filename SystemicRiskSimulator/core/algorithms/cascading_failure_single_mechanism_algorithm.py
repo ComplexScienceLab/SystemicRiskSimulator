@@ -271,9 +271,12 @@ def run_single_mechanism_cascade(
     final_state = result_core["final_state"]
     final_failed_mask = final_state == STATE_FAILED
 
+# 补充机制层运行后对业务有用的原始量：最终负载与最终容量
     result: Dict[str, Any] = {
         **result_core,
         "final_failed_mask": final_failed_mask,
+        "load_final": model.load.copy(),
+        "capacity": model.capacity.copy(),
     }
     return result
 
