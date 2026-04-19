@@ -161,7 +161,7 @@ def main(sgv):
         # list_idsExp_PLAN = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(0, num_files_BB))
         # list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
         # 保存实验组作业完成状态信息
-        with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
+        with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w', encoding='utf-8') as f:
             json.dump({
                 "计划运行的实验组 id": list_idsExp_TASK,
                 "未运行过的实验组 id": list_idsExp_RAW,
@@ -393,7 +393,7 @@ def main(sgv):
                 pass  # if
             pass  # for
         # 保存实验组作业完成状态信息
-        with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
+        with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w', encoding='utf-8') as f:
             json.dump({
                 "计划运行的实验组 id": list_idsExp_TASK,
                 "未运行过的实验组 id": list_idsExp_RAW,

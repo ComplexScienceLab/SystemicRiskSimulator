@@ -51,7 +51,7 @@ def log_decorator(filepath_log: Union[str, Path], logger_name=None, level_to_log
             logger = logging.getLogger(logger_name or func.__name__)
 
             # 创建一个 file handler，并设置日志级别
-            log_file_handler = logging.FileHandler(Path(filepath_log, f"{func.__name__}.txt"))
+            log_file_handler = logging.FileHandler(Path(filepath_log, f"{func.__name__}.txt"), encoding='utf-8-sig')
             log_file_handler.setLevel(level_to_logFileHandler)
 
             # 创建一个 stream handler，并设置日志级别
@@ -96,7 +96,7 @@ def get_logger(filepath_log: Union[str, Path], logger_name=None, level_to_logFil
     logger.setLevel(logging.DEBUG)
 
     # 创建文件处理器，并设置级别为 DEBUG
-    log_file_handler = logging.FileHandler(filepath_log)
+    log_file_handler = logging.FileHandler(filepath_log, encoding='utf-8-sig')
     log_file_handler.setLevel(level_to_logFileHandler)
 
     # 创建控制台处理器，并设置级别为 DEBUG
