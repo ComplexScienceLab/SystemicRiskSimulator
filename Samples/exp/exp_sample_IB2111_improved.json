@@ -1,0 +1,15 @@
+{
+  "experiment_id": "exp_IB2111_improved",
+  "folderpath_config": "Samples/libraries/configs_library/config_sample_IB2111",
+  "folderpath_model": "Samples/libraries/models_library/model_sample_IB2111_improved",
+  "output_subdir": "runs/exp_IB2111_improved",
+  "runtime_overrides": {
+    "max_iterations": 1000,
+    "early_stop_tol": 1e-6,
+    "is_auto_confirmation": true
+  },
+  "external_paths": [
+    "C:/Users/Ethan/CoreFiles/ProjectsFile/ComplexSystemLab/ComplexSystemLab"
+  ],
+  "note": "improved 模型通常依赖 ComplexSystemLab；请根据本机实际路径替换 external_paths 中的示例路径。"
+}

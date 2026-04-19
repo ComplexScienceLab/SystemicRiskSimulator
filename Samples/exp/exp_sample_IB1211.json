@@ -1,0 +1,13 @@
+{
+  "experiment_id": "exp_IB1211",
+  "folderpath_config": "Samples/libraries/configs_library/config_sample_IB1211",
+  "folderpath_model": "Samples/libraries/models_library/model_sample_IB1211",
+  "output_subdir": "runs/exp_IB1211",
+  "runtime_overrides": {
+    "max_iterations": 1500,
+    "early_stop_tol": 1e-6,
+    "is_auto_confirmation": true
+  },
+  "external_paths": [],
+  "note": "为 model_sample_IB1211 的实验 JSON；根据需要修改 config 路径或 runtime_overrides。"
+}

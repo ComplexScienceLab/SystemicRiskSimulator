@@ -60,7 +60,7 @@ def main(sgv):
     ## 设置主进程日志
     logger = logging.getLogger()
     logger.setLevel(sgv['test_logging'])
-    log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"))
+    log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"), encoding='utf-8-sig')
     logger.addHandler(log_file_handler)
     log_console_handler = logging.StreamHandler()
     logger.addHandler(log_console_handler)
@@ -133,10 +133,10 @@ def main(sgv):
 
                 ## 并行处理之后，读取各个实验日志文件之内容追加到主进程日志文件之内容
                 if sgv['is_enable_multiprocessing_for_run_model']:
-                    with open(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"), 'a') as f:
+                    with open(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"), 'a', encoding='utf-8-sig') as f:
                         for i, para in paras.iterrows():
                             if Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i}_exp.txt").exists():
-                                with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i}_exp.txt"), 'r') as f_sub:
+                                with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i}_exp.txt"), 'r', encoding='utf-8', errors='replace') as f_sub:
                                     f.write(f_sub.read())
                                     pass  # with
                                 pass  # if
@@ -526,7 +526,7 @@ def main(sgv):
                 pass  # if
             pass  # for
         # 保存实验组作业完成状态信息
-        with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
+        with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w', encoding='utf-8') as f:
             json.dump({
                 "计划运行的实验组 id": sgv['list_idsExp_TASK'],
                 "未运行过的实验组 id": list_idsExp_RAW,

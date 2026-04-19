@@ -1,6 +1,6 @@
 ## 主程序示例
 
-from SystemicRiskSimulator.simulator import simulator
+from SystemicRiskSimulator.main import simulator
 
 
 def main():

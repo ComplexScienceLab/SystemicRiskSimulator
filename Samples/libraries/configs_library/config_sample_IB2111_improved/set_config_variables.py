@@ -30,7 +30,7 @@ set_config_variables = dict(
     # foldername_set_manually=r"sample_IB2111_应还尽还",
     # foldername_set_manually=r"sample_IB2111_等级完全相同",
     # foldername_set_manually=r"sample_IB2111_均匀分布随机",
-    foldername_set_manually=r"sample_IB2111_均匀分布随机与应还尽还",
+    foldername_set_manually=r"sample_IB2111_均匀分布随机与应还尽还_单机制级联失效模型",
     # foldername_set_manually=r"sample_IB2111",
     # foldername_set_manually=r"sample_IB2111_导入预置的",
     foldername_prefix_experiments=r"sample_IB2111",  # 手动设置初始生成的实验文件夹前缀名。默认"default"。当设置实验文件夹命名方式取值 "default" 的时候激活；
@@ -40,9 +40,8 @@ set_config_variables = dict(
     folderpath_realpath_outputData=r".",  # 从本实验项目根路径文件夹到输出数据所在总文件夹之相对路径。
     folderpath_root_experiments=r"data/sims_samples",  # 手动设置实验文件夹根路径。默认"data/sims/"；
     foldername_experiments_output_data=r"exp_output_data",  # 手动设置实验导出数据文件夹名称。默认"exp_output_data"；
-    # folderpath_models=r"Samples/libraries/models_library/model_sample_IB2111_improved",  # 模型所在的文件夹
-    folderpath_models=r"Samples/libraries/models_library/model_sample_IB2111",  # 模型所在的文件夹
-    folderpath_config=r"Samples/libraries/configs_library/config_sample_IB2111",  # 配置项设置所在的文件夹
+    folderpath_models=r"Samples/libraries/models_library/model_sample_IB2111_improved",  # 模型所在的文件夹
+    folderpath_config=r"Samples/libraries/configs_library/config_sample_IB2111_improved",  # 配置项设置所在的文件夹
     folderpath_parameters=r"Samples/libraries/parameters_library/parameters_sample_IB2111",  # 参数设置所在的文件夹
     folderpath_agents=r"Samples/libraries/agents_library/agents_sample_IB2111",  # 个体众数据初始化所在的文件夹
     # list_agents_yearName=['2012', '2013'],  # 设置 agents 初始数据列表（按照年份名称）
@@ -82,7 +81,7 @@ set_config_variables = dict(
     is_ignore_warning=True,  # 是否忽略警告。默认 False；
     test_logging=10,  # 日志输出级别。调试级别是10，输出信息级别是20。具体见：[logging —— python的日志记录工具](https://docs.python.org/zh-cn/3.9/library/logging.html#levels)
     test_turn_for_debug=4,  # test变量，用于打断点。相关语句：`sgv['turn']>=sgv['test_turn_for_debug']`；
-    test_max_num_of_turn=100000,  # 最大运行轮次数（调试用）。默认 10000；
+    test_max_num_of_turn=100,  # 最大运行轮次数（调试用）。默认 10000；
 
     # 其它配置
     # is_compress_result_data=True,  # 是否压缩实验结果数据。默认 True。建议开启此项，尤其是一批次实验生成大量数据。
@@ -107,7 +106,7 @@ set_config_variables = dict(
     RL_state='using',  # 强化学习状态：可选值包括 'training', 'using'。默认值 'using'； #HACK 注意，当只有处于 'using' 值的时候才会收集运行过程之数据。
 
     # NOTE 手动设置后续处理用的实验文件夹名
-    foldername_experiments=r'sample_IB2111_均匀分布随机与应还尽还',  # 实验文件夹名称
+    foldername_experiments=r'sample_IB2111_均匀分布随机与应还尽还_单机制级联失效模型',  # 实验文件夹名称
 
     # NOTE 设置预处理实验结果数据：
     is_enable_multiprocessing_for_transform_output_data=False,  # 是否启用多进程。默认 False；

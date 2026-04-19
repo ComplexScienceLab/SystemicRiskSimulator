@@ -7,7 +7,7 @@
   "default_experiment": "ib2111",
   "experiments": {
     "ib2111": {
-      "folderpath_config": "Samples/libraries/configs_library/config_sample_IB2111"
+      "folderpath_config": "Samples/libraries/configs_library/config_sample_IB2111_improved"
     }
   }
 }

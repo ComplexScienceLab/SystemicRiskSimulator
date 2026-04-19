@@ -2,6 +2,21 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../entity-relation-system-kit"
+		},
+		{
+			"path": "../ComplexSystemLab/ComplexSystemLab/Projects/cascading_failures"
+		},
+		{
+			"path": "../CS_notebook/Projects/网络级联失效模型"
+		},
+		{
+			"path": "../SystemicRiskLab"
+		},
+		{
+			"path": "../SystemicRiskData/data/sims_samples"
 		}
 	],
 	"settings": {
@@ -11,7 +26,15 @@
 		"editor.fontLigatures": true,
 		"files.autoSave": "onFocusChange",
 		"editor.fontFamily": "Times New Roman, Songti SC, STZhongsong, Menlo, Monaco, 'Courier New', monospace, Luxi Mono",
-		"r.lsp.promptToInstall": false
+		"r.lsp.promptToInstall": false,
+		"git.ignoredRepositories": [
+			".",
+			"../entity-relation-system-kit",
+			"../ComplexSystemLab/ComplexSystemLab/Projects/cascading_failures",
+			"../CS_notebook/Projects/网络级联失效模型",
+			"../SystemicRiskLab"
+		],
+		"git.ignoreLimitWarning": true,
 	},
 	"launch": {
 		"version": "0.2.0",

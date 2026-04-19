@@ -74,6 +74,24 @@ python -m SystemicRiskSimulator.main --set-config-folder Samples/libraries/confi
 python -m SystemicRiskSimulator.main --global-config config.json --experiment ib2111 --override is_auto_confirmation=true --override test_max_num_of_turn=100
 ```
 
+### Samples 运行前准备（重要）
+
+很多 `Samples` 配置依赖预生成的 `agents/*.pkl` 与 `parameters.pkl`。建议先运行对应 sample 的生成脚本，再启动实验。
+
+以 `IB2111` 为例：
+
+```powershell
+$env:PYTHONPATH='C:/Users/Ethan/CoreFiles/ProjectsFile/SystemicRiskSimulator'
+cd Samples/libraries/agents_library/agents_sample_IB2111
+python set_agents_variables.py
+
+cd ../../parameters_library/parameters_sample_IB2111
+python set_parameters_variables.py
+
+cd ../../../../
+python -m SystemicRiskSimulator.main --experiment-json Samples/exp/exp_sample_IB2111.json
+```
+
 ### 输出说明
 
 程序运行后会按配置生成实验输出目录，并在其中写入配置快照、日志与实验结果数据。请优先通过配置控制输出路径，不建议在运行中手动清理正在使用的输出目录。
@@ -83,12 +101,26 @@ python -m SystemicRiskSimulator.main --global-config config.json --experiment ib
 ```text
 SystemicRiskSimulator/
 |- SystemicRiskSimulator/      # 核心包：core / programs / tools / main.py
-|- data/                       # 运行时配置、agents、parameters 等数据模板
+|- data/                       # 历史兼容与模板目录（当前主流程可直接运行，不再强依赖其作为正式运行源）
 |- Samples/                    # 样例配置、样例实验与样例数据
 |- config.json                 # 全局实验入口配置（可选）
 |- requirements.txt            # 依赖清单
 |- pyproject.toml              # 包元数据与构建配置
 ```
+
+## 文档索引
+
+- 开发者指南：`docs/开发者指南.md`
+- 用户手册：`docs/用户手册.md`
+- API 手册：`docs/API手册.md`
+
+## 当前迁移状态
+
+1. 统一入口迁移：已完成。推荐使用 `python -m SystemicRiskSimulator.main`。
+2. 运行时 `data/` 目录依赖：已弱化。当前通过 `runtime_model_import_source='external'` 与 `runtime_copy_resources_into_simulator_data=False` 支持直接运行。
+3. `Samples/exp` 入口脚本：已兼容到 `SystemicRiskSimulator.main` 的 `simulator`。
+4. JSON 配置替代 Python 配置：已具备基础能力（可通过 `--experiment-json` 选择 config），但本质仍依赖 `set_config_variables.py`，暂未做到“纯 JSON 全量配置”。
+5. `model_sample_IB2111_improved`：已接入 `run_bank_interbank_cascade`，但当前仍需外部 `ComplexSystemLab` 依赖，且在部分参数下存在不收敛风险。
 
 ## 总体架构
 

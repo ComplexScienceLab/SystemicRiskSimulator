@@ -183,6 +183,21 @@ def simulator(config: dict):
 
     from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 
+    # 如果实验配置中指定了外部依赖路径（external_paths），优先把这些路径加入 sys.path
+    # 这样可以让模型或算法中依赖外部库（例如 ComplexSystemLab）的导入在运行时可用。
+    external_paths = config.get("external_paths")
+    if external_paths:
+        import sys as _sys
+
+        for _p in external_paths:
+            try:
+                _pp = str(Path(_p).resolve())
+            except Exception:
+                _pp = str(Path(config["folderpath_project"]) / _p)
+                _pp = str(Path(_pp).resolve())
+            if _pp not in _sys.path:
+                _sys.path.insert(0, _pp)
+
     sgv.update(
         (
             Tools.import_modules_from_package(
@@ -356,7 +371,7 @@ def simulator(config: dict):
         logger.setLevel(sgv["test_logging"])
 
         log_file_handler = logging.FileHandler(
-            Path(sgv["folderpath_experiments_output_log"], "outputlog.txt")
+            Path(sgv["folderpath_experiments_output_log"], "outputlog.txt"), encoding='utf-8-sig'
         )
         logger.addHandler(log_file_handler)
         log_console_handler = logging.StreamHandler()

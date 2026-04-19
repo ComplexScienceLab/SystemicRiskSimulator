@@ -1,4 +1,12 @@
 {
+  "experiment_id": "exp_IB2111",
   "folderpath_config": "Samples/libraries/configs_library/config_sample_IB2111",
-  "note": "实验 JSON 目前只负责选择 config 文件夹（仍然依赖 set_config_variables.py），用于兼容现有快照机制。你也可以在这里加入少量覆盖项，比如 is_auto_confirmation。"
+  "folderpath_model": "Samples/libraries/models_library/model_sample_IB2111",
+  "output_subdir": "runs/exp_IB2111",
+  "runtime_overrides": {
+    "max_iterations": 2000,
+    "early_stop_tol": 1e-6,
+    "is_auto_confirmation": true
+  },
+  "note": "实验 JSON 用于选择 config/model 文件夹并做少量覆盖；复杂 config 仍由 set_config_variables.py 处理。"
 }

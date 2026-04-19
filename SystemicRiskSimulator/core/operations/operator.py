@@ -160,7 +160,7 @@ class Operator:
                 pass  # for
             list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
             # 保存实验组作业完成状态信息
-            with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
+            with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w', encoding='utf-8') as f:
                 json.dump(
                     {
                         "计划运行的实验组 id": list_idsExp_TASK,
