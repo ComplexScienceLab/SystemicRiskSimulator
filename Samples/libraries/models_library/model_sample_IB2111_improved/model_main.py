@@ -6,6 +6,7 @@
 from copy import deepcopy
 import numpy as np
 import logging
+from typing import Optional
 
 from SystemicRiskSimulator.core.define.define_type import *
 from SystemicRiskSimulator.core.operations.collector import Collector
@@ -13,8 +14,96 @@ from SystemicRiskSimulator.core.operations.executer import Executer
 from SystemicRiskSimulator.tools.tools import Tools
 from SystemicRiskSimulator.core.algorithms.cascading_failure_single_mechanism_algorithm import (
     run_single_mechanism_cascade,
-    run_bank_interbank_cascade,
 )
+
+
+# Business adapter: 把银行间资产负债表变量映射为机制层的 adjacency/load/capacity，
+# 然后调用通用算法 `run_single_mechanism_cascade`。
+def _ensure_numpy_1d(arr, name: str) -> np.ndarray:
+    if arr is None:
+        raise ValueError(f"`{name}` 不能为空。")
+    a = np.asarray(arr)
+    if a.ndim != 1:
+        raise ValueError(f"`{name}` 必须是一维数组，当前 ndim={a.ndim}。")
+    return a.astype(float, copy=False)
+
+
+def run_bank_interbank_cascade(
+    *,
+    Z_IB: np.ndarray,
+    E_all: np.ndarray,
+    Z_IB_all: np.ndarray,
+    Loss_exIB_init: np.ndarray,
+    Loss_IB_init: Optional[np.ndarray] = None,
+    initial_failed_mask: Optional[np.ndarray] = None,
+    steps: int = 200,
+    seed: Optional[int] = None,
+    load_redundancy: float = 0.0,
+    early_stop_patience: int = 10,
+    redistribution_mode: str = "average",
+    redistribution_weights: Optional[np.ndarray] = None,
+    random_dirichlet_alpha: float = 1.0,
+    record_history: bool = True,
+) -> dict:
+    """基于样例模型的银行间资产负债表封装的单机制级联适配器。
+
+    该函数原先位于 core 算法层，出于保持核心算法纯粹性的考虑，已将其移至
+    模型实现层（samples/models_library）。本函数与原始实现行为一致：负责把
+    `Z_IB, E_all, Z_IB_all, Loss_exIB_init, Loss_IB_init` 映射为算法所需的
+    adjacency/load/capacity，并调用 `run_single_mechanism_cascade`。
+    """
+
+    Z = np.asarray(Z_IB, dtype=float)
+    if Z.ndim != 2 or Z.shape[0] != Z.shape[1]:
+        raise ValueError("`Z_IB` 必须是方阵 (N, N)。")
+    N = Z.shape[0]
+
+    E = _ensure_numpy_1d(E_all, "E_all")
+    Z_total = _ensure_numpy_1d(Z_IB_all, "Z_IB_all")
+    Loss_ex = _ensure_numpy_1d(Loss_exIB_init, "Loss_exIB_init")
+    if Loss_IB_init is None:
+        Loss_IB = np.zeros_like(Loss_ex)
+    else:
+        Loss_IB = _ensure_numpy_1d(Loss_IB_init, "Loss_IB_init")
+
+    if not (E.shape[0] == Z_total.shape[0] == Loss_ex.shape[0] == Loss_IB.shape[0] == N):
+        raise ValueError("E_all / Z_IB_all / Loss_exIB_init / Loss_IB_init 长度必须与 Z_IB 规模一致。")
+
+    # 邻接矩阵：按行归一化的权重，表示从 i 向 j 的负载分配比例
+    row_sum = Z.sum(axis=1, keepdims=True)
+    adjacency = np.divide(Z, row_sum, out=np.zeros_like(Z), where=row_sum > 0.0)
+
+    # 节点容量：资本 + interbank 资产总额（可视为一阶近似）
+    capacity = E + Z_total
+
+    # 初始负载：外部资产损失 + 已有 interbank 损失
+    load = Loss_ex + Loss_IB
+
+    if initial_failed_mask is None:
+        init_failed_mask = load > (capacity * (1.0 + load_redundancy))
+    else:
+        init_failed_mask = np.asarray(initial_failed_mask, dtype=bool)
+        if init_failed_mask.ndim != 1 or init_failed_mask.shape[0] != N:
+            raise ValueError("`initial_failed_mask` 必须是一维布尔数组，长度为 N。")
+
+    result = run_single_mechanism_cascade(
+        adjacency=adjacency,
+        load=load,
+        capacity=capacity,
+        initial_failed_mask=init_failed_mask,
+        steps=steps,
+        seed=seed,
+        load_redundancy=load_redundancy,
+        early_stop_patience=early_stop_patience,
+        redistribution_mode=redistribution_mode,
+        redistribution_weights=redistribution_weights,
+        random_dirichlet_alpha=random_dirichlet_alpha,
+        record_history=record_history,
+    )
+
+    # 补充一些对业务模型有用的原始量
+    result.update({"adjacency": adjacency, "load_init": load, "capacity": capacity})
+    return result
 
 
 class ModelMain:
