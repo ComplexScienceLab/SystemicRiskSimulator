@@ -2,8 +2,8 @@
 @File   ：cascading_failure_single_mechanism_algorithm.py
 @Desc   :  单层单机制级联失效算法层封装
 
-该模块对上提供通用的 Python 函数接口，对下复用
-`ComplexSystemLab` 中实现的 `CascadeFailuresModel_SingleMechanism` 机制模型。
+该模块对上提供通用的 Python 函数接口，
+并在模块内部提供 `CascadeFailuresModel_SingleMechanism` 的实现。
 
 约定：
 - 机制层只关注 state/load/capacity 三个量以及负载重分配规则；
@@ -18,14 +18,133 @@ from typing import Any, Dict, Optional
 
 import numpy as np
 
-try:
-    from ComplexSystemLab.Projects.cascading_failures.models.cascading_failures_单机制 import (
-        CascadeFailuresModel_SingleMechanism,
-        STATE_FAILED,
-    )
-except Exception:  # pragma: no cover - 兼容尚未安装 / 路径差异
-    CascadeFailuresModel_SingleMechanism = None  # type: ignore
-    STATE_FAILED = 1
+
+STATE_NORMAL = 0
+STATE_FAILED = 1
+
+
+class CascadeFailuresModel_SingleMechanism:
+    """单层单机制级联失效模型（SRS 内置实现）。"""
+
+    def __init__(
+        self,
+        adjacency: np.ndarray,
+        N: int,
+        steps: int = 200,
+        seed: Optional[int] = None,
+        load_redundancy: float = 0.0,
+        early_stop_patience: int = 10,
+        redistribution_mode: str = "average",
+        redistribution_weights: Optional[np.ndarray] = None,
+        random_dirichlet_alpha: float = 1.0,
+    ):
+        self.adjacency = np.asarray(adjacency, dtype=float)
+        self.N = int(N)
+        self.steps = int(steps)
+        self.seed = seed
+        self.load_redundancy = float(load_redundancy)
+        self.early_stop_patience = int(early_stop_patience)
+        self.redistribution_mode = redistribution_mode
+        self.redistribution_weights = (
+            None if redistribution_weights is None else np.asarray(redistribution_weights, dtype=float)
+        )
+        self.random_dirichlet_alpha = float(random_dirichlet_alpha)
+
+        self.load = np.zeros(self.N, dtype=float)
+        self.capacity = np.zeros(self.N, dtype=float)
+        self.state = np.full(self.N, STATE_NORMAL, dtype=int)
+        self.current_failed = np.full(self.N, False, dtype=bool)
+        self._rng = np.random.default_rng(self.seed)
+
+    def initialize(self, load_init_max: float = 0.0, use_degree: bool = True):
+        """兼容接口：初始化由业务侧覆盖的 load/capacity 容器。"""
+        self.load[:] = 0.0
+        self.capacity[:] = 0.0
+        self.state[:] = STATE_NORMAL
+        self.current_failed[:] = False
+
+    def _calc_probs(self, weights: np.ndarray) -> np.ndarray:
+        positive = weights > 0.0
+        if not positive.any():
+            return np.zeros_like(weights)
+
+        mode = (self.redistribution_mode or "average").lower()
+        probs = np.zeros_like(weights)
+
+        if mode == "average":
+            probs[positive] = 1.0 / positive.sum()
+            return probs
+
+        if mode == "random":
+            alpha = max(self.random_dirichlet_alpha, 1e-12)
+            vec = self._rng.dirichlet(np.full(positive.sum(), alpha, dtype=float))
+            probs[positive] = vec
+            return probs
+
+        # default proportional
+        s = weights[positive].sum()
+        if s <= 0.0:
+            probs[positive] = 1.0 / positive.sum()
+        else:
+            probs[positive] = weights[positive] / s
+        return probs
+
+    def run(self, is_record_history: bool = True) -> Dict[str, Any]:
+        history = {"states": [], "loads": [], "capacities": []} if is_record_history else None
+        no_change_rounds = 0
+
+        for _ in range(self.steps):
+            if is_record_history:
+                history["states"].append(self.state.copy())
+                history["loads"].append(self.load.copy())
+                history["capacities"].append(self.capacity.copy())
+
+            overloaded = self.load > (self.capacity * (1.0 + self.load_redundancy))
+            newly_failed = overloaded & (~self.current_failed)
+
+            if not newly_failed.any():
+                no_change_rounds += 1
+                if no_change_rounds >= self.early_stop_patience:
+                    break
+                continue
+
+            no_change_rounds = 0
+            added = np.zeros_like(self.load)
+
+            for i in np.where(newly_failed)[0]:
+                outflow = max(self.load[i], 0.0)
+                if outflow <= 0.0:
+                    self.load[i] = 0.0
+                    continue
+
+                weights = self.adjacency[i].astype(float, copy=True)
+
+                # 失效节点不接收再分配负载
+                alive_mask = ~self.current_failed
+                alive_mask[i] = False
+                weights[~alive_mask] = 0.0
+
+                if self.redistribution_weights is not None:
+                    weights = weights * self.redistribution_weights
+
+                probs = self._calc_probs(weights)
+                if probs.sum() > 0.0:
+                    added += outflow * probs
+
+                self.load[i] = 0.0
+
+            self.load += added
+            self.current_failed[newly_failed] = True
+            self.state[self.current_failed] = STATE_FAILED
+
+        result: Dict[str, Any] = {"final_state": self.state.copy()}
+        if is_record_history:
+            result["history"] = {
+                "states": np.asarray(history["states"]),
+                "loads": np.asarray(history["loads"]),
+                "capacities": np.asarray(history["capacities"]),
+            }
+        return result
 
 
 def _ensure_numpy_1d(arr, name: str) -> np.ndarray:
@@ -107,10 +226,6 @@ def run_single_mechanism_cascade(
         [ True  True]
 
     """
-    if CascadeFailuresModel_SingleMechanism is None:
-        raise ImportError(
-            "CascadeFailuresModel_SingleMechanism 无法导入，请确认 ComplexSystemLab 已作为依赖可用。"
-        )
 
     A = np.asarray(adjacency, dtype=float)
     if A.ndim != 2 or A.shape[0] != A.shape[1]:

@@ -11,7 +11,10 @@ from SystemicRiskSimulator.core.define.define_type import *
 from SystemicRiskSimulator.core.operations.collector import Collector
 from SystemicRiskSimulator.core.operations.executer import Executer
 from SystemicRiskSimulator.tools.tools import Tools
-from SystemicRiskSimulator.core.algorithms.cascading_failure_single_mechanism_algorithm import run_single_mechanism_cascade
+from SystemicRiskSimulator.core.algorithms.cascading_failure_single_mechanism_algorithm import (
+    run_single_mechanism_cascade,
+    run_bank_interbank_cascade,
+)
 
 
 class ModelMain:

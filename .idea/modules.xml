@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SystemicRiskSimulator.iml" filepath="$PROJECT_DIR$/.idea/SystemicRiskSimulator.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../ComplexSystemLab/ComplexSystemLab/Projects/cascading_failures/.idea/cascading_failures.iml" filepath="$PROJECT_DIR$/../ComplexSystemLab/ComplexSystemLab/Projects/cascading_failures/.idea/cascading_failures.iml" />
     </modules>
   </component>
 </project>

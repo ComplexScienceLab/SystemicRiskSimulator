@@ -185,7 +185,7 @@ def simulator(config: dict):
     from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 
     # 如果实验配置中指定了外部依赖路径（external_paths），优先把这些路径加入 sys.path
-    # 这样可以让模型或算法中依赖外部库（例如 ComplexSystemLab）的导入在运行时可用。
+    # 这样可以让模型或算法中声明的可选外部库在运行时可用。
     external_paths = config.get("external_paths")
     if external_paths:
         import sys as _sys

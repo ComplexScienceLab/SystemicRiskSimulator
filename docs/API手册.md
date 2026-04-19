@@ -99,4 +99,4 @@
 
 - 当前统一入口在 `SystemicRiskSimulator/main.py`。
 - 建议新代码从 `SystemicRiskSimulator.main` 导入 `simulator`。
-- 对 `ComplexSystemLab` 的级联依赖仍属于外部依赖，需显式准备环境。
+- 单机制级联实现已内置在 `SystemicRiskSimulator/core/algorithms/cascading_failure_single_mechanism_algorithm.py`，无需额外外部依赖。

@@ -120,7 +120,7 @@ SystemicRiskSimulator/
 2. 运行时 `data/` 目录依赖：已弱化。当前通过 `runtime_model_import_source='external'` 与 `runtime_copy_resources_into_simulator_data=False` 支持直接运行。
 3. `Samples/exp` 入口脚本：已兼容到 `SystemicRiskSimulator.main` 的 `simulator`。
 4. JSON 配置替代 Python 配置：已具备基础能力（可通过 `--experiment-json` 选择 config），但本质仍依赖 `set_config_variables.py`，暂未做到“纯 JSON 全量配置”。
-5. `model_sample_IB2111_improved`：已接入 `run_bank_interbank_cascade`，但当前仍需外部 `ComplexSystemLab` 依赖，且在部分参数下存在不收敛风险。
+5. `model_sample_IB2111_improved`：已接入 `run_bank_interbank_cascade`，机制实现已内置到 SRS；在部分参数下仍可能存在不收敛风险。
 
 ## 总体架构
 
