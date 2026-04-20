@@ -21,13 +21,13 @@ set_config_variables = dict(
     type_of_experiments_foldername=r"manually",  # 设置实验文件夹命名方式。取值："default"、"manually"。默认"manually"；
 
     # # 手动设置生成的实验文件夹全名。用于 `type_of_experiments_foldername=r"manually"`；
-    foldername_set_manually=r"test_sample_IB1111",
+    foldername_set_manually=r"sample_IB1111",
 
-    foldername_prefix_experiments=r"test_sample_IB1111",  # 手动设置初始生成的实验文件夹前缀名。默认"default"。当设置实验文件夹命名方式取值 "default" 的时候激活；
+    foldername_prefix_experiments=r"sample_IB1111",  # 手动设置初始生成的实验文件夹前缀名。默认"default"。当设置实验文件夹命名方式取值 "default" 的时候激活；
     is_datetime=True,  # 是否使用日期时间作为实验文件夹名称的一部分。默认 True；
-    foldername_outputData=r"SystemicRiskSimulator",  # 输出数据总文件夹名称
+    foldername_outputData=r"SystemicRiskData",  # 输出数据总文件夹名称
     folderpath_realpath_outputData=r".",  # 从本实验项目根路径文件夹到输出数据总文件夹之相对路径。
-    folderpath_root_experiments=r"Samples/data/sims/",  # 手动设置实验文件夹根路径。默认"data/sims/"；
+    folderpath_root_experiments=r"data/sims_samples",  # 手动设置实验文件夹根路径。默认"data/sims/"；
     foldername_experiments_output_data=r"exp_output_data",  # 手动设置实验导出数据文件夹名称。默认"exp_output_data"；
     folderpath_models=r"Samples/libraries/models_library/model_sample_IB1111",  # 模型所在的文件夹
     folderpath_config=r"Samples/libraries/configs_library/config_sample_IB1111",  # 配置项设置所在的文件夹
@@ -40,36 +40,50 @@ set_config_variables = dict(
     is_enable_multiprocessing_for_run_model=False,  # 运行模型期间，是否启用的多进程。默认 False；
     percent_core_for_multiprocessing=0.75,  # 设置多进程的 CPU 核心数与该设备总的 CPU 核心数占比。默认 0.75；
     is_rerun_all_done_works_in_the_same_experiments=True,  # 是否重新运行所有已经完成的实验。默认 True。如果为 True，则在实验运行之前，重置该实验组当中所有的实验作业运行状态为 "RAW"。
+    # is_rerun_all_done_works_in_the_same_experiments=False,  # 是否重新运行所有已经完成的实验。默认 True。如果为 True，则在实验运行之前，重置该实验组当中所有的实验作业运行状态为 "RAW"。
+    is_use_sqlite_to_manage_experiments=False,  # 是否使用 SQLite 数据库来管理实验。默认 False；
     is_draw_color_band_distribution_before_experiments=False,  # 是否在实验运行之前绘制颜色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。默认 False；
     # list_idsExperiment_to_run=None,  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。
     # list_idsExperiment_to_run=[46, 47, 48, 49, 50, 51, 56, 61, 67, 68],  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。
     # list_idsExperiment_to_run=list(range(1, 68 + 1)),  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。
     list_idsExperiment_to_run=[46],  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。
 
-    num_bank=5,  # 手动输入最大的银行个数（NOTE：如果是手动设置数据，那么设置具体值的时候必须保证是正确的。如果设置为 None 或者不设置，那么就会忽略该变量的设置值，而是根据实际情况计算一个值）；
+    # num_bank=5,  # 手动输入最大的银行个数（NOTE：如果是手动设置数据，那么设置具体值的时候必须保证是正确的。如果设置为 None 或者不设置，那么就会忽略该变量的设置值，而是根据实际情况计算一个值）；
 
     is_auto_confirmation=True,  # 是否自动确认一些比较危险的操作例如删除、移动、复制文件等。默认 False；
     is_auto_open_outputlog=False,  # 是否自动打开输出日志文件。默认 False；
     system_platform=sys.platform,  # 获取系统信息
 
     # 开发、调试模型专用变量：
-    is_develope_mode=False,  # 是否处于开发状态。默认 False。默认情况下，模拟器通在子进程独立启用相关的程序。启用之后，在模拟器中，将通过函数调用的方式调用各个程序。启用之后，适合在 Python 3.11 开始的版本做断点调试。
-    is_maintain_model_files_in_simulator_when_develope_mode=False,  # 如果 is_develope_mode == True ，那么启用是否保留模拟器里的模型？默认 False。运行的时候只会运行输出文件夹内已有的模型，而不会运行外部导入的模型，运行后也不会将其删除。如果你想直接运行输出文件夹内已有的模型，并且做开发模型相关的工作，建议开启此项。
-    is_ignore_warning=False,  # 是否忽略警告。默认 False；
+    # NOTE：开发优先改造后，默认不再依赖把资源复制到 `SystemicRiskSimulator/data/*` 固定目录。
+
+    # NOTE：运行时资源策略（开发优先默认值）
+    runtime_model_import_source='external',  # 'external' | 'simulator_data'
+    runtime_copy_resources_into_simulator_data=False,  # 默认不复制 config/agents/parameters 到模拟器包内 data/*
+    is_develope_mode=True,  # 是否处于开发状态。默认 False。默认情况下，模拟器通在子进程独立启用相关的程序。启用之后，在模拟器中，将通过函数调用的方式调用各个程序。启用之后，适合在 Python 3.11 开始的版本做断点调试。
+    is_maintain_model_files_in_simulator_when_develope_mode=True,  # 如果 is_develope_mode == True ，那么启用是否保留模拟器里的模型？默认 False。运行的时候只会运行输出文件夹内已有的模型，而不会运行外部导入的模型，运行后也不会将其删除。如果你想直接运行输出文件夹内已有的模型，并且做开发模型相关的工作，建议开启此项。
+    is_ignore_warning=True,  # 是否忽略警告。默认 False；
     test_logging=10,  # 日志输出级别。调试级别是10，输出信息级别是20。具体见：[logging —— python的日志记录工具](https://docs.python.org/zh-cn/3.9/library/logging.html#levels)
-    test_turn_for_test=4,  # test变量，用于打断点。相关语句：`sgv['turn']>=sgv['test_turn_for_test']`；
-    test_max_num_of_turn=1000,  # 最大运行轮次数（测试用）。默认 10000；
+    test_turn_for_debug=4,  # test变量，用于打断点。相关语句：`sgv['turn']>=sgv['test_turn_for_debug']`；
+    test_max_num_of_turn=1000,  # 最大运行轮次数（调试用）。默认 10000；
 
     # 其它配置
-    is_compress_result_data=False,  # 是否压缩实验结果数据。默认 False。不建议开启此项，除非一批次实验生成大量数据。压缩数据可以在一定程度上有效减少实验数据文件的大小，但是会增加数据的读写时间。最高效的压缩数据方法是手动压缩相关的文件夹为 zip 等格式的文件。
+    is_compress_result_data=False,  # 是否压缩实验结果数据。默认 True。建议开启此项，尤其是一批次实验生成大量数据。
+
+    # 收集数据设置
+    is_collect=True,  # 是否收集当前的数据。默认 False 。
+    collect=None,  # 收集数据设置。默认 None。可选值包括：'None'、具体的 Python 列表列出需要收集的变量。
+
+    # 导出配置
+    is_export_data_to_xlsx=True,  # 是否导出数据到 XLSX 文件。默认 False；
+    is_export_data_to_csv=False,  # 是否导出数据到 CSV 文件。默认 False；
 
     # NOTE 使用的模型类型类型设置：
-    is_use_PettingZoo_environments=False,  # 是否使用 PettingZoo 环境框架。默认 True。
-    is_use_RL_method=False,  # 是否使用强化学习方法。默认 False。
-    RL_state='using',  # 强化学习状态：可选值包括 'training', 'using'。默认值 'using'； #HACK 注意，当只有处于 'using' 值的时候才会收集运行过程之数据。
+    is_use_Gym_environments=False,  # 是否使用 PettingZoo 环境框架。默认 True。
+    is_use_RL_method=False,  # 是否使用强化学习方法。默认 True。
 
     # NOTE 手动设置后续处理用的实验文件夹名
-    foldername_experiments=r'test_sample_IB1111',  # 实验文件夹名称
+    foldername_experiments=r'sample_IB1111',  # 实验文件夹名称
 
     # NOTE 设置预处理实验结果数据：
     is_enable_multiprocessing_for_transform_output_data=False,  # 是否启用多进程。默认 False；
@@ -102,14 +116,13 @@ set_config_variables = dict(
 
     visulization_process=dict(
         导入面板形式的CSV数据预处理=False,  # 默认 False
-        读取面板形式的PKL格式的文件=True,  # 默认 True
         绘制资产负债表图=True,  # 默认 True
         拼接资产负债表图=True,  # 默认 True
         绘制矩阵热图=True,  # 默认 True
         拼接矩阵热图=True,  # 默认 True
-        绘制资金流网络图=True,  # 默认 True
-        拼接资金流网络图=True,  # 默认 True
-        银行状态表格可视化=True,  # 默认 True
+        绘制资金流网络图=False,  # 默认 True
+        拼接资金流网络图=False,  # 默认 True
+        银行状态表格可视化=False,  # 默认 True
     ),
 
     # #NOTE 设置可视化的选项

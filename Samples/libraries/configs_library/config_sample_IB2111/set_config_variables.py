@@ -82,7 +82,7 @@ set_config_variables = dict(
     is_ignore_warning=True,  # 是否忽略警告。默认 False；
     test_logging=10,  # 日志输出级别。调试级别是10，输出信息级别是20。具体见：[logging —— python的日志记录工具](https://docs.python.org/zh-cn/3.9/library/logging.html#levels)
     test_turn_for_debug=4,  # test变量，用于打断点。相关语句：`sgv['turn']>=sgv['test_turn_for_debug']`；
-    test_max_num_of_turn=100000,  # 最大运行轮次数（调试用）。默认 10000；
+    test_max_num_of_turn=1000,  # 最大运行轮次数（调试用）。默认 10000；
 
     # 其它配置
     # is_compress_result_data=True,  # 是否压缩实验结果数据。默认 True。建议开启此项，尤其是一批次实验生成大量数据。
