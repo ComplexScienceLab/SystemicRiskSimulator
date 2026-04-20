@@ -57,15 +57,28 @@ class ModelMain:
         模型之执行模型动作
         """
 
+        # # if sgv['turn'] > 1 and (self.A.BB.con.any() and sgv['is_continue_process']):
+        # if sgv['turn'] > 1:
+
+        # self.A.BB.con[2] = True  # DEBUG
+        # self.A.BB.Shock_IB_def_s[2] = 800  # DEBUG
         ia = self.A.BB.con[:, None] & (self.A.IB.Z_IB > 0.0)
 
+        # #HACK 旧的不用的
+        # # self.A.IB.theta_IB_def = self.model_strategy.update_strategies_variables(self.A.IB.theta_IB_def, self.A.note.strategy_Default_IB_def_s, self.A.BB.con, ia, A)   # #HACK 这段是计算违约比例的。目前不需要。改为下面的直接计算银行间冲击值。
+        # self.A.IB.Shock_IB_def = self.model_strategy.update_strategies_variables(self.A.BB.Shock_IB_def_s, self.A.note.strategy_Default_IB_def_s, self.A.BB.con, ia, A)
+        #
+        # # 根据该银行间冲击值计算银行间违约比例 #BUG 似乎计算有错误，因为求和应该按行进行
+        # self.A.IB.Shock_IB_def = np.divide(self.A.IB.Shock_IB_def, self.A.IB.Shock_IB_def.sum(axis=1), out=np.zeros_like(self.A.IB.Shock_IB_def), where=self.A.IB.Shock_IB_def != 0)  # 计算银行间违约比例
+
+        # self.A.IB.theta_IB_def = self.model_strategy.update_strategies_variables(self.A.IB.theta_IB_def, self.A.note.strategy_Default_IB_def_s, self.A.BB.con, ia, A)   # #HACK 这段是计算违约比例的。目前不需要。改为下面的直接计算银行间冲击值。
         self.A.IB.theta_IB_def = self.model_strategy.update_strategies_variables(
             agent_variable_in=self.A.BB.Shock_IB_def_s,
             agent_variable_update=self.A.IB.theta_IB_def,
             agent_strategies_variable=self.A.note.strategy_Default_IB_def_s,
             agent_interState=self.A.BB.con,
             ia=ia,
-            A=self.A,
+            A=self.A
         )
 
         # 获取 agents 动作
@@ -88,9 +101,10 @@ class ModelMain:
             pass  # for
 
         # 根据该银行间违约比例计算银行间冲击值
-        self.A.IB.Shock_IB_def = (
-            self.A.IB.theta_IB_def * self.A.BB.Shock_IB_def_s[:, None]
-        )
+        self.A.IB.Shock_IB_def = self.A.IB.theta_IB_def * self.A.BB.Shock_IB_def_s[:, None]
+
+        # Collector.collect_agent_data(self.A, self.A_data, self.sgv, self.para, collect=None)
+
         Executer.update_variableStep(
             self.model_finance,
             'Shock_IB_def',
@@ -99,7 +113,7 @@ class ModelMain:
             self.para,
             self.sgv,
             is_collect=self.sgv['is_collect'],
-            collect=self.sgv['collect'],
+            collect=self.sgv['collect']
         )
 
         pass  # function
@@ -116,43 +130,18 @@ class ModelMain:
             self.sgv['turn'] += 1  # 回合数计次轮次数（由于开始轮次是`START`，所以记为0）
             self.sgv['phase'] = 1  # 逐相复位（起始为1）
             self.sgv['process_name'] = "InterBankInsolventContagionShock"
-            logging.debug(
-                f"          轮次 {self.sgv['turn']}：模型 {self.sgv['process_name']}"
-            )
+            logging.debug(f"          轮次 {self.sgv['turn']}：模型 {self.sgv['process_name']}")
 
-            self.A.IB.theta_IB_def = np.divide(
-                self.A.IB.Shock_IB_def,
-                self.A.BB.Shock_IB_def_s,
-                out=np.zeros_like(self.A.IB.Shock_IB_def),
-                where=self.A.BB.Shock_IB_def_s != 0,
-            )  # 计算银行间违约比例
+            self.A.IB.theta_IB_def = np.divide(self.A.IB.Shock_IB_def, self.A.BB.Shock_IB_def_s, out=np.zeros_like(self.A.IB.Shock_IB_def), where=self.A.BB.Shock_IB_def_s != 0)  # 计算银行间违约比例
 
-            Executer.update_variableStep(
-                self.model_finance,
-                'clear all Shock_source',
-                self.A,
-                self.A_data,
-                self.para,
-                self.sgv,
-                is_collect=self.sgv['is_collect'],
-                collect=self.sgv['collect'],
-            )  # 清零所有冲击源头变量 Shock_source
+            Executer.update_variableStep(self.model_finance, 'clear all Shock_source', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 清零所有冲击源头变量 Shock_source
 
             self.A.BB.inf = ~self.A.BB.br & (self.A.BB.Shock_IB_def_t > 0.0)
 
             self.A.IB.Default_IB += self.A.IB.Shock_IB_def  # 更新 Default_IB
 
             self.A.IB.Loss_IB_def += self.A.IB.Shock_IB_def.T  # 计算 Loss_IB_def
-            Executer.update_variableStep(
-                self.model_finance,
-                'Loss_IB_def_t',
-                self.A,
-                self.A_data,
-                self.para,
-                self.sgv,
-                is_collect=self.sgv['is_collect'],
-                collect=self.sgv['collect'],
-            )
+            Executer.update_variableStep(self.model_finance, 'Loss_IB_def_t', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])
 
             # Executer.update_variableStep(self.model_finance, 'clear all Shock_source', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 清零所有冲击源头变量 Shock_source
             # Executer.update_variableStep(self.model_finance, 'clear all Shock_interbank', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 清零所有银行间冲击变量 Shock_IB
@@ -160,88 +149,23 @@ class ModelMain:
             # 资不抵债银行资产违约损失冲击模型 InterBankInsolventShock
 
             self.A.BB.Loss_IB_def_t += self.A.BB.Shock_IB_def_t  # 银行间违约损失冲击损失
-            Executer.update_variableStep(
-                self.model_finance,
-                'Loss_IB_def_t',
-                self.A,
-                self.A_data,
-                self.para,
-                self.sgv,
-                is_collect=self.sgv['is_collect'],
-                collect=self.sgv['collect'],
-            )
+            Executer.update_variableStep(self.model_finance, 'Loss_IB_def_t', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])
 
             # 临时记录 self.A.BB.Default_IB_def_s 、self.A.BB.Default_D_def_s 变动前的值
             Default_IB_def_s_last = self.A.BB.Default_IB_def_s.copy()
             Default_D_def_s_last = self.A.BB.Default_D_def_s.copy()
 
-            self.A.BB.Default_IB_def_s[self.A.BB.inf] = np.minimum(
-                np.maximum(
-                    self.A.BB.Loss_exIB_def_t[self.A.BB.inf]
-                    + self.A.BB.Loss_IB_def_t[self.A.BB.inf]
-                    - self.A.BB.E_all[self.A.BB.inf],
-                    0,
-                ),
-                self.A.BB.Z_IB_all[self.A.BB.inf],
-            )  # 银行间违约量变动
-            Executer.update_variableStep(
-                self.model_finance,
-                'Default_IB_def_s',
-                self.A,
-                self.A_data,
-                self.para,
-                self.sgv,
-                is_collect=self.sgv['is_collect'],
-                collect=self.sgv['collect'],
-            )  # 更新银行间违约量
+            self.A.BB.Default_IB_def_s[self.A.BB.inf] = np.minimum(np.maximum(self.A.BB.Loss_exIB_def_t[self.A.BB.inf] + self.A.BB.Loss_IB_def_t[self.A.BB.inf] - self.A.BB.E_all[self.A.BB.inf], 0), self.A.BB.Z_IB_all[self.A.BB.inf])  # 银行间违约量变动
+            Executer.update_variableStep(self.model_finance, 'Default_IB_def_s', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 更新银行间违约量
 
-            self.A.BB.Default_D_def_s[self.A.BB.inf] = np.maximum(
-                self.A.BB.Loss_exIB_def_t[self.A.BB.inf]
-                + self.A.BB.Loss_IB_def_t[self.A.BB.inf]
-                - (
-                    self.A.BB.E_all[self.A.BB.inf]
-                    + self.A.BB.Z_IB_all[self.A.BB.inf]
-                ),
-                0,
-            )  # 商业银行对居民存款应违约量变动
-            Executer.update_variableStep(
-                self.model_finance,
-                'Default_D_def_s',
-                self.A,
-                self.A_data,
-                self.para,
-                self.sgv,
-                is_collect=self.sgv['is_collect'],
-                collect=self.sgv['collect'],
-            )
+            self.A.BB.Default_D_def_s[self.A.BB.inf] = np.maximum(self.A.BB.Loss_exIB_def_t[self.A.BB.inf] + self.A.BB.Loss_IB_def_t[self.A.BB.inf] - (self.A.BB.E_all[self.A.BB.inf] + self.A.BB.Z_IB_all[self.A.BB.inf]), 0)  # 商业银行对居民存款应违约量变动
+            Executer.update_variableStep(self.model_finance, 'Default_D_def_s', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])
 
-            self.A.BB.Shock_IB_def_s[self.A.BB.inf] = (
-                self.A.BB.Default_IB_def_s[self.A.BB.inf] - Default_IB_def_s_last[self.A.BB.inf]
-            )  # 计算银行内冲击传导至银行间传染冲击
-            Executer.update_variableStep(
-                self.model_finance,
-                'Shock_IB_def_s',
-                self.A,
-                self.A_data,
-                self.para,
-                self.sgv,
-                is_collect=self.sgv['is_collect'],
-                collect=self.sgv['collect'],
-            )
+            self.A.BB.Shock_IB_def_s[self.A.BB.inf] = self.A.BB.Default_IB_def_s[self.A.BB.inf] - Default_IB_def_s_last[self.A.BB.inf]  # 计算银行内冲击传导至银行间传染冲击
+            Executer.update_variableStep(self.model_finance, 'Shock_IB_def_s', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])
 
-            self.A.BB.Shock_D_def_s[self.A.BB.inf] = (
-                self.A.BB.Default_D_def_s[self.A.BB.inf] - Default_D_def_s_last[self.A.BB.inf]
-            )  # 计算应银行内冲击传导至居民存款传染冲击
-            Executer.update_variableStep(
-                self.model_finance,
-                'Shock_D_def_s',
-                self.A,
-                self.A_data,
-                self.para,
-                self.sgv,
-                is_collect=self.sgv['is_collect'],
-                collect=self.sgv['collect'],
-            )
+            self.A.BB.Shock_D_def_s[self.A.BB.inf] = self.A.BB.Default_D_def_s[self.A.BB.inf] - Default_D_def_s_last[self.A.BB.inf]  # 计算应银行内冲击传导至居民存款传染冲击
+            Executer.update_variableStep(self.model_finance, 'Shock_D_def_s', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])
 
             # 计算奖励值
             self.calc_rewards(
@@ -249,7 +173,7 @@ class ModelMain:
                 growth_rate=0.2,  # #TODO 后续加入参数集
                 isv=self.A.BB.isv,
                 Loss_IB_def_t=self.A.BB.Loss_IB_def_t,
-                Default_IB_def_s=self.A.BB.Default_IB_def_s,
+                Default_IB_def_s=self.A.BB.Default_IB_def_s
             )
 
             # Collector.collect_agent_data(self.A, self.A_data, self.sgv, self.para, collect=None)
@@ -261,39 +185,12 @@ class ModelMain:
 
             self.A.BB.br |= self.A.BB.isv  # 更新破产银行
 
-            Executer.update_variableStep(
-                self.model_finance,
-                'clear all Shock_target',
-                self.A,
-                self.A_data,
-                self.para,
-                self.sgv,
-                is_collect=self.sgv['is_collect'],
-                collect=self.sgv['collect'],
-            )  # 清零所有冲击目标变量 Shock_target
-            Executer.update_variableStep(
-                self.model_finance,
-                'clear all Shock_interbank',
-                self.A,
-                self.A_data,
-                self.para,
-                self.sgv,
-                is_collect=self.sgv['is_collect'],
-                collect=self.sgv['collect'],
-            )  # 清零所有银行间冲击变量 Shock_IB
+            Executer.update_variableStep(self.model_finance, 'clear all Shock_target', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 清零所有冲击目标变量 Shock_target
+            Executer.update_variableStep(self.model_finance, 'clear all Shock_interbank', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 清零所有银行间冲击变量 Shock_IB
 
         elif self.sgv['turn'] == 0:
             # node_START
-            Executer.update_variableStep(
-                self.model_finance,
-                'all',
-                self.A,
-                self.A_data,
-                self.para,
-                self.sgv,
-                is_collect=self.sgv['is_collect'],
-                collect=self.sgv['collect'],
-            )  # 更新各银行之所有变量，在第一回合开始时
+            Executer.update_variableStep(self.model_finance, 'all', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 更新各银行之所有变量，在第一回合开始时
 
             # node_010 外部资产违约损失冲击
             self.sgv['process_name'] = "ExBankInsolventShock"
@@ -301,19 +198,8 @@ class ModelMain:
             self.sgv['phase'] = 1  # 逐相复位（起始为1）
             logging.debug(f"          轮次 {self.sgv['turn']}：模型 {self.sgv['process_name']}")
 
-            self.A.BB.Shock_P_def_t = (
-                self.A.BB.A_P * np.array(self.para['Shock_exIB_def_t_percentage'])
-            )  # 厂商贷款违约损失冲击
-            Executer.update_variableStep(
-                self.model_finance,
-                'Shock_P_def_t',
-                self.A,
-                self.A_data,
-                self.para,
-                self.sgv,
-                is_collect=self.sgv['is_collect'],
-                collect=self.sgv['collect'],
-            )  # 厂商贷款违约损失冲击传导至银行内资产冲击
+            self.A.BB.Shock_P_def_t = self.A.BB.A_P * np.array(self.para['Shock_exIB_def_t_percentage'])  # 厂商贷款违约损失冲击
+            Executer.update_variableStep(self.model_finance, 'Shock_P_def_t', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 厂商贷款违约损失冲击传导至银行内资产冲击
 
             self.A.BB.inf = ~self.A.BB.br & (self.A.BB.Shock_P_def_t > 0.0)
             # logging.debug(f"          轮次 {self.sgv['turn']}：模型 {self.sgv['process_name']}，银行遭受感染情况：{self.A.BB.inf}")
@@ -321,73 +207,17 @@ class ModelMain:
             # 不再对破产的银行进行传染
             # self.A.BB.Z_other[~self.A.BB.br] += self.A.BB.Z_other[~self.A.BB.br] + self.A.BB.Z_all[self.A.BB.br]  # 破产清算
 
-            self.A.BB.Loss_exIB_def_t[self.A.BB.inf] = (
-                self.A.BB.Shock_P_def_t[self.A.BB.inf]
-            )  # 非银行间违约损失冲击损失
-            Executer.update_variableStep(
-                self.model_finance,
-                'Loss_exIB_def_t',
-                self.A,
-                self.A_data,
-                self.para,
-                self.sgv,
-                is_collect=self.sgv['is_collect'],
-                collect=self.sgv['collect'],
-            )
+            self.A.BB.Loss_exIB_def_t[self.A.BB.inf] = self.A.BB.Shock_P_def_t[self.A.BB.inf]  # 非银行间违约损失冲击损失
+            Executer.update_variableStep(self.model_finance, 'Loss_exIB_def_t', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])
 
-            self.A.BB.Default_IB_def_s[self.A.BB.inf] += np.minimum(
-                np.maximum(
-                    self.A.BB.Loss_exIB_def_t[self.A.BB.inf]
-                    + self.A.BB.Loss_IB_def_t[self.A.BB.inf]
-                    - self.A.BB.E_all[self.A.BB.inf],
-                    0,
-                ),
-                self.A.BB.Z_IB_all[self.A.BB.inf],
-            )  # 银行间违约量变动
-            Executer.update_variableStep(
-                self.model_finance,
-                'Default_IB_def_s',
-                self.A,
-                self.A_data,
-                self.para,
-                self.sgv,
-                is_collect=self.sgv['is_collect'],
-                collect=self.sgv['collect'],
-            )  # 更新银行间违约量
+            self.A.BB.Default_IB_def_s[self.A.BB.inf] += np.minimum(np.maximum(self.A.BB.Loss_exIB_def_t[self.A.BB.inf] + self.A.BB.Loss_IB_def_t[self.A.BB.inf] - self.A.BB.E_all[self.A.BB.inf], 0), self.A.BB.Z_IB_all[self.A.BB.inf])  # 银行间违约量变动
+            Executer.update_variableStep(self.model_finance, 'Default_IB_def_s', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 更新银行间违约量
 
-            self.A.BB.Default_D_def_s[self.A.BB.inf] = np.maximum(
-                self.A.BB.Loss_exIB_def_t[self.A.BB.inf]
-                + self.A.BB.Loss_IB_def_t[self.A.BB.inf]
-                - (
-                    self.A.BB.E_all[self.A.BB.inf]
-                    + self.A.BB.Z_IB_all[self.A.BB.inf]
-                ),
-                0,
-            )  # 商业银行对居民存款应违约量变动
-            Executer.update_variableStep(
-                self.model_finance,
-                'Default_D_def_s',
-                self.A,
-                self.A_data,
-                self.para,
-                self.sgv,
-                is_collect=self.sgv['is_collect'],
-                collect=self.sgv['collect'],
-            )  # 更新商业银行对居民存款应违约量
+            self.A.BB.Default_D_def_s[self.A.BB.inf] = np.maximum(self.A.BB.Loss_exIB_def_t[self.A.BB.inf] + self.A.BB.Loss_IB_def_t[self.A.BB.inf] - (self.A.BB.E_all[self.A.BB.inf] + self.A.BB.Z_IB_all[self.A.BB.inf]), 0)  # 商业银行对居民存款应违约量变动
+            Executer.update_variableStep(self.model_finance, 'Default_D_def_s', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 更新商业银行对居民存款应违约量
 
-            self.A.BB.Shock_IB_def_s[self.A.BB.inf] = (
-                self.A.BB.Default_IB_def_s[self.A.BB.inf]
-            )  # 计算应银行内冲击传导至银行间传染冲击
-            Executer.update_variableStep(
-                self.model_finance,
-                'Shock_IB_def_s',
-                self.A,
-                self.A_data,
-                self.para,
-                self.sgv,
-                is_collect=self.sgv['is_collect'],
-                collect=self.sgv['collect'],
-            )  # 更新违约损失冲击源头变量Shock_def_s
+            self.A.BB.Shock_IB_def_s[self.A.BB.inf] = self.A.BB.Default_IB_def_s[self.A.BB.inf]  # 计算应银行内冲击传导至银行间传染冲击
+            Executer.update_variableStep(self.model_finance, 'Shock_IB_def_s', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 更新违约损失冲击源头变量Shock_def_s
 
             # ## 计算奖励值 #HACK 无用可以删除
             # self.calc_rewards(
@@ -399,33 +229,13 @@ class ModelMain:
             # )
 
             self.A.BB.con = ~self.A.BB.br & (self.A.BB.Shock_IB_def_s > 0.0)
-            logging.debug(
-                f"          轮次 {self.sgv['turn']}：模型 {self.sgv['process_name']}，银行传染出去情况：{self.A.BB.con}"
-            )
+            logging.debug(f"          轮次 {self.sgv['turn']}：模型 {self.sgv['process_name']}，银行传染出去情况：{self.A.BB.con}")
             self.A.BB.br |= self.A.BB.isv  # 更新破产银行
 
             # Collector.collect_agent_data(self.A, self.A_data, self.sgv, self.para, collect=None)
 
-            Executer.update_variableStep(
-                self.model_finance,
-                'clear all Shock_target',
-                self.A,
-                self.A_data,
-                self.para,
-                self.sgv,
-                is_collect=self.sgv['is_collect'],
-                collect=self.sgv['collect'],
-            )  # 清零所有冲击目标变量 Shock_target
-            Executer.update_variableStep(
-                self.model_finance,
-                'clear all Shock_interbank',
-                self.A,
-                self.A_data,
-                self.para,
-                self.sgv,
-                is_collect=self.sgv['is_collect'],
-                collect=self.sgv['collect'],
-            )  # 清零所有银行间冲击变量 Shock_IB
+            Executer.update_variableStep(self.model_finance, 'clear all Shock_target', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 清零所有冲击目标变量 Shock_target
+            Executer.update_variableStep(self.model_finance, 'clear all Shock_interbank', self.A, self.A_data, self.para, self.sgv, is_collect=self.sgv['is_collect'], collect=self.sgv['collect'])  # 清零所有银行间冲击变量 Shock_IB
 
         else:
             raise ValueError("模型错误，需要修复！")

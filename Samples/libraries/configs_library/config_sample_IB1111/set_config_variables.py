@@ -6,6 +6,7 @@ import sys
 ######### 设置配置项变量 #########################################
 
 set_config_variables = dict(
+    simulator_version=r"v0.2_alpha",  # 模拟器版本号
 
     schedule_operation=dict(
         实验组模拟程序=True,  # 默认 True
@@ -13,8 +14,8 @@ set_config_variables = dict(
         可视化结果程序=True,  # 默认 False
     ),
 
-    list_agents_data_filename_para_01=['BB', 'IB'],  # 设置 agents 初始数据列表
-    list_agents_data_filename_para_02=['year', 'density'],  # 设置 agents 初始数据列表文件名相关的参数
+    list_agents_data_filename_para_01=['BB', 'IB', 'note'],  # 设置 agents 初始数据列表
+    list_agents_data_filename_para_02=['year', 'density_IB'],  # 设置 agents 初始数据列表文件名相关的参数
     init_data_method=r"import data",  # 初始化数据方式。初始化方式有如下："import data"、"set manually"、"randomly"、"only init"。默认"import data"；
     init_parameters_method=r"import data",  # 初始化参数方式。初始化方式有如下："import data"、"set manually"。默认"import data"；
     type_of_experiments_foldername=r"manually",  # 设置实验文件夹命名方式。取值："default"、"manually"。默认"manually"；
@@ -76,6 +77,17 @@ set_config_variables = dict(
         导入Pandas格式的实验结果数据转换为面板形式再导出=True,  # 默认 True。（NOTE：这个只需要运行一次即可。）
         导入Pandas格式的实验结果数据合并为一个文件=False,  # 默认 False。（NOTE：这个只需要运行一次即可。）
     ),
+
+    # NOTE 设置 【导入Pandas格式的实验结果数据转换为面板形式再导出】 当中需要插入到主变量的 note 列。
+    # 其中，三元组的第一个元素是需要插入的列名，第二个元素是需要插入的字段名的值，第三个元素是将新插入的列名移动到指定的列名的后面。
+    columns_to_insert_into_panel_data=dict(
+        BB=[
+            ('fullName', 'fullName_bank', 'id_agent'),
+        ],
+        IB=None,
+    ),
+
+    list_table_for_explode=['BB', 'IB'],  # 列表，设置需要展开的表格名称。
 
     # NOTE 设置可视化：
     is_enable_multiprocessing_for_visualization=True,  # 可视化期间，是否启用多进程。默认 True；
