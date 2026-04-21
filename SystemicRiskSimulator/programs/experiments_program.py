@@ -21,7 +21,6 @@ import pickle
 import multiprocessing
 from multiprocessing import Pool
 import json
-import gymnasium as gym
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
@@ -191,6 +190,8 @@ def main(sgv):
 
         case '运行Gym和ABM实验组':
             ## #NOTE：运行Gym和ABM实验组
+
+            import gymnasium as gym
 
             sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
 
@@ -455,6 +456,8 @@ def main(sgv):
         case '运行强化学习算法和Gym框架结合自定义ABM模型实验组做训练':  # #HACK  其实后续不打算用 Gym 相关的环境框架了
 
             ## #NOTE：运行强化学习和Gym和ABM模型实验组做训练
+
+            import gymnasium as gym
 
             sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
 
