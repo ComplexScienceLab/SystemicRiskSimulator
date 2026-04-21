@@ -24,7 +24,7 @@ setup(
         "networkx==3.4.2",
         "numpy==2.2.1",
         "openpyxl==3.1.5",
-        "pandas==2.2.3",
+        "pandas==3.0.1",
         "pillow==11.1.0",
         "pip>=25.1",
         "pymupdf==1.25.3",

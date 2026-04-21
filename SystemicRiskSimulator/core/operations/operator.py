@@ -9,6 +9,7 @@ import datetime
 import logging
 from copy import deepcopy
 import json
+import ast
 from typing import Any, Optional
 import pickle
 import sqlite3
@@ -33,6 +34,35 @@ class Operator:
     # A_data = AgentDataCollection([], [])
 
     @classmethod
+    def _load_parameters_works(cls, folderpath_parameters: Path) -> pd.DataFrame:
+        """读取参数作业表，兼容 pandas 版本差异导致的 pkl 反序列化失败。"""
+        filepath_parameters_pkl = Path(folderpath_parameters, "parameters.pkl")
+        filepath_parameters_xlsx = Path(folderpath_parameters, "parameters.xlsx")
+
+        try:
+            with open(filepath_parameters_pkl, 'rb') as f:
+                parameters_works = pd.read_pickle(f)
+        except Exception as e:
+            logging.warning(f"读取 parameters.pkl 失败，将回退读取 parameters.xlsx。错误：{e}")
+            if not filepath_parameters_xlsx.exists():
+                raise
+            parameters_works = pd.read_excel(filepath_parameters_xlsx)
+
+            # Excel 回退时，恢复核心字段类型与列表字段，保证后续文件名拼接与参数传递一致。
+            if 'density_IB' in parameters_works.columns:
+                parameters_works['density_IB'] = pd.to_numeric(parameters_works['density_IB'], errors='coerce').astype(float)
+            if 'exp_id' in parameters_works.columns:
+                parameters_works['exp_id'] = pd.to_numeric(parameters_works['exp_id'], errors='coerce').astype(int)
+
+            for col in parameters_works.columns:
+                if parameters_works[col].dtype == 'object':
+                    parameters_works[col] = parameters_works[col].apply(
+                        lambda v: ast.literal_eval(v) if isinstance(v, str) and v.strip()[:1] in {'[', '{', '('} else v
+                    )
+
+        return parameters_works
+
+    @classmethod
     def operate_installing(cls, sgv, para: Optional[dict] = None):
         """
         运作安装
@@ -55,9 +85,7 @@ class Operator:
             pass  # if
 
         if sgv['is_use_sqlite_to_manage_experiments']:
-            with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
-                parameters_works = pd.read_pickle(f)
-                pass  # with
+            parameters_works = cls._load_parameters_works(sgv['folderpath_parameters'])
 
             num_parameters_works = len(parameters_works)
 
@@ -196,10 +224,7 @@ class Operator:
 
 
         else:
-
-            with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
-                parameters_works = pd.read_pickle(f)
-                pass  # with
+            parameters_works = cls._load_parameters_works(sgv['folderpath_parameters'])
 
             num_parameters_works = len(parameters_works)
 

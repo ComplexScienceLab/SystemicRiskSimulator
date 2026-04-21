@@ -74,6 +74,17 @@ python -m SystemicRiskSimulator.main --set-config-folder Samples/libraries/confi
 python -m SystemicRiskSimulator.main --global-config config.json --experiment ib2111 --override is_auto_confirmation=true --override test_max_num_of_turn=100
 ```
 
+### 在外部项目文件夹中使用 SRS（重要）
+
+如果你要从 `SystemicRiskSimulator` 之外的项目目录加载配置，请优先遵循以下规则：
+
+- `folderpath_config` 推荐使用**外部绝对路径**；
+- 外部项目最好保持 `libraries/configs_library`、`libraries/agents_library`、`libraries/parameters_library`、`libraries/models_library` 的目录契约；
+- 外部 `set_config_variables.py` 中的 `folderpath_models`、`folderpath_parameters`、`folderpath_agents` 推荐写成**相对外部项目根目录**的路径；
+- 若外部项目与 `SystemicRiskSimulator` 不是兄弟目录，需要调整 `runner.folderpath_realpath_simulator`，否则阶段脚本路径可能解析错误。
+
+详细示例、限制与排查清单见：`docs/用户手册.md` → “外部项目文件夹接入 SRS（重要，适用于 SRL 以外的项目）”。
+
 ### Samples 运行前准备（重要）
 
 很多 `Samples` 配置依赖预生成的 `agents/*.pkl` 与 `parameters.pkl`。建议先运行对应 sample 的生成脚本，再启动实验。

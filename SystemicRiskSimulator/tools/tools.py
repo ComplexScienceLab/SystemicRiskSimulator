@@ -3,6 +3,7 @@
 import logging
 import time
 from pathlib import Path
+import sys
 import itertools
 import pkgutil
 import importlib
@@ -147,7 +148,8 @@ class Tools:
             str_folderpath_models: str,
             str_folderpath_config: str,
             str_folderpath_parameters: str,
-            str_folderpath_agents: str
+            str_folderpath_agents: str,
+            str_folderpath_project_base: str = None,
     ):
         """
         设置实验相关的文件夹路径。包括实验设置项文件夹、模型文件夹、实验导出数据文件夹、模拟器工具所在的文件夹等。
@@ -197,9 +199,14 @@ class Tools:
         """
 
         ## 设置项目文件夹路径
-        folderpath_project = Tools._get_current_project_rootpath()
-        folderpath_simulator = Tools.get_project_rootpath(str_foldername_simulator, str_folderpath_realpath_simulator)
-        folderpath_outputData = Tools.get_project_rootpath(str_foldername_outputData, str_folderpath_realpath_outputData)
+        if str_folderpath_project_base is None:
+            folderpath_project = Tools._get_current_project_rootpath()
+            folderpath_simulator = Tools.get_project_rootpath(str_foldername_simulator, str_folderpath_realpath_simulator)
+            folderpath_outputData = Tools.get_project_rootpath(str_foldername_outputData, str_folderpath_realpath_outputData)
+        else:
+            folderpath_project = Path(str_folderpath_project_base).resolve()
+            folderpath_simulator = Path(folderpath_project, str_folderpath_realpath_simulator, "../", str_foldername_simulator).resolve()
+            folderpath_outputData = Path(folderpath_project, str_folderpath_realpath_outputData, "../", str_foldername_outputData).resolve()
 
         folderpath_experiments = Path(folderpath_outputData, str_folderpath_root_experiments, foldername_experiments)
 
@@ -422,6 +429,19 @@ class Tools:
         # str_folderpath = cls._translate_package_form_path_to_folder_form_path(str_package_form_path) # NOTE 仅当如果用到以模块形式的包之路径的时候启用。
         module_form_path_package = cls._translate_folder_form_path_to_package_form_path(str_folderpath, str_folderpath_project)
 
+        # 兼容“目录位于仓库外部”的情况：优先推断外部工程根并按包导入（支持相对导入），
+        # 如果仍无法确定包路径，再降级为按文件路径导入。
+        if module_form_path_package is None:
+            guessed_project_root = cls._guess_external_project_root(str_folderpath)
+            if guessed_project_root is not None:
+                guessed_project_root_str = str(guessed_project_root)
+                if guessed_project_root_str not in sys.path:
+                    sys.path.insert(0, guessed_project_root_str)
+                module_form_path_package = cls._translate_folder_form_path_to_package_form_path(str_folderpath, guessed_project_root_str)
+
+            if module_form_path_package is None:
+                return cls._import_modules_from_external_folder(str_folderpath, pattern)
+
         ## 遍历以导入内容函数
         idx_file = 0
         list_files = []  # 文件列表
@@ -449,6 +469,44 @@ class Tools:
         pass  # function
 
     @classmethod
+    def _guess_external_project_root(cls, str_folderpath: str):
+        """根据目录结构推断外部工程根目录（当前规则：命中 `libraries` 目录）。"""
+        folderpath = Path(str_folderpath).resolve()
+        for parent in folderpath.parents:
+            if parent.name == "libraries":
+                return parent.parent
+        return None
+
+    @classmethod
+    def _import_modules_from_external_folder(cls, str_folderpath: str, pattern: str):
+        """从外部目录按文件路径导入模块，并返回匹配内容。"""
+        folderpath = Path(str_folderpath)
+        list_contents = {}
+        idx_file = 0
+
+        for filepath in sorted(folderpath.rglob("*.py")):
+            if filepath.name == "__init__.py" or "__pycache__" in filepath.parts:
+                continue
+
+            module_name = f"_external_module_{filepath.stem}_{idx_file}"
+            spec = importlib.util.spec_from_file_location(module_name, filepath)
+            if spec is None or spec.loader is None:
+                idx_file += 1
+                continue
+
+            module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(module)
+
+            if re.search(pattern, filepath.name) is not None:
+                for content in dir(module):
+                    if re.search(pattern, content.__str__()) is not None:
+                        list_contents.update({filepath.stem: module.__dict__.get(content)})
+
+            idx_file += 1
+
+        return list_contents
+
+    @classmethod
     def _translate_folder_form_path_to_package_form_path(cls, str_folder_form_path: str, str_folderpath_project: str):
         """
         转换文件夹形式的包之相对路径为模块形式的包之相对路径
@@ -460,10 +518,17 @@ class Tools:
         Returns: 模块形式的包之相对路径
 
         """
-        str_folder_form_path = Path(str_folder_form_path)  # 获取包文件夹路径
+        str_folder_form_path = Path(str_folder_form_path).resolve()  # 获取包文件夹路径
+        str_folderpath_project = Path(str_folderpath_project).resolve()
+
+        try:
+            relative_path = str_folder_form_path.relative_to(str_folderpath_project)
+        except ValueError:
+            return None
+
         pattern = r"[\/\\]"
         repl = r"."
-        return re.sub(pattern, repl, Path(str_folder_form_path).relative_to(str_folderpath_project).__str__())
+        return re.sub(pattern, repl, relative_path.__str__())
         pass  # function
 
     @classmethod

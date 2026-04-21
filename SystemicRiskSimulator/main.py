@@ -35,8 +35,11 @@ from pathlib import Path
 try:
     _THIS_FILE = Path(__file__).resolve()
     # main.py 在路径 .../SystemicRiskSimulator/SystemicRiskSimulator/main.py
-    # 项目根目录是 parents[2]
-    _PROJECT_ROOT_GUESS = _THIS_FILE.parents[2]
+    # 需要把“包目录的父目录”加入 sys.path，才能正确导入 `SystemicRiskSimulator.*`
+    # 正常仓库结构下应为 parents[1]；若结构变化则降级到旧逻辑。
+    _PROJECT_ROOT_GUESS = _THIS_FILE.parents[1]
+    if not (_PROJECT_ROOT_GUESS / "SystemicRiskSimulator").is_dir():
+        _PROJECT_ROOT_GUESS = _THIS_FILE.parents[2]
     if str(_PROJECT_ROOT_GUESS) not in sys.path:
         sys.path.insert(0, str(_PROJECT_ROOT_GUESS))
 except Exception:
@@ -182,6 +185,26 @@ def simulator(config: dict):
         config["foldername_simulator"], config["folderpath_realpath_simulator"]
     )
 
+    # 若 folderpath_config 为外部绝对路径（例如来自 SystemicRiskLab），
+    # 则把项目根路径锚定到该配置所在工程，保证后续相对资源路径可正确解析。
+    try:
+        _cfg_path_raw = Path(config["folderpath_config"])
+        if _cfg_path_raw.is_absolute():
+            _cfg_path = _cfg_path_raw.resolve()
+            for _parent in _cfg_path.parents:
+                if _parent.name == "libraries":
+                    config["folderpath_project"] = _parent.parent
+                    break
+    except Exception:
+        pass
+
+    try:
+        _project_root_for_import = str(Path(config["folderpath_project"]).resolve())
+        if _project_root_for_import not in sys.path:
+            sys.path.insert(0, _project_root_for_import)
+    except Exception:
+        pass
+
     from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 
     # 如果实验配置中指定了外部依赖路径（external_paths），优先把这些路径加入 sys.path
@@ -247,6 +270,7 @@ def simulator(config: dict):
         str_folderpath_config=sgv["folderpath_config"],
         str_folderpath_parameters=sgv["folderpath_parameters"],
         str_folderpath_agents=sgv["folderpath_agents"],
+        str_folderpath_project_base=str(config["folderpath_project"]),
     )
 
     # 设定实验组运行方式（统一键名）
@@ -454,19 +478,29 @@ def simulator(config: dict):
 
     # 是否运行预处理程序（通常应在可视化之前执行）
     if sgv["schedule_operation"].get("预处理实验结果程序", False):
-        _run_stage_program(
-            stage_name="预处理实验结果程序",
-            script_name="transform_output_data_program.py",
-            module_name="SystemicRiskSimulator.programs.transform_output_data_program",
-        )
+        try:
+            _run_stage_program(
+                stage_name="预处理实验结果程序",
+                script_name="transform_output_data_program.py",
+                module_name="SystemicRiskSimulator.programs.transform_output_data_program",
+            )
+        except Exception as e:
+            logging.exception(f"预处理实验结果程序执行失败，已跳过。错误：{e}")
+            if sgv.get("is_fail_fast_postprocess", False):
+                raise
 
     # 是否运行可视化程序
     if sgv["schedule_operation"].get("可视化结果程序", False):
-        _run_stage_program(
-            stage_name="可视化结果程序",
-            script_name="visualize_data_program.py",
-            module_name="SystemicRiskSimulator.programs.visualize_data_program",
-        )
+        try:
+            _run_stage_program(
+                stage_name="可视化结果程序",
+                script_name="visualize_data_program.py",
+                module_name="SystemicRiskSimulator.programs.visualize_data_program",
+            )
+        except Exception as e:
+            logging.exception(f"可视化结果程序执行失败，已跳过。错误：{e}")
+            if sgv.get("is_fail_fast_postprocess", False):
+                raise
 
     # 当前 programs 目录尚未提供分析程序文件，先给出显式提示，避免误判“未生效”。
     if sgv["schedule_operation"].get("分析实验结果程序", False):
@@ -521,12 +555,20 @@ def _build_parser():
 
 def main(argv: Optional[list[str]] = None) -> None:
     import argparse
+    import os
 
     args = _build_parser().parse_args(argv)
 
+    # 直接运行该文件时，统一把工作目录锚定到模拟器仓库根目录，避免受 IDE 默认 cwd 影响。
+    script_project_root = Path(__file__).resolve().parents[1]
+    try:
+        os.chdir(script_project_root)
+    except Exception:
+        pass
+
     from SystemicRiskSimulator.tools.tools import Tools
 
-    project_root = Tools.get_project_rootpath()
+    project_root = script_project_root
     overrides = parse_overrides(args.override)
 
     runner_cfg: Dict[str, Any] = {}
@@ -540,11 +582,36 @@ def main(argv: Optional[list[str]] = None) -> None:
         global_path = Path(project_root, args.global_config)
         global_cfg = load_json(global_path)
 
-        exp_name = args.experiment or global_cfg.get("default_experiment")
-        if not exp_name:
-            raise ValueError("未指定 experiment，且 global config 缺少 default_experiment。")
+        # 从 global config 中读取 experiments 列表
+        experiments = global_cfg.get("experiments")
+        if not isinstance(experiments, Mapping) or len(experiments) == 0:
+            raise ValueError("global config 中没有可用的 `experiments` 条目。请在 config.json 的 `experiments` 中添加实验配置。")
 
-        exp_cfg = resolve_experiment_from_global(global_cfg, str(exp_name))
+        # 不再使用 default_experiment：强制要求通过 --experiment 指定（或仅在 experiments 只有一个条目时自动选取）
+        if args.experiment:
+            exp_name_str = str(args.experiment)
+            # 先尝试精确匹配
+            if exp_name_str in experiments:
+                chosen_exp = exp_name_str
+            else:
+                # 尝试忽略大小写匹配
+                ci_matches = [k for k in experiments.keys() if k.lower() == exp_name_str.lower()]
+                if ci_matches:
+                    chosen_exp = ci_matches[0]
+                else:
+                    raise KeyError(f"全局配置中未找到 experiment={exp_name_str!r}。可选值：{list(experiments.keys())}")
+        else:
+            # 未显式指定 experiment：当且仅当 experiments 只有一个可用条目时自动使用它，否则要求用户通过 CLI 指定。
+            if len(experiments) == 1:
+                chosen_exp = next(iter(experiments.keys()))
+                print(f"[Info] 未通过 --experiment 指定实验，自动使用唯一可用的 experiment: {chosen_exp}")
+            else:
+                raise ValueError(
+                    "未指定 --experiment，且 global config 中��有设置可自动选择的默认实验。请通过 --experiment 指定要运行的实验。可选值："
+                    + str(list(experiments.keys()))
+                )
+
+        exp_cfg = resolve_experiment_from_global(global_cfg, str(chosen_exp))
         runner_cfg = dict(global_cfg.get("runner", {}))
 
     config = build_simulator_config(

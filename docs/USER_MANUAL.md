@@ -4,11 +4,11 @@
 
 ## 1. 项目简介
 
-SystemicRiskSimulator 是一个用 Python 3.11 编写的系统性风险模拟器，核心范式为多主体建模（ABM）。项目还包含可选的 Gymnasium/RL（强化学习）实验运行流程。
+SystemicRiskSimulator 是一个用 Python 3.13 编写的系统性风险模拟器，核心范式为多主体建模（ABM）。项目还包含可选的 Gymnasium/RL（强化学习）实验运行流程。
 
 本项目的**推荐入口函数**为：
 
-- `SystemicRiskSimulator.simulator.simulator(config)`
+- `SystemicRiskSimulator.main.simulator(config)`
 
 模拟器运行时会将本次实验用到的配置、agents、parameters、models **复制**到实验输出目录，便于复现实验。
 
@@ -16,7 +16,7 @@ SystemicRiskSimulator 是一个用 Python 3.11 编写的系统性风险模拟器
 
 ### 2.1 安装
 
-- Python：3.11（必需）
+- Python：3.13（必需）
 - 依赖：见 `requirements.txt` 或 `pyproject.toml`
 
 安装后，你可以选择两种使用方式：
@@ -27,7 +27,7 @@ SystemicRiskSimulator 是一个用 Python 3.11 编写的系统性风险模拟器
 ### 2.2 最小示例：通过 Python 调用模拟器
 
 ```python
-from SystemicRiskSimulator.simulator import simulator
+from SystemicRiskSimulator.main import simulator
 
 config = {
     # 通常只需要覆盖你要改的部分配置；其余将由 set_config_variables.py 进行补全
@@ -92,6 +92,46 @@ simulator(config)
 - `is_use_sqlite_to_manage_experiments`：是否用 SQLite 管理实验作业状态
 - `is_rerun_all_done_works_in_the_same_experiments`：是否重跑已完成实验
 - `is_develope_mode`：开发/调试模式（影响是否用子进程运行）
+
+### 5.4 在外部项目文件夹中使用 SRS 的要求与限制
+
+如果你要让 SRS 读取**另一个项目**中的配置与资源（而不是直接使用 `Samples/...`），请特别注意以下规则：
+
+1. `folderpath_config` 必须指向包含 `set_config_variables.py` 的配置文件夹。
+2. 对外部项目，推荐把 `folderpath_config` 写成**绝对路径**；这样 SRS 才能稳定识别“当前实验实际属于哪个外部项目”。
+3. 当前版本对外部项目根目录的自动识别，优先依赖 `libraries` 命名约定。最稳妥的布局是：
+
+```text
+外部项目根目录/
+|- libraries/
+|  |- configs_library/
+|  |- agents_library/
+|  |- parameters_library/
+|  \- models_library/
+```
+
+4. 一旦 `folderpath_config` 被识别为外部项目目录，`set_config_variables.py` 中的：
+   - `folderpath_config`
+   - `folderpath_models`
+   - `folderpath_parameters`
+   - `folderpath_agents`
+
+   推荐都写成**相对外部项目根目录**的路径。
+
+5. 如果外部项目与 `SystemicRiskSimulator` 不是同级兄弟目录，则不能继续依赖 `runner.folderpath_realpath_simulator="."` 的默认值；应显式调整该字段，让运行期能正确回到 SRS 仓库本体。
+6. `agents`、`parameters`、`models` 目录本身也必须满足原有契约：
+   - `agents` 目录下应有 `agents/`、`set_agents_variables.py`、`logfile.log`
+   - `parameters` 目录下应有可被当前环境读取的参数文件
+   - `models` 目录下若使用相对导入，必须保持包结构完整
+
+如果以上规则未满足，常见报错包括：
+
+- `配置文件不存在`
+- `FileNotFoundError: ...agents...`
+- `FileNotFoundError: ...parameters...`
+- `ImportError: attempted relative import with no known parent package`
+
+更完整的外部项目接入说明、示例命令与排查清单，请见：`docs/用户手册.md` 中的“外部项目文件夹接入 SRS”章节。
 
 ## 6. 输入数据格式（agents / parameters / models）
 
