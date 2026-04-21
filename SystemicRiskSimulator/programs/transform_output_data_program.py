@@ -33,6 +33,7 @@ import sqlite3
 import re
 import glob
 import pandas as pd
+from pandas.api.types import is_string_dtype
 import numpy as np
 from copy import deepcopy
 import sys
@@ -484,14 +485,15 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
             if is_value_a_vector:
                 ## 转换数据格式为 numpy 字符串格式
                 list_columns_for_transform_datatype = [
-                    v for i, v in enumerate(df_1D.columns) if (
-                            df_1D[v].dtype == np.dtype('object')
-                            and type(df_1D[v][0]) == str
+                    v for v in df_1D.columns if (
+                        is_string_dtype(df_1D[v].dtype)
+                        or isinstance(df_1D[v].iloc[0], (str, np.str_))
                     )
                 ]
-                for i in range(df_1D.__len__()):
-                    df_1D.at[i, list_columns_for_transform_datatype[0]] = np.str_(df_1D[list_columns_for_transform_datatype[0]][i])
-                    pass  # for
+                for column_name in list_columns_for_transform_datatype:
+                    df_1D[column_name] = df_1D[column_name].map(
+                        lambda x: np.str_(x) if isinstance(x, (str, np.str_)) else x
+                    )
 
                 ## 展平为面板形式
                 list_columns_for_explode = [
@@ -505,7 +507,7 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
                 for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
                     if col != 'id_agent':
                         # df_1D_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack(dropna=False).reset_index(level=1, drop=True)
-                        df_1D_panel[col] = df_1D.apply(lambda row: pd.Series(row[col]), axis=1).stack(dropna=False).values
+                        df_1D_panel[col] = df_1D.apply(lambda row: pd.Series(row[col]), axis=1).stack().values
                         pass  # if
                     pass  # for
             else:
@@ -579,15 +581,17 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
             (num_row, num_col) = df_2D_original['id_agent'][0].shape
             df_IB = deepcopy(df_2D_original)
 
-            ## 转换数据格式为numpy字符串格式
+            ## 转换数据格式为 numpy 字符串格式
             list_columns_for_transform_datatype = [
-                v for i, v in enumerate(df_IB.columns) if (
-                        df_IB[v].dtype == np.dtype('object')
-                        and type(df_IB[v][0]) == str
+                v for v in df_IB.columns if (
+                    is_string_dtype(df_IB[v].dtype)
+                    or isinstance(df_IB[v].iloc[0], (str, np.str_))
                 )
             ]
-            for i in range(df_IB.__len__()):
-                df_IB.at[i, list_columns_for_transform_datatype[0]] = np.str_(df_IB[list_columns_for_transform_datatype[0]][i])
+            for column_name in list_columns_for_transform_datatype:
+                df_IB[column_name] = df_IB[column_name].map(
+                    lambda x: np.str_(x) if isinstance(x, (str, np.str_)) else x
+                )
 
             ## 转换信息列表为矩阵形式，插入数据框  #HACK 能否用现成的功能函数代替？
             list_columns_for_transform = [
@@ -621,30 +625,30 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
 
             ## 生成agent矩阵之坐标，以矩阵形式，插入数据框
             row_coord, col_coord = np.mgrid[0:num_row:1, 0:num_col:1]
-            df_IB.insert(loc=df_IB.columns.get_loc('id_agent') + 1, column="col", value=np.dtype('object'))
-            for i, _ in enumerate(df_IB.col):
-                df_IB.at[i, 'col'] = col_coord.astype('int16')
-            df_IB.insert(loc=df_IB.columns.get_loc('id_agent') + 1, column="row", value=np.dtype('object'))
-            for i, _ in enumerate(df_IB.row):
-                df_IB.at[i, 'row'] = row_coord.astype('int16')
+            df_IB.insert(loc=df_IB.columns.get_loc('id_agent') + 1, column="col", value=None)
+            df_IB.insert(loc=df_IB.columns.get_loc('id_agent') + 1, column="row", value=None)
+            for i in range(len(df_IB)):
+                df_IB.at[i, 'col'] = col_coord.astype('int16').copy()
+                df_IB.at[i, 'row'] = row_coord.astype('int16').copy()
 
-                ## 展平为面板形式
-            list_columns_for_explode = [
-                v for i, v in enumerate(df_IB.columns) if (
-                        df_IB[v].dtype == np.dtype('object')
-                        and df_IB[v][0].size == (num_row * num_col)
-                )
-            ]  # 获取需要展平的列
+            ## 展平为面板形式
+            list_columns_for_flatten = [
+                v for v in df_IB.columns if hasattr(df_IB[v].iloc[0], 'size') and df_IB[v].iloc[0].size == (num_row * num_col)
+            ]
 
-            df_2D_panel = (df_IB.explode('id_agent')).explode('id_agent')  # 只展开 'id_agent' 列，对于二维数组需要展开两次
-            # df_2D_panel = df_IB['id_agent'].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=1, drop=True).to_frame('id_agent')  # 只展开 'id_agent' 列，对于二维数组需要展开两次
-            for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
-                if col != 'id_agent':
-                    # df_2D_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=0, drop=True).reset_index(drop=True)  # 对于二维数组需要展开两次
-                    # df_2D_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack(dropna=False).reset_index(level=1, drop=True)  # 对于二维数组需要展开两次
-                    df_2D_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack(dropna=False).values  # 对于二维数组需要展开两次
-                    pass  # if
-                pass  # for
+            list_df_2D_panel = []
+            num_cells = num_row * num_col
+            for _, row in df_IB.iterrows():
+                dict_panel_row = {}
+                for column_name in df_IB.columns:
+                    value = row[column_name]
+                    if column_name in list_columns_for_flatten:
+                        dict_panel_row[column_name] = value.flatten()
+                    else:
+                        dict_panel_row[column_name] = np.repeat(value, num_cells)
+                list_df_2D_panel.append(pd.DataFrame(dict_panel_row))
+
+            df_2D_panel = pd.concat(list_df_2D_panel, ignore_index=True)
             df_2D_panel = df_2D_panel.reset_index(drop=True)  # 重置索引
 
             df_2D_panel.insert(0, 'id', range(len(df_2D_panel)))  # 添加id列
