@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SystemicRiskSimulator.iml" filepath="$PROJECT_DIR$/.idea/SystemicRiskSimulator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SystemicRiskLab/libraries/.idea/libraries.iml" filepath="$PROJECT_DIR$/../SystemicRiskLab/libraries/.idea/libraries.iml" />
     </modules>
   </component>
 </project>

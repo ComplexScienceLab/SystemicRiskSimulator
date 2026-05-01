@@ -3,7 +3,7 @@ name = "systemicrisksimulator"
 version = "0.1.0"
 description = "一个金融系统的系统性风险模拟器。 A systemic risk simulator for financial systems."
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.13,<3.14"
 dependencies = [
     "chardet==5.2.0",
     "drawsvg==2.4.0",

@@ -26,6 +26,7 @@
 		"editor.fontLigatures": true,
 		"files.autoSave": "onFocusChange",
 		"editor.fontFamily": "Times New Roman, Songti SC, STZhongsong, Menlo, Monaco, 'Courier New', monospace, Luxi Mono",
+		"python.defaultInterpreterPath": "${workspaceFolder:SystemicRiskSimulator}/.venv/bin/python",
 		"r.lsp.promptToInstall": false,
 		"git.ignoredRepositories": [
 			".",
