@@ -1,51 +1,79 @@
 """
 设置多主体变量
 """
+from itertools import product
 import pickle
+import datetime
 from pathlib import Path
+import logging
+import numpy as np
+import pandas as pd
 from SystemicRiskSimulator.core.define.define_type import *
 from SystemicRiskSimulator.core.functions.generation.fun_calibrate_interbank_exposure import calibrate_bilateral_exposure_by_ME_method_use_R_package
 
 pass  # end import
 
-# %% 预处理
-# 删除 agents 内所有文件
-Path(Path.cwd(), 'agents').mkdir(exist_ok=True)
-folderpath_agents = Path(Path.cwd(), 'agents')
-for file in folderpath_agents.iterdir():
-    if file.is_file():
-        file.unlink()
 
-# %% #NOTE 设置项
-# 设置金额单位
-money_unit = MoneyType(1e9)  # 金额单位：十亿
+def main():
+    # %% 预处理
+    # 删除 agents 内所有文件
+    folderpath_agents = Path.cwd() / 'agents'
+    folderpath_agents.mkdir(exist_ok=True)
+    for file in folderpath_agents.iterdir():
+        if file.is_file():
+            file.unlink()
 
-list_年份 = ['2012', '2013']  # 设置 agents 初始数据列表
-list_agents_networkDensity_IB = [0.25, 1.0]  # 设置 agents 初始数据列表
-list_agents_IBA_networkDensity = [0.25, 0.5, 0.75, 1.0]  # 设置 agents 初始数据列表
-num_bank = 5
-num_asset = 4
+    # 如果存在日志记录文件，删除
+    log_file_path = Path.cwd() / 'logfile.log'
+    if log_file_path.exists():
+        log_file_path.unlink()
 
-for year in list_年份:
-    for density_IB in list_agents_networkDensity_IB:
-        for density_IBA in list_agents_IBA_networkDensity:
+    pass  # if
+
+    # %% 设置日志记录
+    log_file_path = Path(__file__).parent / 'logfile.log'
+    logging.basicConfig(
+        level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[
+            logging.FileHandler(log_file_path, mode='w'),
+            logging.StreamHandler()
+        ]
+    )
+
+    # %% #NOTE 设置项
+    # 设置金额单位
+    money_unit = MoneyType(1e9)  # 金额单位：十亿
+
+    # list_年份 = ['2012', '2013']  # 设置 agents 初始数据列表
+    list_年份 = ['2012']  # 设置 agents 初始数据列表
+    # list_agents_networkDensity_IB = [0.25, 1.0]  # 设置 agents 初始数据列表
+    list_agents_networkDensity_IB = [1.0]  # 设置 agents 初始数据列表
+    # list_agents_networkDensity_IBA = [0.25, 0.5, 0.75, 1.0]  # 设置 agents 初始数据列表
+    list_agents_networkDensity_IBA = [0.25, 1.0]  # 设置 agents 初始数据列表
+    num_bank: int = 5
+    num_asset: int = 4
+
+    id_agents = 0
+    for year in list_年份:
+        for density_IB, density_IBA in product(list_agents_networkDensity_IB, list_agents_networkDensity_IBA):  # 一层循环遍历所有组合
+
+
             # %% 设置银行个体变量
             set_bankCommercial_variables = dict(
 
                 # 初始化商业银行群 bank_commercial
                 id_agent=np.arange(num_bank),  # agent 之编号 id
-                abbr=np.arange(num_bank).astype(AbbrType),  # 缩写 abbr
-                fullName=np.array(["Bank_1", "Bank_2", "Bank_3", "Bank_4", "Bank_5"], dtype=NameType),  # 全名 fullName
                 A_all=np.zeros(num_bank),  # 总资产 A_all: $A_all=A_IB+A_exIB$
                 A_IB_all=np.array([2185.24, 398.37, 730.99, 1357.75, 2717.39], dtype=MoneyType),  # 银行间资产加总 A_IB_all
                 A_P=np.array([1631.73, 4303.24, 3379.72, 4351.47, 620.69], dtype=MoneyType),  # 银行贷款给非金融部门（非银行金融部门）之资产（非流动性资产） A_P
                 A_Q=np.array([477.125, 587.693, 513.847, 713.662, 417.257], dtype=MoneyType),  # 银行持有超额准备金（流动性资产） A_Q
                 A_R=np.zeros(num_bank),  # 银行持有法定准备金（非流动性资产） A_R #NOTE 这里用准备金率计算得到。
+                A_I=np.zeros(num_bank),  # 银行投资非金融部门之资产 A_I  #HACK 该模型未用到，相当于 A_other 的一部分
                 A_other=np.zeros(num_bank),  # 银行持有的其他资产（NOTE 包括：研究不涉及的资产科目、会计科目之其他资产、不重要且不明确的资产科目） A_other
                 Z_all=np.zeros(num_bank),  # 总负债 Z_all: $Z_total=Z_IB+Z_exIB$
                 Z_IB_all=np.array([959.6, 1844.24, 1253.34, 2851.85, 480.71], dtype=MoneyType),  # 银行间负债加总 Z_IB_all
                 Z_CB=np.zeros(num_bank),  # 持有央行之负债 Z_CB
                 Z_D=np.array([3160.99, 3231.37, 3184.36, 3311.51, 3122.9], dtype=MoneyType),  # 银行获得居民部门存款（非流动性负债） Z_D
+                Z_I=np.zeros(num_bank),  # 银行投资类负债 Z_I  #HACK 该模型未用到，相当于 Z_other 的一部分
                 Z_other=np.zeros(num_bank),  # 银行持有的其他负债（NOTE 包括：研究不涉及的负债科目、会计科目之其他负债、不重要且不明确的负债科目） Z_other
                 E_all=np.array([173.505, 213.693, 186.857, 259.522, 151.727], dtype=MoneyType),  # 所有者权益 E_all
                 Shock_t=np.zeros(num_bank),  # 总冲击目标 Shock_t $Shock_t = Shock_exIB_t+Shock_IB_t$
@@ -72,45 +100,32 @@ for year in list_年份:
                 inf=np.full(num_bank, False),  # 示性向量之于银行当前轮次是否遭受感染 is_infect
             )
 
-            # %% 设置贷款资产变量
-            set_debtAssets_variables = dict(
-
-                # 初始化贷款资产 debt_assets
-                id_agent=np.arange(num_asset),  # agent 之编号 id
-                abbr=np.arange(num_asset).astype(AbbrType),  # 缩写 abbr
-                fullName=np.array(["Asset_1", "Asset_2", "Asset_3", "Asset_4"], dtype=NameType),  # 全名 fullName
-                p=np.array([1.0, 1.0, 1.0, 1.0], dtype=MoneyType),  # 资产价格 p
-                DA=np.array([4361.83, 2575.97, 4259.21, 3089.84], dtype=MoneyType),  # 资产贷款 DA
-                Shock_DA_def_t=np.zeros(num_asset),  # 资产贷款违约损失冲击目标 Shock_DA_def_t
-                Shock_IBA_t=np.zeros(num_asset),  # 银行持有贷款类资产冲击目标 Shock_IBA_t
-                Shock_IBA_s=np.zeros(num_asset),  # 银行持有贷款类资产冲击源头 Shock_IBA_s
-                con=np.full(num_asset, False),  # 示性向量之于银行当前轮次是否传染出去 is_contagion
-                inf=np.full(num_asset, False),  # 示性向量之于银行当前轮次是否遭受感染 is_infect
-            )
-
             # %% 设置银行间邻接矩阵
             set_bankInterbank_variables = dict(
-
-                # 初始化银行间邻接矩阵 interbank
                 id_agent=(np.arange((num_bank * num_bank))).reshape(num_bank, num_bank),  # agent 之间之关联编号 id
-                A_IB=np.array([
-                    [0, 1728.55, 0, 134.46, 322.23],
-                    [109.35, 0, 289.02, 0, 0],
-                    [730.99, 0, 0, 0, 0],
-                    [119.26, 115.69, 964.32, 0, 158.48],
-                    [0, 0, 0, 2717.39, 0]
-                ], dtype=MoneyType),  # 银行间资产邻接矩阵 A_IB
-                Z_IB=np.array([
-                    [0, 1728.55, 0, 134.46, 322.23],
-                    [109.35, 0, 289.02, 0, 0],
-                    [730.99, 0, 0, 0, 0],
-                    [119.26, 115.69, 964.32, 0, 158.48],
-                    [0, 0, 0, 2717.39, 0]
-                ], dtype=MoneyType).T,  # 银行间负债邻接矩阵 Z_IB
+                A_IB=np.array(
+                    [
+                        [0, 1728.55, 0, 134.46, 322.23],
+                        [109.35, 0, 289.02, 0, 0],
+                        [730.99, 0, 0, 0, 0],
+                        [119.26, 115.69, 964.32, 0, 158.48],
+                        [0, 0, 0, 2717.39, 0]
+                    ], dtype=MoneyType
+                ),  # 银行间资产邻接矩阵 A_IB
+                Z_IB=np.array(
+                    [
+                        [0, 1728.55, 0, 134.46, 322.23],
+                        [109.35, 0, 289.02, 0, 0],
+                        [730.99, 0, 0, 0, 0],
+                        [119.26, 115.69, 964.32, 0, 158.48],
+                        [0, 0, 0, 2717.39, 0]
+                    ], dtype=MoneyType
+                ).T,  # 银行间负债邻接矩阵 Z_IB
                 Shock_IB=np.zeros((num_bank, num_bank)),  # 银行间冲击 Shock_IB: $Shock_IB=Shock_IB_def$
                 Shock_IB_def=np.zeros((num_bank, num_bank)),  # 银行间违约损失冲击 Shock_IB_def
                 Loss_IB=np.zeros((num_bank, num_bank)),  # 银行间市场冲击损失 Loss_IB
                 Loss_IB_def=np.zeros((num_bank, num_bank)),  # 银行间资产负债违约冲击损失 Loss_IB_def
+                theta_IB_def=np.zeros((num_bank, num_bank)),  # 银行间资产负债违约分配比例 theta_IB_def
                 Default_IB=np.zeros((num_bank, num_bank)),  # 银行间违约量 Default_IB
                 exist=np.full((num_bank, num_bank), True),  # 示性邻接矩阵之于银行间存在的 is_exist
                 exit=np.full((num_bank, num_bank), False),  # 示性邻接矩阵之于银行间已退出不存在的 is_exit
@@ -122,6 +137,24 @@ for year in list_年份:
             )
 
             # IBA, IBA_T = calibrate_bilateral_exposure_by_ME_method_use_R_package(set_bankCommercial_variables['A_P'].flatten(), set_debtAssets_variables['DA'].flatten(), target_density=1.0, folderpath_result=Path.cwd())  # #DEBUG 这个只是用来一次性生成的。测试的时候直接用生成的数据就行。
+
+            
+            # %% 设置贷款资产变量
+            set_debtAssets_variables = dict(
+
+                # 初始化贷款资产 debt_assets
+                id_agent=np.arange(num_asset),  # agent 之编号 id
+                p=np.array([1.0, 1.0, 1.0, 1.0], dtype=MoneyType),  # 资产价格 p
+                DA=np.array([4361.83, 2575.97, 4259.21, 3089.84], dtype=MoneyType),  # 资产贷款 DA
+                kappa_DA=np.zeros(num_asset),  # 银行抛售银行持有共同贷款资产之价格折扣率 kappa_DA
+                Shock_DA_def_t=np.zeros(num_asset),  # 资产贷款违约损失冲击目标 Shock_DA_def_t
+                Shock_IBA_t=np.zeros(num_asset),  # 银行持有贷款类资产冲击目标 Shock_IBA_t
+                Shock_IBA_s=np.zeros(num_asset),  # 银行持有贷款类资产冲击源头 Shock_IBA_s
+                con=np.full(num_asset, False),  # 示性向量之于银行当前轮次是否传染出去 is_contagion
+                inf=np.full(num_asset, False),  # 示性向量之于银行当前轮次是否遭受感染 is_infect
+            )
+
+
 
             # %% 设置银行持有贷款类资产邻接矩阵
             set_banksDebtAssets_variables = dict(
@@ -143,20 +176,55 @@ for year in list_年份:
                 exit=np.full((num_bank, num_asset), False),  # 示性邻接矩阵之于银行持有贷款资产邻接矩阵已退出不存在的 is_exit
 
             )
+            # %% 设置备注变量
+            set_note_variables = dict(
+                id_bank=np.arange(num_bank),  # 银行编号
+                id_interbank=(np.arange((num_bank * num_bank))).reshape(num_bank, num_bank),  # 银行间关联编号
+                id_asset=np.arange(num_asset),  # 资产编号
+                abbr_bank=np.arange(num_bank).astype(AbbrType),  # 银行缩写
+                fullName_bank=np.array(["Bank_1", "Bank_2", "Bank_3", "Bank_4", "Bank_5"], dtype=NameType),  # 银行全名
+                abbr_asset=np.arange(num_asset).astype(AbbrType),  # 资产缩写
+                fullName_asset=np.array(["Asset_1", "Asset_2", "Asset_3", "Asset_4"], dtype=NameType),  # 资产全名
+                id_interasset=np.nan,  # 银行持有贷款类资产之关联编号
+                num_bank=num_bank,  # 银行数量 num_bank
+                num_asset=num_asset,  # 资产数量 num_asset
+
+                # 银行备注 note
+                note=dict(
+                ),
+
+                # 元数据 meta
+                meta="""
+                模型：IB1211。
+                调试模型专用。
+                """,
+            )
+
 
             # %% # 导出 agents 变量
 
-            with open(Path(folderpath_agents, f"BB-year={year}-density_IB={density_IB:.2f}-density_IBA={density_IBA:.2f}.pkl"), 'wb') as f:
+            Path(Path.cwd(), 'agents').mkdir(exist_ok=True)
+            folderpath_agents = Path(Path.cwd(), 'agents')
+
+            with open(Path(folderpath_agents / f"id={id_agents}-v=BB-year={year}-density_IB={density_IB:.2f}-density_IBA={density_IBA:.2f}.pkl"), 'wb') as f:
                 pickle.dump(set_bankCommercial_variables, f)
-            with open(Path(folderpath_agents, f"DA-year={year}-density_IB={density_IB:.2f}-density_IBA={density_IBA:.2f}.pkl"), 'wb') as f:
+            with open(Path(folderpath_agents / f"id={id_agents}-v=DA-year={year}-density_IB={density_IB:.2f}-density_IBA={density_IBA:.2f}.pkl"), 'wb') as f:
                 pickle.dump(set_debtAssets_variables, f)
-            with open(Path(folderpath_agents, f"IB-year={year}-density_IB={density_IB:.2f}-density_IBA={density_IBA:.2f}.pkl"), 'wb') as f:
+            with open(Path(folderpath_agents / f"id={id_agents}-v=IB-year={year}-density_IB={density_IB:.2f}-density_IBA={density_IBA:.2f}.pkl"), 'wb') as f:
                 pickle.dump(set_bankInterbank_variables, f)
-            with open(Path(folderpath_agents, f"IBA-year={year}-density_IB={density_IB:.2f}-density_IBA={density_IBA:.2f}.pkl"), 'wb') as f:
+            with open(Path(folderpath_agents / f"id={id_agents}-v=IBA-year={year}-density_IB={density_IB:.2f}-density_IBA={density_IBA:.2f}.pkl"), 'wb') as f:
                 pickle.dump(set_banksDebtAssets_variables, f)
+            with open(Path(folderpath_agents / f"id={id_agents}-v=note-year={year}-density_IB={density_IB:.2f}-density_IBA={density_IBA:.2f}.pkl"), 'wb') as f:
+                pickle.dump(set_note_variables, f)
 
-            pass  # for density_IBA
-        pass  # for density_IB
-    pass  # for 年份
+            id_agents += 1
+            pass  # for density_IB, density_IBA
+        pass  # for 年份
 
-print("运行完毕！")
+    pass  # function
+
+
+if __name__ == '__main__':
+    main()
+    print("运行完毕。")
+    print(f"时间：{datetime.datetime.now()}")

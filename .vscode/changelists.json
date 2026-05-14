@@ -5,16 +5,14 @@
       "files": [
         ".idea/modules.xml",
         "config.json",
-        ".idea/misc.xml",
         ".idea/vcs.xml",
-        "sync.ffs_lock",
         ".aiignore",
-        "uv.lock",
-        ".python-version",
+        "Samples/libraries/parameters_library/parameters_sample_IB1211/set_parameters_variables.py",
         ".vscode/changelists.json",
         "SystemicRiskSimulator.code-workspace",
-        "pyproject.toml",
-        ".vscode/settings.json"
+        "Samples/libraries/agents_library/agents_sample_IB1211/set_agents_variables.py",
+        "Samples/libraries/configs_library/config_sample_IB1211/set_config_variables.py",
+        "Samples/libraries/models_library/model_sample_IB1211/model_main.py"
       ]
     }
   ],

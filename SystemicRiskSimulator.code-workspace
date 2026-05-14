@@ -4,6 +4,10 @@
 			"path": "."
 		},
 		{
+			"name": "SystemicRisk-Library",
+			"path": "../SystemicRiskLab/libraries"
+		},
+		{
 			"path": "../entity-relation-system-kit"
 		},
 		{
@@ -17,6 +21,9 @@
 		},
 		{
 			"path": "../SystemicRiskData/data/sims_samples"
+		},
+		{
+			"path": "../SystemicRiskResearch"
 		}
 	],
 	"settings": {
