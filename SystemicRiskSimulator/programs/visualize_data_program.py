@@ -148,13 +148,51 @@ def main(sgv):
     # sgv['folderpath_visualize_强化学习收敛曲线'] = Path(sgv['folderpath_plots'], sgv['foldername_visualize_强化学习收敛曲线'])
     # sgv['folderpath_visualize_强化学习收敛曲线'].mkdir(parents=True, exist_ok=True)
 
-    ## 获取需要做的实验组之索引
-    list_fig_files = list(sgv['folderpath_experiments_output_data_panel'].glob('*-form=panel.pkl'))  # 获取实验组输出数据pkl格式之文件列表
-    if sgv['vis']['list_idsExperiment_to_vis'] is None:
-        experiments_indices_to_vis = list(range(len(list_fig_files)))
+    ## 获取需要做的实验组之索引（基于面板文件中的真实 exp_id，避免配置与产物不一致导致越界）
+    panel_files_BB = list(sgv['folderpath_experiments_output_data_panel'].glob('*exp=*-v=BB-*-form=panel.pkl'))
+    panel_files_IB = list(sgv['folderpath_experiments_output_data_panel'].glob('*exp=*-v=IB-*-form=panel.pkl'))
+    available_exp_ids_BB = {
+        int(match.group(1))
+        for file in panel_files_BB
+        for match in [re.search(r'exp=(\d+)-v=BB-', file.name)]
+        if match
+    }
+    available_exp_ids_IB = {
+        int(match.group(1))
+        for file in panel_files_IB
+        for match in [re.search(r'exp=(\d+)-v=IB-', file.name)]
+        if match
+    }
+    available_exp_ids = sorted(available_exp_ids_BB & available_exp_ids_IB)
+
+    requested_exp_ids = sgv['vis'].get('list_idsExperiment_to_vis')
+    if requested_exp_ids is None:
+        experiments_indices_to_vis = available_exp_ids
     else:
-        experiments_indices_to_vis = sgv['vis']['list_idsExperiment_to_vis']
-        pass
+        if not isinstance(requested_exp_ids, (list, tuple, set)):
+            requested_exp_ids = [requested_exp_ids]
+        normalized_requested_exp_ids = []
+        for exp_id in requested_exp_ids:
+            try:
+                normalized_requested_exp_ids.append(int(exp_id))
+            except (TypeError, ValueError):
+                logging.warning(f"忽略非法的可视化实验编号：{exp_id!r}")
+        missing_exp_ids = [exp_id for exp_id in normalized_requested_exp_ids if exp_id not in available_exp_ids]
+        if missing_exp_ids:
+            logging.warning(
+                f"请求可视化的实验编号不存在于面板数据中：{missing_exp_ids}；可用实验编号：{available_exp_ids}"
+            )
+        experiments_indices_to_vis = [exp_id for exp_id in normalized_requested_exp_ids if exp_id in available_exp_ids]
+
+    if not experiments_indices_to_vis:
+        if available_exp_ids:
+            logging.warning(
+                f"未匹配到有效的可视化实验编号，回退为全部可用实验：{available_exp_ids}"
+            )
+            experiments_indices_to_vis = available_exp_ids
+        else:
+            logging.warning("未找到可视化所需面板数据（BB/IB），跳过可视化结果程序。")
+            return
 
     # # %% [markdown] # NOTE 导入Pandas格式的实验结果数据，然后转换为面板形式的数据，导出PKL、CSV、xlsx 格式数据。 #HACK 这个功能似乎无用
     #
