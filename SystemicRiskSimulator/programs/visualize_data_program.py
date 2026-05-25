@@ -29,6 +29,12 @@ def main(sgv):
     if sgv['is_ignore_warning']:
         warnings.filterwarnings("ignore")  # 忽略警告
 
+    # 在全局日志级别为 DEBUG 时，抑制 matplotlib 内部调试日志刷屏
+    logging.getLogger("matplotlib").setLevel(logging.WARNING)
+    logging.getLogger("matplotlib.font_manager").setLevel(logging.WARNING)
+    logging.getLogger("matplotlib.backends.backend_pdf").setLevel(logging.WARNING)
+    logging.getLogger("matplotlib.colorbar").setLevel(logging.WARNING)
+
     # %% 初始化
 
     # from SystemicRiskSimulator.tools.tools import Tools

@@ -23,6 +23,7 @@ import numpy as np
 from functools import reduce
 from typing import Optional
 import re
+import platform
 from pathlib import Path
 from copy import deepcopy
 from SystemicRiskSimulator.tools.tools import Tools
@@ -1065,6 +1066,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         pass  # if
 
     ### 银行状态数据
+    bankState_color = '#CCCCCC'
     for state in sgv_vis['set_dataTypes_for_agentsState']:  # 顺序遍历 set_dataTypes_for_agentsState 中的每一个状态，如果该状态能够与 bank_states 中的状态匹配，那么就将该状态的颜色添加到个体颜色列表
         if df_BB[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent)][state].values[0]:
             bankState_color = sgv_vis['dict_state_colors'][state]
@@ -1481,11 +1483,8 @@ def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_
     if num_figure_in_paging_direction_per_page == 1:
         is_adjast_horizontal_direction = True
         ### 获取当前显示器长宽比。根据总的图片数，分配与长宽比最接近的每行、每列图片数
-        from screeninfo import get_monitors
         import math
-        monitor = get_monitors()[0]
-        width = monitor.width
-        height = monitor.height
+        width, height = get_primary_monitor_size()
         aspect_ratio = width / height
         max_num_figure_for_adjast_in_vertical_direction_per_page = max_num_figure_for_adjast_in_horizontal_direction_per_page = math.floor(math.sqrt(total_figures_per_page))
         while max_num_figure_for_adjast_in_horizontal_direction_per_page * max_num_figure_for_adjast_in_vertical_direction_per_page < total_figures_per_page:
@@ -1541,3 +1540,65 @@ def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_
     pass  # function
 
 
+def get_primary_monitor_size() -> tuple[int, int]:
+    """
+    获取主显示器尺寸（像素），跨系统兼容。
+    """
+    try:
+        if platform.system().lower() == "windows":
+            import ctypes
+            import ctypes.wintypes
+
+            MONITOR_DEFAULTTOPRIMARY = 1
+            point = ctypes.wintypes.POINT(0, 0)
+            monitor = ctypes.windll.user32.MonitorFromPoint(point, MONITOR_DEFAULTTOPRIMARY)
+
+            class RECT(ctypes.Structure):
+                _fields_ = [
+                    ("left", ctypes.c_long),
+                    ("top", ctypes.c_long),
+                    ("right", ctypes.c_long),
+                    ("bottom", ctypes.c_long),
+                ]
+                pass  # class
+
+            class MONITORINFO(ctypes.Structure):
+                _fields_ = [
+                    ("cbSize", ctypes.c_ulong),
+                    ("rcMonitor", RECT),
+                    ("rcWork", RECT),
+                    ("dwFlags", ctypes.c_ulong),
+                ]
+                pass  # class
+
+            monitor_info = MONITORINFO()
+            monitor_info.cbSize = ctypes.sizeof(MONITORINFO)
+            ok = ctypes.windll.user32.GetMonitorInfoW(monitor, ctypes.byref(monitor_info))
+            if ok:
+                width = monitor_info.rcMonitor.right - monitor_info.rcMonitor.left
+                height = monitor_info.rcMonitor.bottom - monitor_info.rcMonitor.top
+                if width > 0 and height > 0:
+                    return int(width), int(height)
+                pass  # if
+            pass  # if
+
+        from screeninfo import get_monitors
+
+        monitors = list(get_monitors())
+        if monitors:
+            primary_monitor = next((m for m in monitors if bool(getattr(m, "is_primary", False))), None)
+            if primary_monitor is None:
+                primary_monitor = max(monitors, key=lambda m: int(getattr(m, "width", 0)) * int(getattr(m, "height", 0)))
+                pass  # if
+            width = int(getattr(primary_monitor, "width", 0))
+            height = int(getattr(primary_monitor, "height", 0))
+            if width > 0 and height > 0:
+                return width, height
+            pass  # if
+        pass  # if
+    except Exception:
+        pass  # try
+
+    # 最后回退：使用常见屏幕比例，避免流程中断
+    return 1920, 1080
+    pass  # function
