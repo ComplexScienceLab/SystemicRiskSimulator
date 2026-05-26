@@ -66,6 +66,20 @@ def main(sgv):
     if sgv['is_ignore_warning']:
         warnings.filterwarnings("ignore")  # 忽略警告
 
+    def _build_exp_id_to_filepath_map(filepaths):
+        """
+        基于结果文件名中的 exp_id 建立映射，避免把实验编号误当成列表下标。
+        """
+        filepath_map = dict()
+        for filepath in filepaths:
+            match = re.search(r'exp=(\d+)-v=', filepath.name)
+            if match is None:
+                continue
+            filepath_map[int(match.group(1))] = filepath
+            pass  # if
+        return filepath_map
+        pass  # function
+
     # %% 初始化
     from SystemicRiskSimulator.tools.tools import Tools
     list_transform_output_data_packages = ['openpyxl']  # 所需的第三方工具包 #NOTE 如果需要添加新的包，请在此处添加
@@ -187,11 +201,8 @@ def main(sgv):
         ## 读取实验结果数据。根据 list_idsExp_TASK 中的实验组 id，读取实验结果数据。
         dict_filepath_pkl = dict()
         for para_01 in sgv['list_agents_data_filename_para_01']:
-            list_filepath_pkl = []
-            for id_exp in list_idsExp_TASK:
-                list_filepath_pkl.extend(list(folderpath_experiments_output_data.glob(f'exp={id_exp}-v={para_01}-aid=*.pkl')))
-                pass  # for
-            dict_filepath_pkl[para_01] = list_filepath_pkl
+            list_filepath_pkl = list(folderpath_experiments_output_data.glob(f'exp=*-v={para_01}-aid=*.pkl'))
+            dict_filepath_pkl[para_01] = _build_exp_id_to_filepath_map(list_filepath_pkl)
             pass  # for
 
     else:  # 如果是是运行强化学习算法和ABM模型实验组做训练，那么读取所有实验组 id 的实验结果数据
@@ -234,10 +245,13 @@ def main(sgv):
             for para_01 in sgv['list_agents_data_filename_para_01']:
                 if para_01 == "note":  # 如果是备注变量，则跳过。因为是作为辅助的，不需要转换
                     continue
-                filepath_pkl = dict()
-                for i, exp_id in enumerate(list_idsExp_TASK):
-                    filepath_pkl[para_01] = dict_filepath_pkl[para_01][i]
-                    filepath_note_pkl = dict_filepath_pkl['note'][i]
+                for exp_id in list_idsExp_TASK:
+                    filepath_para_pkl = dict_filepath_pkl[para_01].get(exp_id)
+                    filepath_note_pkl = dict_filepath_pkl['note'].get(exp_id)
+                    if filepath_para_pkl is None or filepath_note_pkl is None:
+                        logging.warning(f"预处理跳过缺失产物的实验编号：exp_id={exp_id}, para={para_01}")
+                        continue
+                    filepath_pkl = {para_01: filepath_para_pkl}
                     works.append((
                         exp_id,
                         filepath_pkl,
@@ -261,10 +275,13 @@ def main(sgv):
             for para_01 in sgv['list_agents_data_filename_para_01']:
                 if para_01 == "note":  # 如果是备注变量，则跳过。因为是作为辅助的，不需要转换
                     continue
-                filepath_pkl = dict()
-                for i, exp_id in enumerate(list_idsExp_TASK):
-                    filepath_pkl[para_01] = dict_filepath_pkl[para_01][i]
-                    filepath_note_pkl = dict_filepath_pkl['note'][i]
+                for exp_id in list_idsExp_TASK:
+                    filepath_para_pkl = dict_filepath_pkl[para_01].get(exp_id)
+                    filepath_note_pkl = dict_filepath_pkl['note'].get(exp_id)
+                    if filepath_para_pkl is None or filepath_note_pkl is None:
+                        logging.warning(f"预处理跳过缺失产物的实验编号：exp_id={exp_id}, para={para_01}")
+                        continue
+                    filepath_pkl = {para_01: filepath_para_pkl}
                     print(f"para = {para_01}, exp_id = {exp_id}")
                     fun_导入Pandas格式的实验结果数据转换为面板形式再导出(
                         exp_id,

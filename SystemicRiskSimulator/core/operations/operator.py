@@ -33,32 +33,80 @@ class Operator:
 
     # A_data = AgentDataCollection([], [])
 
+    @staticmethod
+    def _get_parameter_source_files(folderpath_parameters: Path) -> list[Path]:
+        """获取可用的参数资产文件，优先使用结构化文本资产。"""
+        candidate_names = [
+            "parameters.json",
+            "parameters.pkl",
+            "parameters.xlsx",
+            "parameters.csv",
+        ]
+        return [Path(folderpath_parameters, name) for name in candidate_names if Path(folderpath_parameters, name).exists()]
+
+    @staticmethod
+    def _normalize_parameters_works(parameters_works: pd.DataFrame) -> pd.DataFrame:
+        """标准化参数表字段类型，保证后续拼接 agents 文件名时行为一致。"""
+        for col in ['density_IB', 'density_IBA', 'kappa_BA']:
+            if col in parameters_works.columns:
+                parameters_works[col] = pd.to_numeric(parameters_works[col], errors='coerce').astype(float)
+                pass  # if
+            pass  # for
+
+        for col in ['exp_id', 'inner_id', 'id_agents']:
+            if col in parameters_works.columns:
+                parameters_works[col] = pd.to_numeric(parameters_works[col], errors='coerce').astype(int)
+                pass  # if
+            pass  # for
+
+        for col in parameters_works.columns:
+            if parameters_works[col].dtype == 'object':
+                parameters_works[col] = parameters_works[col].apply(
+                    lambda v: ast.literal_eval(v) if isinstance(v, str) and v.strip()[:1] in {'[', '{', '('} else v
+                )
+                pass  # if
+            pass  # for
+
+        return parameters_works
+        pass  # function
+
     @classmethod
     def _load_parameters_works(cls, folderpath_parameters: Path) -> pd.DataFrame:
-        """读取参数作业表，兼容 pandas 版本差异导致的 pkl 反序列化失败。"""
+        """读取参数作业表，兼容 pkl/xlsx/json/csv 多种参数资产。"""
+        filepath_parameters_json = Path(folderpath_parameters, "parameters.json")
         filepath_parameters_pkl = Path(folderpath_parameters, "parameters.pkl")
         filepath_parameters_xlsx = Path(folderpath_parameters, "parameters.xlsx")
+        filepath_parameters_csv = Path(folderpath_parameters, "parameters.csv")
 
-        try:
-            with open(filepath_parameters_pkl, 'rb') as f:
-                parameters_works = pd.read_pickle(f)
-        except Exception as e:
-            logging.warning(f"读取 parameters.pkl 失败，将回退读取 parameters.xlsx。错误：{e}")
-            if not filepath_parameters_xlsx.exists():
-                raise
+        if filepath_parameters_json.exists():
+            with open(filepath_parameters_json, 'r', encoding='utf-8') as f:
+                parameters_works = pd.DataFrame(json.load(f))
+                pass  # with
+            return cls._normalize_parameters_works(parameters_works)
+            pass  # if
+
+        if filepath_parameters_pkl.exists():
+            try:
+                with open(filepath_parameters_pkl, 'rb') as f:
+                    parameters_works = pd.read_pickle(f)
+                    pass  # with
+                return cls._normalize_parameters_works(parameters_works)
+            except Exception as e:
+                logging.warning(f"读取 parameters.pkl 失败，将继续尝试读取其它参数资产。错误：{e}")
+                pass  # try
+            pass  # if
+
+        if filepath_parameters_xlsx.exists():
             parameters_works = pd.read_excel(filepath_parameters_xlsx)
+            return cls._normalize_parameters_works(parameters_works)
+            pass  # if
 
-            # Excel 回退时，恢复核心字段类型与列表字段，保证后续文件名拼接与参数传递一致。
-            if 'density_IB' in parameters_works.columns:
-                parameters_works['density_IB'] = pd.to_numeric(parameters_works['density_IB'], errors='coerce').astype(float)
-            if 'exp_id' in parameters_works.columns:
-                parameters_works['exp_id'] = pd.to_numeric(parameters_works['exp_id'], errors='coerce').astype(int)
+        if filepath_parameters_csv.exists():
+            parameters_works = pd.read_csv(filepath_parameters_csv)
+            return cls._normalize_parameters_works(parameters_works)
+            pass  # if
 
-            for col in parameters_works.columns:
-                if parameters_works[col].dtype == 'object':
-                    parameters_works[col] = parameters_works[col].apply(
-                        lambda v: ast.literal_eval(v) if isinstance(v, str) and v.strip()[:1] in {'[', '{', '('} else v
-                    )
+        raise FileNotFoundError(f"未找到可用的参数资产文件：{folderpath_parameters}")
 
         return parameters_works
 
@@ -110,21 +158,25 @@ class Operator:
             ## SQLite 数据库统计实验组之上一次的作业之完成情况
             time_start_统计实验组作业情况 = timeit.default_timer()  # #DEBUG
             # 如果参数库当中的参数文件夹中的参数文件有更新，那么就要在后续删除原有的作业数据库再重建
+            parameter_source_files = cls._get_parameter_source_files(sgv['folderpath_parameters'])
+            if not parameter_source_files:
+                raise FileNotFoundError(f"参数库中未找到可用的 parameters 资产：{sgv['folderpath_parameters']}")
+                pass  # if
             if os.path.exists(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db")):
                 is_exist_experiments_works_status_db = True
-                mtime_of_file_parameters_pkl = Path(sgv['folderpath_parameters'], "parameters.pkl").resolve().stat().st_mtime
+                mtime_of_file_parameters_assets = max(file.resolve().stat().st_mtime for file in parameter_source_files)
                 mtime_of_file_experimentsWorksStatus_db = Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db").resolve().stat().st_mtime
-                if mtime_of_file_parameters_pkl > mtime_of_file_experimentsWorksStatus_db:
-                    is_mtime_of_file_parameters_pkl_changed = True
+                if mtime_of_file_parameters_assets > mtime_of_file_experimentsWorksStatus_db:
+                    is_mtime_of_file_parameters_assets_changed = True
                 else:
-                    is_mtime_of_file_parameters_pkl_changed = False
+                    is_mtime_of_file_parameters_assets_changed = False
                     pass  # if
             else:
                 is_exist_experiments_works_status_db = False
-                is_mtime_of_file_parameters_pkl_changed = True
+                is_mtime_of_file_parameters_assets_changed = True
                 pass  # if
 
-            if sgv['is_rerun_all_done_works_in_the_same_experiments'] or is_mtime_of_file_parameters_pkl_changed:
+            if sgv['is_rerun_all_done_works_in_the_same_experiments'] or is_mtime_of_file_parameters_assets_changed:
                 is_recreate_experiments_works_status_db = True
                 if is_exist_experiments_works_status_db:
                     is_remove_experiments_works_status_db = True

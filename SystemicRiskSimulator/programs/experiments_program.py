@@ -151,7 +151,7 @@ def main(sgv):
                 for i, para in paras.iterrows():
                     para = para.to_dict()  # 将参数数据框转换为字典
                     # model = list(models.values())[0]  # 获取当前实验对应的模型
-                    sgv['id_experiment'] = i  # 设定当前实验编号
+                    sgv['id_experiment'] = int(para['exp_id'])  # 设定当前实验编号
                     sgv['num_unfinished_experiments_to_run'] -= 1  # 更新未完成实验数
                     ## 运行一次实验作业
                     fun_single_experiment_work(sgv['id_experiment'], sgv, para, model_dict)

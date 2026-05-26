@@ -17,6 +17,18 @@ pass  # end import
 
 class Collector:
 
+    @staticmethod
+    def _get_parameter_source_files(folderpath_parameters: Path) -> list[Path]:
+        """获取可复制到实验快照目录的参数资产文件。"""
+        candidate_names = [
+            "parameters.json",
+            "parameters.pkl",
+            "parameters.xlsx",
+            "parameters.csv",
+        ]
+        return [Path(folderpath_parameters, name) for name in candidate_names if Path(folderpath_parameters, name).exists()]
+        pass  # function
+
     ## NOTE 当用 Pandas 之数据结构时：
     @classmethod
     def init_agent_data_collection(cls, A: pd.Series, sgv: dict, para: dict):
@@ -560,11 +572,15 @@ class Collector:
 
         ### 如果参数库当中的参数文件夹中的参数文件有更新，那么就要在后续重新生成参数作业数据
         mtime_of_file_parameters_py = Path(sgv['folderpath_parameters'], r"set_parameters_variables.py").resolve().stat().st_mtime
-        mtime_of_file_parameters_pkl = Path(sgv['folderpath_parameters'], r"parameters.pkl").resolve().stat().st_mtime
+        parameter_source_files = cls._get_parameter_source_files(sgv['folderpath_parameters'])
+        if not parameter_source_files:
+            raise FileNotFoundError(f"参数库中未找到可用的 parameters 资产：{sgv['folderpath_parameters']}")
+            pass  # if
+        mtime_of_file_parameters_assets = max(file.resolve().stat().st_mtime for file in parameter_source_files)
         filepath_parameters_works_pkl = Path(sgv['folderpath_experiments_output_parameters'], r"parameters_works.pkl").resolve()
         if filepath_parameters_works_pkl.exists():  # 检查parameters_works.pkl文件是否存在
             mtime_of_file_parameters_works_pkl = filepath_parameters_works_pkl.stat().st_mtime  # 获取parameters_works.pkl文件的最后修改时间
-            if (mtime_of_file_parameters_pkl > mtime_of_file_parameters_works_pkl) or (mtime_of_file_parameters_py > mtime_of_file_parameters_works_pkl):
+            if (mtime_of_file_parameters_assets > mtime_of_file_parameters_works_pkl) or (mtime_of_file_parameters_py > mtime_of_file_parameters_works_pkl):
                 is_generate_parameters_works_data = True
                 print("参数文件有更新，需要重新导出参数作业数据。")
             else:
@@ -578,13 +594,12 @@ class Collector:
             Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_parameters'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建输出文件夹之参数文件夹
             # Tools.copy_files_from_other_folders(sgv['folderpath_parameters'], sgv['folderpath_experiments_output_parameters'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份参数文件夹到输出文件夹
             shutil.copyfile(sgv['folderpath_parameters'] / "set_parameters_variables.py", sgv['folderpath_experiments_output_parameters'] / "set_parameters_variables.py")
-            shutil.copyfile(sgv['folderpath_parameters'] / "parameters.pkl", sgv['folderpath_experiments_output_parameters'] / "parameters.pkl")
-            # 如果存在文件名（非格式名）为 parameters 的文件（例如 pkl、xlsx 等格式），就全部复制过去
-            for file in Path(sgv['folderpath_parameters']).iterdir():
-                if file.stem == "parameters":
-                    shutil.copyfile(file, sgv['folderpath_experiments_output_parameters'] / file.name)
-                    pass  # if
+            for file in parameter_source_files:
+                shutil.copyfile(file, sgv['folderpath_experiments_output_parameters'] / file.name)
                 pass  # for
+            # 无论源参数资产使用哪种格式，统一在实验输出目录补一份规范 parameters.pkl，
+            # 便于后续预处理与分析阶段沿用既有读取契约。
+            pd.to_pickle(df_combinationOfPara, sgv['folderpath_experiments_output_parameters'] / "parameters.pkl")
 
             # 旧逻辑（开发优先改造前）：无条件复制到模拟器包内 data/parameters。
             # 已由上面的 runtime_copy_resources_into_simulator_data 开关逻辑替代。
