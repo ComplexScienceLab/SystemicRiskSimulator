@@ -118,6 +118,64 @@ def fun_根据资产负债表科目计算模型银行变量(list_subject: list, 
     pass  # function
 
 
+def check_bank_names_in_list(bank_names: list, data_table: pd.DataFrame, name_column: str = '基本：银行中文简称') -> dict:
+    """
+    检查银行名称是否在数据表中
+
+    Args:
+        bank_names (list): 要检查的银行名称列表
+        data_table (pd.DataFrame): 数据表
+        name_column (str): 银行名称所在的列名，默认为 '基本：银行中文简称'
+
+    Returns:
+        dict: 包含检查结果的字典
+            - found: 找到的银行名称列表
+            - not_found: 未找到的银行名称列表
+            - all_found: 是否所有银行都找到了
+    """
+    if name_column not in data_table.columns:
+        raise ValueError(f"数据表中不存在列: {name_column}")
+
+    available_names = set(data_table[name_column].unique())
+    found = [name for name in bank_names if name in available_names]
+    not_found = [name for name in bank_names if name not in available_names]
+
+    return {
+        'found': found,
+        'not_found': not_found,
+        'all_found': len(not_found) == 0
+    }
+
+
+def check_bank_id_in_list(bank_ids: list, data_table: pd.DataFrame, id_column: str = '基本：银行代码') -> dict:
+    """
+    检查银行ID是否在数据表中
+
+    Args:
+        bank_ids (list): 要检查的银行ID列表
+        data_table (pd.DataFrame): 数据表
+        id_column (str): 银行ID所在的列名，默认为 '基本：银行代码'
+
+    Returns:
+        dict: 包含检查结果的字典
+            - found: 找到的银行ID列表
+            - not_found: 未找到的银行ID列表
+            - all_found: 是否所有银行ID都找到了
+    """
+    if id_column not in data_table.columns:
+        raise ValueError(f"数据表中不存在列: {id_column}")
+
+    available_ids = set(data_table[id_column].unique())
+    found = [bank_id for bank_id in bank_ids if bank_id in available_ids]
+    not_found = [bank_id for bank_id in bank_ids if bank_id not in available_ids]
+
+    return {
+        'found': found,
+        'not_found': not_found,
+        'all_found': len(not_found) == 0
+    }
+
+
 def fun_根据对接的科目检测处理异常值(
         method_处理异常值: str,
         var_name: str,
