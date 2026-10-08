@@ -1,12 +1,12 @@
 {
   "runner": {
     "foldername_simulator": "SystemicRiskSimulator",
-    "folderpath_realpath_simulator": ".",
+    "folderpath_realpath_simulator": "./../",
     "is_auto_confirmation": true
   },
   "experiments": {
-    "ib2111": {
-      "folderpath_config": "Samples/libraries/configs_library/config_sample_IB2111_improved"
+    "ib1211": {
+      "folderpath_config": "<path-to-configs_library>/config_debug_IB2211_new"
     }
   }
 }

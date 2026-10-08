@@ -1,3 +1,4 @@
+from pathlib import Path
 """
 简单测试脚本，验证新添加的银行检查函数
 """
@@ -6,7 +7,7 @@ import sys
 import os
 
 # 添加项目根目录到Python路径
-project_root = r"C:\Users\Ethan\CoreFiles\ProjectsFile\SystemicRiskSimulator"
+project_root = Path(__file__).resolve().parent
 sys.path.insert(0, project_root)
 
 try:

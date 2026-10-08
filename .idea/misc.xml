@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="uv (SystemicRiskSimulator)" />
   </component>
-  <component name="ProjectRootManager" version="2" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="~/CoreFiles/ProjectsFile/SystemicRiskLab/libraries/.venv" project-jdk-type="Python SDK" />
 </project>

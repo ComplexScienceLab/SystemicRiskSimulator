@@ -590,3 +590,13 @@ dist
 .svelte-kit
 
 
+
+# mailbox/relay — 运行时状态与归档（不入库）
+.mailbox/
+docs/mailbox/relay/archive/
+
+# 联合体治理：机器生成的导航附件，仅含本机绝对路径，不入库（2026-10-08）
+WORKSPACE_GUIDE.md
+
+# IDE 自动生成的统计报告（含本机路径），不入库（2026-10-08）
+.VSCodeCounter/

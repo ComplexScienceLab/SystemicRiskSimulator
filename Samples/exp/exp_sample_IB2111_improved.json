@@ -9,7 +9,7 @@
     "is_auto_confirmation": true
   },
   "external_paths": [
-    "C:/Users/Ethan/CoreFiles/ProjectsFile/ComplexSystemLab/ComplexSystemLab"
+    "<本机路径>"
   ],
   "note": "improved 模型通常依赖 ComplexSystemLab；请根据本机实际路径替换 external_paths 中的示例路径。"
 }

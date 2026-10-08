@@ -9,8 +9,8 @@ setup(
     author="Ethan Lin",
     author_email="ElementsSystem@hunnu.edu.cn",
     url="https://gitee.com/EthanLingo/SystemicRiskSimulator",
-    packages=find_packages(where="SystemicRiskSimulator"),
-    package_dir={"": "SystemicRiskSimulator"},
+    packages=find_packages(where="."),
+    package_dir={"": "."},
     include_package_data=True,
     exclude_package_data={
         "": ["data/**/*"]

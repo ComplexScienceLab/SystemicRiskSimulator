@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SystemicRiskSimulator.iml" filepath="$PROJECT_DIR$/.idea/SystemicRiskSimulator.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../SystemicRiskLab/libraries/.idea/libraries.iml" filepath="$PROJECT_DIR$/../SystemicRiskLab/libraries/.idea/libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/libraries.iml" filepath="file://$PROJECT_DIR$/.idea/libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SystemicRisk-Library.iml" filepath="file://$PROJECT_DIR$/.idea/SystemicRisk-Library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SystemicRiskLab.iml" filepath="file://$PROJECT_DIR$/.idea/SystemicRiskLab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sims_samples.iml" filepath="file://$PROJECT_DIR$/.idea/sims_samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SystemicRiskResearch.iml" filepath="file://$PROJECT_DIR$/.idea/SystemicRiskResearch.iml" />
     </modules>
   </component>
 </project>
