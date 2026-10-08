@@ -602,3 +602,6 @@ WORKSPACE_GUIDE.md
 .VSCodeCounter/
 
 tmp_absolute_config.json
+
+# 治理信箱（含本机路径），不入库（2026-10-08）
+docs/mailbox/relay/
